@@ -2,6 +2,11 @@
 
 All notable deployments of the public HaulBoard page. Weekly content refreshes (new prices and deals) happen every Friday and are summarised in the commit message; this log tracks structural and feature changes.
 
+## 2026-10-25 — Data published + suite roadmap
+- Price database and JSONs now published with the board in `data/`: SQL dump and JSON export of the full price database (212 prices, 161 items, 11 stores), raw `captures.jsonl`, and the generated price tables, with a `data/README.md` explaining the schema and why the binary `.db` itself is exported as text
+- `ROADMAP.md` rewritten: HaulBoard's destination is a home shopping suite — Track A groceries, Track B coupons engine (image-first, couponer-led shortlists), Track C household essentials and drugstores, Track D apparel clearance, Track E furniture and home goods, Track F bodegas/warehouses/clearance outlets, plus cross-cutting video-sourced pricing, price trends and alerts, and the suite dashboard
+- Operations doc: coupon step is now image-first with a defined shortlist format, and a video-sourced pricing protocol was added (pilot: The Meat Grinder Market)
+
 ## 2026-10-24 — Full deployment
 - Added web app manifest (`manifest.webmanifest`), app icon (`icon.svg`), and a service worker (`sw.js`) so the board installs as a phone web app and the current board stays available offline
 - Added `.nojekyll` so GitHub Pages serves the files exactly as pushed

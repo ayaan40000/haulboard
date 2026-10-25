@@ -50,6 +50,9 @@ The site is a progressive web app: open the live link in your phone browser and 
 | `ROADMAP.md` | Planned development, in phases with acceptance criteria |
 | `CHANGELOG.md` | What changed, per deployment |
 | `docs/` | Architecture, weekly operations, and development guides |
+| `data/` | The data behind the board, published weekly: price database as SQL dump + JSON, raw captures, price tables, dated coupon shortlists — see `data/README.md` |
+
+**Roadmap in one line:** HaulBoard is growing from a grocery board into a **home shopping suite** — coupons engine, household essentials, apparel clearance, furniture and home deals, and clearance outlets, all on the same verified price tracking. Full plan: [ROADMAP.md](ROADMAP.md).
 
 ## Documentation
 
