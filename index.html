@@ -10,6 +10,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="HaulBoard">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon.svg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2314532d'/%3E%3Ctext x='50' y='68' font-size='55' text-anchor='middle' fill='%23f6f3ec'%3EH%3C/text%3E%3C/svg%3E">
 <style>
 :root{--bg:#f6f3ec;--surface:#fff;--surface2:#fdfbf7;--ink:#1a211c;--muted:#5c665e;--line:#e3ddd0;--green:#14532d;--green2:#166534;--lime:#dcfce7;--marigold:#d97706}
@@ -259,10 +261,10 @@ footer{color:var(--muted);font-size:13px;margin-top:28px}
 <li>H-E-B · Walmart · Aldi · Kroger · Flipp for 77477</li></ul></section>
 
 <section id="my-list" class="card"><h2>My list</h2>
-<p class="muted">Saved only on this device (local storage). Use “Add to my list” on the headline deal as a prototype — the full planner from the Muse board can be ported in the publishing step.</p>
+<p class="muted">Saved only on this device (local storage). Use “Add to my list” on the headline deal — the full trip planner is Phase 1 of the roadmap.</p>
 <ul id="list"></ul><button class="add" id="clear">Clear list</button></section>
 
-<footer>HaulBoard prototype — built locally 2026-10-24 from the first board's data. Not published. Prices were verified for the week shown; check the flyer before you go.</footer>
+<footer>HaulBoard — live on GitHub Pages, updated every Friday. Prices were verified for the week shown; check the flyer before you go. <a href="https://github.com/ayaan40000/haulboard">Repo</a> · <a href="https://github.com/ayaan40000/haulboard/blob/main/README.md">Documentation</a> · <a href="https://github.com/ayaan40000/haulboard/blob/main/ROADMAP.md">Roadmap</a></footer>
 </div>
 <script>
 const key='haulboard-list-v1'; const ul=document.getElementById('list');
@@ -270,5 +272,8 @@ function render(){let items=[]; try{items=JSON.parse(localStorage.getItem(key)||
 document.querySelectorAll('.add[data-item]').forEach(b=>b.addEventListener('click',()=>{let items=[]; try{items=JSON.parse(localStorage.getItem(key)||'[]')}catch(e){} items.push(b.dataset.item); localStorage.setItem(key,JSON.stringify(items)); render();}));
 document.getElementById('clear').addEventListener('click',()=>{localStorage.removeItem(key); render();});
 render();
+</script>
+<script>
+if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js').catch(function(){}); }
 </script>
 </body></html>
