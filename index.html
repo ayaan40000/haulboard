@@ -14,91 +14,417 @@
 <link rel="apple-touch-icon" href="icon.svg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2314532d'/%3E%3Ctext x='50' y='68' font-size='55' text-anchor='middle' fill='%23f6f3ec'%3EH%3C/text%3E%3C/svg%3E">
 <style>
+/* SHELL: styles — edit only via UX spec */
 :root{--bg:#f6f3ec;--surface:#fff;--surface2:#fdfbf7;--ink:#1a211c;--muted:#5c665e;--line:#e3ddd0;--green:#14532d;--green2:#166534;--lime:#dcfce7;--marigold:#d97706}
-*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.55}
-.wrap{max-width:1100px;margin:0 auto;padding:0 18px 48px} a{color:var(--green2);font-weight:600}
-h1{font-family:Georgia,serif;font-size:clamp(36px,6vw,60px);line-height:.95;margin:10px 0 12px} h1 em{font-style:normal;color:var(--green2)}
-h2{font-family:Georgia,serif;font-size:28px;margin:0 0 8px} h3{margin:18px 0 6px}
-.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--green2)}
-.lede,.muted{color:var(--muted)} .pill{display:inline-block;font-size:12.5px;font-weight:700;background:var(--surface);border:1px solid var(--line);padding:7px 11px;border-radius:999px;margin:0 6px 6px 0}
-.badge{font-size:10.5px;letter-spacing:.08em;font-weight:800;padding:3px 7px;border-radius:999px;background:var(--green);color:#fff;white-space:nowrap}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:14px}
-.hero-deal{background:var(--lime);border:1.5px solid var(--green2);border-left:6px solid var(--marigold);border-radius:14px;padding:18px;margin-top:18px}
-.big{font-size:26px;font-weight:800;color:var(--green)} .price{font-weight:800;color:var(--green);white-space:nowrap}
-ul{margin:8px 0;padding-left:20px} li{margin:4px 0}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px} @media(max-width:760px){.grid{grid-template-columns:1fr}}
-.tw{overflow-x:auto} table{width:100%;border-collapse:collapse;font-size:14px} th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line);vertical-align:top} .best{font-weight:700;color:var(--green)}
-nav{position:sticky;top:0;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line);z-index:5} nav a{display:inline-block;background:var(--surface);border:1px solid var(--line);color:var(--ink);text-decoration:none;padding:6px 10px;border-radius:999px;font-size:12.5px;margin:0 4px 4px 0}
-.add{font-size:12px;font-weight:700;border:1px solid var(--line);background:var(--surface2);border-radius:999px;padding:5px 9px;cursor:pointer;margin-left:8px}
-footer{color:var(--muted);font-size:13px;margin-top:28px}
-
 :root[data-theme="dark"]{--bg:#0d130f;--surface:#16211a;--surface2:#1a261e;--ink:#ece7d9;--muted:#9aa79d;--line:#2b3a2e;--green:#35b267;--green2:#7bc98f;--lime:#17351f;--marigold:#e8a33d}
 :root[data-theme="dark"] .badge{background:#1e7a46;color:#fff}
-.theme-toggle{float:right;font:inherit;font-size:12.5px;font-weight:700;background:var(--surface);color:var(--ink);border:1px solid var(--line);padding:7px 11px;border-radius:999px;cursor:pointer;margin-top:4px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.55}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px calc(60px + env(safe-area-inset-bottom) + 24px)}
+@media(min-width:761px){.wrap{padding:0 18px 48px}}
+a{color:var(--green2);font-weight:600}
+.view[hidden]{display:none}
+.store-block[hidden]{display:none}
+#top-picks,#more-stores,#big-retailers,#watchlist{scroll-margin-top:72px}
+@media(min-width:761px){#top-picks,#more-stores,#big-retailers,#watchlist{scroll-margin-top:128px}}
+.site-header{position:sticky;top:0;height:56px;display:flex;align-items:center;gap:12px;background:var(--bg);border-bottom:1px solid var(--line);z-index:6}
+.brand{font-family:Georgia,serif;font-weight:700;font-size:20px;line-height:1.1;margin:0;color:var(--ink);white-space:nowrap}
+.brand-tag{color:var(--green2);display:none}
+@media(min-width:761px){.brand-tag{display:inline}}
+.week-stamp{font-size:12.5px;color:var(--muted);white-space:nowrap}
+@media(min-width:761px){.week-stamp{margin-left:auto}}
+.theme-toggle{font:inherit;font-size:12.5px;font-weight:700;background:var(--surface);color:var(--ink);border:1px solid var(--line);padding:0 14px;min-height:44px;border-radius:999px;cursor:pointer;margin-left:auto;white-space:nowrap}
+@media(min-width:761px){.theme-toggle{margin-left:0}}
+#tabbar{position:fixed;left:0;right:0;bottom:0;height:calc(60px + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);background:var(--surface);border-top:1px solid var(--line);display:flex;z-index:7}
+#tabbar button{flex:1;background:none;border:0;color:var(--muted);font:inherit;font-size:11px;font-weight:700;min-height:56px;position:relative;cursor:pointer;padding:8px 2px;display:flex;align-items:center;justify-content:center;gap:4px}
+#tabbar button[aria-selected="true"]{color:var(--green);font-weight:800}
+:root[data-theme="dark"] #tabbar button[aria-selected="true"]{color:var(--green2)}
+#tabbar button[aria-selected="true"]::before{content:"";position:absolute;top:0;left:8px;right:8px;height:3px;background:var(--marigold)}
+.tab-badge{background:var(--marigold);color:#fff;font-size:11px;font-weight:800;min-width:20px;height:20px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;padding:0 6px}
+.tab-badge[hidden]{display:none}
+@media(min-width:761px){
+#tabbar{position:sticky;top:56px;bottom:auto;left:auto;right:auto;height:auto;padding:10px 0;padding-bottom:10px;background:var(--bg);border-top:0;border-bottom:1px solid var(--line);z-index:5;flex-wrap:wrap;gap:4px}
+#tabbar button{flex:0 0 auto;background:var(--surface);border:1px solid var(--line);color:var(--ink);border-radius:999px;font-size:12.5px;min-height:44px;padding:6px 14px}
+#tabbar button[aria-selected="true"]{background:var(--green);color:#fff}
+#tabbar button[aria-selected="true"]::before{display:none}
+}
+.view{padding-top:16px}
+.view-title{font-family:Georgia,serif;font-size:24px;font-weight:700;line-height:1.15;margin:0 0 8px}
+@media(min-width:761px){.view-title{font-size:28px}}
+.view-intro{font-size:15px;color:var(--muted);margin:0 0 4px}
+h1{font-family:Georgia,serif;font-size:30px;font-weight:700;line-height:1.05;margin:10px 0 12px}
+@media(min-width:761px){h1{font-size:44px}}
+h1 em{font-style:normal;color:var(--green2)}
+h2{font-family:Georgia,serif;font-size:24px;margin:0 0 8px}
+.card h2{font-size:20px}
+h3{margin:18px 0 6px}
+.group-title{font-size:17px;font-weight:700;margin:0 0 8px}
+.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--green2)}
+.lede,.muted{color:var(--muted)}
+.lede{font-size:15px}
+.pill{display:inline-flex;align-items:center;font-size:12.5px;font-weight:700;background:var(--surface);border:1px solid var(--line);padding:6px 10px;min-height:30px;border-radius:999px;margin:0 6px 6px 0}
+.badge{font-size:10.5px;letter-spacing:.08em;font-weight:800;padding:3px 7px;border-radius:999px;background:var(--green);color:#fff;white-space:nowrap}
+.badge-warn{background:var(--marigold);color:#fff}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px;margin-top:12px}
+@media(min-width:761px){.card{padding:18px}}
+.hero-deal{background:var(--lime);border:1.5px solid var(--green2);border-left:6px solid var(--marigold);border-radius:14px;padding:16px;margin-top:12px}
+@media(min-width:761px){.hero-deal{padding:18px}}
+.hero-deal h2{font-size:22px}
+.big{font-size:24px;font-weight:800;color:var(--green);line-height:1.25;margin:8px 0}
+@media(min-width:761px){.big{font-size:26px}}
+.hero-detail{font-size:14.5px;margin:8px 0 12px}
+.price{font-weight:800;color:var(--green);white-space:nowrap;font-size:18px;line-height:1.2}
+.price .unit{font-size:13px;font-weight:600}
+ul{margin:8px 0;padding-left:20px}
+li{margin:4px 0}
+.rows{list-style:none;margin:0;padding:0}
+.deal-row{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);min-height:60px;align-items:flex-start;margin:0}
+.rows .deal-row:last-child{border-bottom:0}
+.deal-main{flex:1;min-width:0}
+.deal-name{display:block;font-size:16px;font-weight:600;line-height:1.35}
+.deal-meta{display:block;font-size:13px;color:var(--muted);line-height:1.45;margin-top:2px}
+.deal-side{display:flex;flex-direction:column;align-items:flex-end;gap:8px;min-width:86px}
+.add{font-size:13px;font-weight:700;border:1px solid var(--line);background:var(--surface2);color:var(--ink);border-radius:999px;padding:0 14px;min-height:44px;min-width:72px;cursor:pointer}
+.add:active{background:var(--lime)}
+.add-primary{background:var(--green);color:#fff;border-color:var(--green);font-size:14px;min-height:48px;width:100%}
+@media(min-width:761px){.add-primary{width:auto}}
+.see-store{min-height:44px;display:inline-flex;align-items:center;font-weight:700}
+.grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:761px){.grid{grid-template-columns:1fr 1fr}}
+.store-group{margin-top:24px}
+.store-card{padding-top:0;padding-bottom:0;margin-top:0}
+.store-row{display:block;text-decoration:none;color:var(--ink);padding:12px 0;min-height:64px;border-bottom:1px solid var(--line)}
+.store-rows .store-row:last-child{border-bottom:0}
+@media(min-width:761px){.store-rows{display:grid;grid-template-columns:1fr 1fr;gap:0 28px}}
+.store-row-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:16px;font-weight:600;line-height:1.35}
+.store-chevron{font-size:20px;color:var(--muted);font-weight:400}
+.store-row-sub{display:block;font-size:13px;color:var(--muted);line-height:1.45;margin-top:2px}
+.store-row-best{display:block;font-size:13.5px;font-weight:700;color:var(--green);line-height:1.45;margin-top:2px}
+.group-sub{font-size:13px;color:var(--muted);margin:0 0 8px}
+.back-btn{background:none;border:0;color:var(--green2);font:inherit;font-size:15px;font-weight:700;min-height:44px;padding:0 4px;cursor:pointer;margin-bottom:4px}
+.store-name{font-family:Georgia,serif;font-size:24px;font-weight:700;line-height:1.15;margin:0 0 8px}
+@media(min-width:761px){.store-name{font-size:28px}}
+.store-meta{font-size:13.5px;color:var(--muted);margin:0 0 4px}
+.status-note{background:var(--surface2);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:12px;font-size:15px}
+.status-note p{margin:0}
+.flyer-link{min-height:44px;display:inline-flex;align-items:center;font-weight:600;margin-top:8px}
+.detail-smallprint{font-size:12.5px;color:var(--muted);margin-top:16px}
+.tw{overflow-x:auto;mask-image:linear-gradient(to right,black 94%,transparent 100%);-webkit-mask-image:linear-gradient(to right,black 94%,transparent 100%)}
+.tw:focus-visible{outline:2px solid var(--green2);outline-offset:2px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+.tw-master table{min-width:620px}
+.tw-cat table{min-width:420px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.45}
+th{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+.best{font-weight:700;color:var(--green)}
+.note-row{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.note-row:last-child{border-bottom:0}
+.note-row p{margin:0}
+.org-row{padding:10px 0;border-bottom:1px solid var(--line);min-height:56px}
+.org-row:last-child{border-bottom:0}
+.org-name{display:block;font-size:16px;font-weight:600;line-height:1.35}
+.org-meta{display:block;font-size:14px;color:var(--muted);line-height:1.45;margin-top:2px}
+.smallprint{font-size:12.5px;color:var(--muted);margin-top:16px}
+footer{color:var(--muted);font-size:13px;margin-top:24px}
+footer a{min-height:44px;display:inline-flex;align-items:center}
+#list{list-style:none;margin:8px 0;padding:0}
+#list li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid var(--line);font-size:16px;margin:0}
+#list li.muted{display:block;border-bottom:0;color:var(--muted);font-size:15px}
+.remove-btn{min-width:44px;min-height:44px;background:none;border:0;color:var(--muted);font:inherit;font-size:13px;font-weight:700;cursor:pointer;padding:0 8px;flex-shrink:0}
+#listCount{font-size:13px;color:var(--muted)}
+[tabindex="-1"]:focus{outline:none}
+button:active{opacity:.85}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 <script>try{var t=localStorage.getItem('hb-theme');if(t){document.documentElement.dataset.theme=t;}}catch(e){}</script>
 </head>
-<body><div class="wrap">
-<nav><a href="#top-picks">Top picks</a><a href="#al-aqsa">Al Aqsa</a><a href="#wfw">World Food Warehouse</a><a href="#more-stores">More stores</a><a href="#big-retailers">Big retailers</a><a href="#price-compare">Price compare</a><a href="#coupons">Coupons</a><a href="#free-food">Free food</a><a href="#watchlist">Watchlist</a><a href="#my-list">My list</a></nav>
-<header>
+<body>
+<div class="wrap">
+<header class="site-header">
+<!-- SHELL: header -->
+<p class="brand">HaulBoard <span class="brand-tag">— Know before you go.</span></p>
+<span class="week-stamp">
+<!-- DATA: week-stamp -->
+As of Oct 24
+<!-- /DATA: week-stamp -->
+</span>
 <button class="theme-toggle" id="themeToggle" type="button">Dark mode</button>
+<!-- /SHELL: header -->
+</header>
+<nav id="tabbar" aria-label="HaulBoard views" role="tablist">
+<!-- SHELL: tabbar -->
+<button type="button" role="tab" id="tab-this-week" aria-controls="view-this-week" aria-selected="true" data-view="this-week">This Week</button>
+<button type="button" role="tab" id="tab-stores" aria-controls="view-stores" aria-selected="false" tabindex="-1" data-view="stores">Stores</button>
+<button type="button" role="tab" id="tab-compare" aria-controls="price-compare" aria-selected="false" tabindex="-1" data-view="compare">Compare</button>
+<button type="button" role="tab" id="tab-coupons" aria-controls="coupons" aria-selected="false" tabindex="-1" data-view="coupons">Coupons</button>
+<button type="button" role="tab" id="tab-free-food" aria-controls="free-food" aria-selected="false" tabindex="-1" data-view="free-food">Free Food</button>
+<button type="button" role="tab" id="tab-my-list" aria-controls="my-list" aria-selected="false" tabindex="-1" data-view="my-list">My List <span class="tab-badge" id="listBadge" hidden>0</span></button>
+<!-- /SHELL: tabbar -->
+</nav>
+<main>
+<section class="view" id="view-this-week" role="tabpanel" aria-labelledby="tab-this-week">
+<!-- VIEW: this-week -->
+<!-- SECTION: lede -->
 <p class="eyebrow">Stafford, TX 77477 · Weekly · As of 2026-10-24</p>
-<h1>HaulBoard — <em>Know before you go.</em></h1>
+<h1 tabindex="-1">HaulBoard — <em>Know before you go.</em></h1>
 <p class="lede">Verified grocery and meat deals for the weekend haul, decided at home — not in the aisle.</p>
 <p><span class="pill">79 prices filed</span><span class="pill">Halal meat tracked</span><span class="pill">Live board — updated every Friday</span></p>
-<div class="hero-deal"><h2>Headline deal <span class="badge">VERIFIED</span></h2>
+<!-- /SECTION: lede -->
+<!-- SECTION: headline-deal -->
+<div class="hero-deal">
+<h2>Headline deal <span class="badge">VERIFIED</span></h2>
 <p class="big">Goat Mix Tray — $5.99/lb Sat &amp; Sun, $6.99/lb weekdays</p>
-<p>Al Aqsa Bangla Bazaar · Zabiha · No limit · Verified from the store's Thu Oct 22 flyer.</p>
-<button class="add" data-item="Goat Mix Tray — Al Aqsa — $5.99/lb weekend">Add to my list</button></div>
-</header>
-
-<section id="top-picks" class="card"><h2>Top picks</h2><ul>
-<li>Al Aqsa Goat Mix Tray — <span class="price">$5.99/lb</span> Sat &amp; Sun ($6.99 weekdays), Zabiha, no limit</li>
-<li>Al Aqsa paratha family pack 25 pc — <span class="price">$7.99</span>; frozen veg 300g — <span class="price">99¢</span>; Red Matta rice — <span class="price">$16.99</span> this weekend</li>
-<li>World Food Warehouse chicken drumsticks — <span class="price">$0.79/lb</span> Mon–Thu; wings / tenders — <span class="price">$1.99/lb</span>; beef feet — <span class="price">$2.69/lb</span></li>
-<li>Papa Mart — Diwali deals + meat flyer (see More stores)</li>
-<li>Hala Market goat rib / goat neck / lamb rib / lamb neck — <span class="price">$5.99/lb</span></li>
-</ul></section>
-
-<section id="al-aqsa" class="card"><h2>Al Aqsa Bangla Bazaar</h2>
-<p class="muted">6198 Wilcrest Dr, Houston, TX 77072 · Zabiha halal · Flyers usually Thu/Fri</p>
-<ul><li>Goat Mix Tray — $5.99/lb weekend, $6.99/lb weekdays, no limit <span class="badge">VERIFIED</span></li>
-<li>Paratha, plain, family pack 25 pc — $7.99</li><li>Frozen vegetable pack 300g — 99¢</li>
-<li>Rice, red matta — $1.70/lb (about $16.99 pack as listed this weekend)</li>
-<li>Hilsa fish, pack — $6.99; whole Chandpuri — $21.99; whole Padma — $22.99</li></ul></section>
-
-<section id="wfw" class="card"><h2>World Food Warehouse</h2>
-<p class="muted">14625 Beechnut St, Houston, TX 77083</p>
-<ul><li>Chicken drumsticks — $0.79/lb Mon–Thu</li><li>Chicken wings — $1.99/lb; chicken tenders — $1.99/lb</li>
-<li>Beef feet, cut up — $2.69/lb; beef paya — $2.99/lb</li><li>Whole chicken — $1.69/lb; baby cow, cut up — $4.99/lb</li>
-<li>Chicken tenders wholesale box 40 lb — $49.99 (bulk only)</li></ul></section>
-
-<section id="more-stores" class="card"><h2>More stores</h2>
-<div class="grid">
-<div><h3>Papa Mart</h3><p class="muted">14637 Beechnut St, Houston, TX 77083 · Open 24/7 · Free delivery over $25</p>
-<ul><li>Diwali deals + meat flyer this week</li><li>Chicken wings — $1.29/lb; whole chicken — $1.19/lb</li><li>Chicken liver — 99¢/lb; chicken gizzard — $1.25/lb</li><li>Chicken breast — $1.90/lb; chicken drumsticks — $1.79/lb</li></ul></div>
-<div><h3>Desi Brothers (Sugar Land)</h3><p class="muted">4620 Hwy 6, Sugar Land, TX 77478 · Weekend flyer Fri–Sun</p>
-<ul><li>Beet root — 39¢/lb; yellow onion — 39¢/lb; carrots — 49¢/lb</li><li>Cilantro — 39¢ each; ginger — $1.09/lb</li></ul></div>
-<div><h3>Big Basket (Stafford)</h3><p class="muted">12002 Southwest Fwy, Suite E, Stafford, TX 77477 · EBT accepted</p>
-<ul><li>$1 weekly sale produce — many items at $1.00/lb or $1.00 each Fri–Mon</li><li>Chickpeas (can) — 79¢; paneer slab — $3.99</li></ul></div>
-<div><h3>Al Madina Supermarket</h3><p class="muted">3210 Hillcroft St, Houston, TX 77057 · Zabiha halal</p>
-<p>Weekday Deals Mon–Wed flyer most weeks. No new flyer priced this week — check the latest flyer on the Friday run.</p></div>
-<div><h3>Jerusalem Supermarket</h3><p class="muted">3330 Hillcroft Ave, Ste I, Houston, TX 77057</p>
-<p>In-store only for now; no posted prices found in Oct 2026. Kept on the watchlist.</p></div>
-<div><h3>Hala Market (Sugar Land)</h3><p class="muted">4127 Hwy 6, Sugar Land, TX 77478 · Halal butcher</p>
-<ul><li>Goat rib / goat neck / lamb rib / lamb neck — $5.99/lb</li><li>Lamb leg / lamb shoulder — $8.99/lb</li></ul></div>
-</div></section>
-
-<section id="big-retailers" class="card"><h2>Big retailers</h2>
-<p class="muted">Weekly ads Wed–Tue. Spot-check prices in the store app before buying.</p>
-<ul><li><strong>H-E-B</strong> (Stafford / Sugar Land) — beef shoulder roast $5.49/lb; red seedless grapes $1.27/lb; boneless skinless chicken breast $2.49/lb</li>
-<li><strong>Walmart</strong> (Sugar Land, Hwy 6) — beef chuck roast $4.47/lb; frozen turkey breast, bone-in $1.68/lb</li>
-<li><strong>Aldi</strong> — chicken drumsticks $1.09/lb; chicken breast $1.99/lb; ground beef 80% $5.29/lb; SnapDragon apples 99¢/lb. Aldi has no coupon program.</li>
-<li><strong>Kroger</strong> — eggs, large 12 ct $1.49/dozen; boneless chicken breast $1.99/lb; ground beef 80% $4.77/lb; frozen whole turkey $1.28/lb</li></ul></section>
-
-<section id="price-compare" class="card"><h2>Price compare</h2>
-<p class="muted">Best price per item across stores, from the price database (79 prices filed, as of 2026-10-24). Full category tables follow.</p>
-<div class="tw"><table><thead><tr><th>Item</th><th>Category</th><th>Best</th><th>All stores</th></tr></thead><tbody><tr><td>chicken drumsticks</td><td>Meat &amp; poultry</td><td class="best">World Food Warehouse — $0.79/lb</td><td>World Food Warehouse $0.79/lb · Aldi $1.09/lb · Papa Mart $1.79/lb</td></tr>
+<p class="hero-detail">Al Aqsa Bangla Bazaar · Zabiha · No limit · Verified from the store's Thu Oct 22 flyer.</p>
+<button class="add add-primary" type="button" data-item="Goat Mix Tray — Al Aqsa — $5.99/lb weekend" aria-label="Add Goat Mix Tray to my list">Add to my list</button>
+</div>
+<!-- /SECTION: headline-deal -->
+<!-- SECTION: top-picks -->
+<div id="top-picks" class="card">
+<h2>Top picks</h2>
+<ul class="rows">
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Goat Mix Tray</span><span class="deal-meta">Al Aqsa · Sat &amp; Sun ($6.99 weekdays), Zabiha, no limit</span></div><div class="deal-side"><span class="price">$5.99<span class="unit">/lb</span></span><button class="add" type="button" data-item="Goat Mix Tray — Al Aqsa — $5.99/lb Sat &amp; Sun ($6.99 weekdays)" aria-label="Add Goat Mix Tray to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Paratha family pack 25 pc</span><span class="deal-meta">Al Aqsa</span></div><div class="deal-side"><span class="price">$7.99</span><button class="add" type="button" data-item="Paratha family pack 25 pc — Al Aqsa — $7.99" aria-label="Add Paratha family pack 25 pc to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Frozen veg 300g</span><span class="deal-meta">Al Aqsa</span></div><div class="deal-side"><span class="price">99¢</span><button class="add" type="button" data-item="Frozen veg 300g — Al Aqsa — 99¢" aria-label="Add Frozen veg 300g to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Red Matta rice</span><span class="deal-meta">Al Aqsa · this weekend</span></div><div class="deal-side"><span class="price">$16.99</span><button class="add" type="button" data-item="Red Matta rice — Al Aqsa — $16.99 this weekend" aria-label="Add Red Matta rice to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Chicken drumsticks</span><span class="deal-meta">World Food Warehouse · Mon–Thu</span></div><div class="deal-side"><span class="price">$0.79<span class="unit">/lb</span></span><button class="add" type="button" data-item="Chicken drumsticks — World Food Warehouse — $0.79/lb Mon–Thu" aria-label="Add Chicken drumsticks to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Wings / tenders</span><span class="deal-meta">World Food Warehouse</span></div><div class="deal-side"><span class="price">$1.99<span class="unit">/lb</span></span><button class="add" type="button" data-item="Wings / tenders — World Food Warehouse — $1.99/lb" aria-label="Add Wings / tenders to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Beef feet</span><span class="deal-meta">World Food Warehouse</span></div><div class="deal-side"><span class="price">$2.69<span class="unit">/lb</span></span><button class="add" type="button" data-item="Beef feet — World Food Warehouse — $2.69/lb" aria-label="Add Beef feet to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Papa Mart — Diwali deals + meat flyer</span><span class="deal-meta">Papa Mart</span></div><div class="deal-side"><a class="see-store" href="#papa-mart">See store</a></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Goat rib / goat neck / lamb rib / lamb neck</span><span class="deal-meta">Hala Market</span></div><div class="deal-side"><span class="price">$5.99<span class="unit">/lb</span></span><button class="add" type="button" data-item="Goat rib / goat neck / lamb rib / lamb neck — Hala Market — $5.99/lb" aria-label="Add Goat rib / goat neck / lamb rib / lamb neck to my list">Add</button></div></li>
+</ul>
+</div>
+<!-- /SECTION: top-picks -->
+<footer>HaulBoard — live on GitHub Pages, updated every Friday. Prices were verified for the week shown; check the flyer before you go. <a href="https://github.com/ayaan40000/haulboard">Repo</a> · <a href="https://github.com/ayaan40000/haulboard/blob/main/README.md">Documentation</a> · <a href="https://github.com/ayaan40000/haulboard/blob/main/ROADMAP.md">Roadmap</a></footer>
+<!-- /VIEW: this-week -->
+</section>
+<section class="view" id="view-stores" role="tabpanel" aria-labelledby="tab-stores" hidden>
+<!-- VIEW: stores -->
+<h2 class="view-title" tabindex="-1">Stores</h2>
+<p class="view-intro">Every store checked on the Friday run. Tap a store for this week's deals.</p>
+<!-- SECTION: store-index -->
+<div class="card store-card">
+<div class="store-rows">
+<a class="store-row" href="#al-aqsa"><span class="store-row-top"><span>Al Aqsa Bangla Bazaar</span><span class="store-chevron" aria-hidden="true">›</span></span><span class="store-row-sub">Houston · 7 deals this week</span><span class="store-row-best">Best: Goat Mix Tray — $5.99/lb weekend</span></a>
+<a class="store-row" href="#wfw"><span class="store-row-top"><span>World Food Warehouse</span><span class="store-chevron" aria-hidden="true">›</span></span><span class="store-row-sub">Houston · 8 deals this week</span><span class="store-row-best">Best: Chicken drumsticks — $0.79/lb Mon–Thu</span></a>
+</div>
+</div>
+<div class="store-group" id="more-stores">
+<h3 class="group-title">More stores</h3>
+<div class="card store-card">
+<div class="store-rows">
+<a class="store-row" href="#papa-mart"><span class="store-row-top"><span>Papa Mart</span><span class="store-chevron" aria-hidden="true">›</span></span><span class="store-row-sub">Houston · 6 deals this week</span><span class="store-row-best">Best: Chicken wings — $1.29/lb</span></a>
+<a class="store-row" href="#desi-brothers"><span class="store-row-top"><span>Desi Brothers (Sugar Land)</span><span class="store-chevron" aria-hidden="true">›</span></span><span class="store-row-sub">Sugar Land · 5 deals this week</span><span class="store-row-best">Best: Beet root — 39¢/lb</span></a>
+<a class="store-row" href="#big-basket"><span class="store-row-top"><span>Big Basket (Stafford)</span><span class="store-chevron" aria-hidden="true">›</span></span><span class="store-row-sub">Stafford · 3 deals this week</span><span class="store-row-best">Best: $1 weekly sale produce — $1.00/lb or $1.00 each Fri–Mon</span></a>
+<a class="store-row" href="#al-madina"><span class="store-row-top"><span>Al Madina Supermarket</span><span class="store-chevron" aria-hidden="true">›</span></span><span class="store-row-sub">Houston · No flyer priced this week</span></a>
+<a class="store-row" href="#jerusalem"><span class="store-row-top"><span>Jerusalem Supermarket</span><span class="store-chevron" aria-hidden="true">›</span></span><span class="store-row-sub">Houston · In-store only</span></a>
+<a class="store-row" href="#hala-market"><span class="store-row-top"><span>Hala Market (Sugar Land)</span><span class="store-chevron" aria-hidden="true">›</span></span><span class="store-row-sub">Sugar Land · 2 deals this week</span><span class="store-row-best">Best: Goat rib / goat neck / lamb rib / lamb neck — $5.99/lb</span></a>
+</div>
+</div>
+</div>
+<div class="store-group" id="big-retailers">
+<h3 class="group-title">Big retailers</h3>
+<p class="group-sub">Weekly ads Wed–Tue. Spot-check prices in the store app before buying.</p>
+<div class="card store-card">
+<div class="store-rows">
+<a class="store-row" href="#heb"><span class="store-row-top"><span>H-E-B</span><span class="store-chevron" aria-hidden="true">›</span></span><span class="store-row-sub">Stafford / Sugar Land · 3 deals this week</span><span class="store-row-best">Best: beef shoulder roast — $5.49/lb</span></a>
+<a class="store-row" href="#walmart"><span class="store-row-top"><span>Walmart</span><span class="store-chevron" aria-hidden="true">›</span></span><span class="store-row-sub">Sugar Land · 2 deals this week</span><span class="store-row-best">Best: beef chuck roast — $4.47/lb</span></a>
+<a class="store-row" href="#aldi"><span class="store-row-top"><span>Aldi</span><span class="store-chevron" aria-hidden="true">›</span></span><span class="store-row-sub">4 deals this week</span><span class="store-row-best">Best: chicken drumsticks — $1.09/lb</span></a>
+<a class="store-row" href="#kroger"><span class="store-row-top"><span>Kroger</span><span class="store-chevron" aria-hidden="true">›</span></span><span class="store-row-sub">4 deals this week</span><span class="store-row-best">Best: eggs, large 12 ct — $1.49/dozen</span></a>
+</div>
+</div>
+</div>
+<div class="store-group" id="watchlist">
+<h3 class="group-title">Store watchlist</h3>
+<p class="group-sub">Checked every Friday.</p>
+<div class="card store-card">
+<div class="store-rows">
+<a class="store-row" href="#zaina"><span class="store-row-top"><span>Zaina Supermarket</span><span class="store-chevron" aria-hidden="true">›</span></span><span class="store-row-sub">Watchlist only</span></a>
+<a class="store-row" href="#prime-bazaar"><span class="store-row-top"><span>Prime Bazaar</span><span class="store-chevron" aria-hidden="true">›</span></span><span class="store-row-sub">Watchlist only</span></a>
+<a class="store-row" href="#meat-grinder"><span class="store-row-top"><span>The Meat Grinder Market</span><span class="store-chevron" aria-hidden="true">›</span></span><span class="store-row-sub">8002 FM 1464 Rd, Richmond, TX 77407 (halal, premium; in-store prices only, no public flyers found)</span></a>
+</div>
+</div>
+<p class="group-sub">H-E-B · Walmart · Aldi · Kroger · Flipp for 77477 — Flipp is an ad source, not a store.</p>
+</div>
+<p class="smallprint">Prices were verified for the week shown; check the flyer before you go.</p>
+<!-- /SECTION: store-index -->
+<!-- /VIEW: stores -->
+</section>
+<section class="view" id="view-store-detail" role="tabpanel" aria-labelledby="tab-stores" hidden>
+<button class="back-btn" id="backToStores" type="button">‹ Back to stores</button>
+<!-- SECTION: store-details -->
+<div class="store-block" data-store="al-aqsa" hidden>
+<!-- STORE: al-aqsa -->
+<h2 class="store-name" tabindex="-1">Al Aqsa Bangla Bazaar</h2>
+<p class="store-meta">6198 Wilcrest Dr, Houston, TX 77072 · Zabiha halal · Flyers usually Thu/Fri</p>
+<ul class="rows">
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Goat Mix Tray</span><span class="deal-meta">$5.99/lb weekend, $6.99/lb weekdays, no limit <span class="badge">VERIFIED</span></span></div><div class="deal-side"><span class="price">$5.99<span class="unit">/lb</span></span><button class="add" type="button" data-item="Goat Mix Tray — Al Aqsa — $5.99/lb weekend, $6.99/lb weekdays, no limit" aria-label="Add Goat Mix Tray to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Paratha, plain, family pack 25 pc</span></div><div class="deal-side"><span class="price">$7.99</span><button class="add" type="button" data-item="Paratha, plain, family pack 25 pc — Al Aqsa — $7.99" aria-label="Add Paratha, plain, family pack 25 pc to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Frozen vegetable pack 300g</span></div><div class="deal-side"><span class="price">99¢</span><button class="add" type="button" data-item="Frozen vegetable pack 300g — Al Aqsa — 99¢" aria-label="Add Frozen vegetable pack 300g to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Rice, red matta</span><span class="deal-meta">about $16.99 pack as listed this weekend</span></div><div class="deal-side"><span class="price">$1.70<span class="unit">/lb</span></span><button class="add" type="button" data-item="Rice, red matta — Al Aqsa — $1.70/lb (about $16.99 pack as listed this weekend)" aria-label="Add Rice, red matta to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Hilsa fish, pack</span></div><div class="deal-side"><span class="price">$6.99</span><button class="add" type="button" data-item="Hilsa fish, pack — Al Aqsa — $6.99" aria-label="Add Hilsa fish, pack to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Hilsa fish, whole Chandpuri</span></div><div class="deal-side"><span class="price">$21.99</span><button class="add" type="button" data-item="Hilsa fish, whole Chandpuri — Al Aqsa — $21.99" aria-label="Add Hilsa fish, whole Chandpuri to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Hilsa fish, whole Padma</span></div><div class="deal-side"><span class="price">$22.99</span><button class="add" type="button" data-item="Hilsa fish, whole Padma — Al Aqsa — $22.99" aria-label="Add Hilsa fish, whole Padma to my list">Add</button></div></li>
+</ul>
+<!-- /STORE: al-aqsa -->
+</div>
+<div class="store-block" data-store="wfw" hidden>
+<!-- STORE: wfw -->
+<h2 class="store-name" tabindex="-1">World Food Warehouse</h2>
+<p class="store-meta">14625 Beechnut St, Houston, TX 77083</p>
+<ul class="rows">
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Chicken drumsticks</span><span class="deal-meta">Mon–Thu</span></div><div class="deal-side"><span class="price">$0.79<span class="unit">/lb</span></span><button class="add" type="button" data-item="Chicken drumsticks — World Food Warehouse — $0.79/lb Mon–Thu" aria-label="Add Chicken drumsticks to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Chicken wings</span></div><div class="deal-side"><span class="price">$1.99<span class="unit">/lb</span></span><button class="add" type="button" data-item="Chicken wings — World Food Warehouse — $1.99/lb" aria-label="Add Chicken wings to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Chicken tenders</span></div><div class="deal-side"><span class="price">$1.99<span class="unit">/lb</span></span><button class="add" type="button" data-item="Chicken tenders — World Food Warehouse — $1.99/lb" aria-label="Add Chicken tenders to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Beef feet, cut up</span></div><div class="deal-side"><span class="price">$2.69<span class="unit">/lb</span></span><button class="add" type="button" data-item="Beef feet, cut up — World Food Warehouse — $2.69/lb" aria-label="Add Beef feet, cut up to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Beef paya</span></div><div class="deal-side"><span class="price">$2.99<span class="unit">/lb</span></span><button class="add" type="button" data-item="Beef paya — World Food Warehouse — $2.99/lb" aria-label="Add Beef paya to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Whole chicken</span></div><div class="deal-side"><span class="price">$1.69<span class="unit">/lb</span></span><button class="add" type="button" data-item="Whole chicken — World Food Warehouse — $1.69/lb" aria-label="Add Whole chicken to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Baby cow, cut up</span></div><div class="deal-side"><span class="price">$4.99<span class="unit">/lb</span></span><button class="add" type="button" data-item="Baby cow, cut up — World Food Warehouse — $4.99/lb" aria-label="Add Baby cow, cut up to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Chicken tenders wholesale box</span><span class="deal-meta">40 lb · bulk only</span></div><div class="deal-side"><span class="price">$49.99</span><button class="add" type="button" data-item="Chicken tenders wholesale box 40 lb — World Food Warehouse — $49.99 (bulk only)" aria-label="Add Chicken tenders wholesale box to my list">Add</button></div></li>
+</ul>
+<!-- /STORE: wfw -->
+</div>
+<div class="store-block" data-store="papa-mart" hidden>
+<!-- STORE: papa-mart -->
+<h2 class="store-name" tabindex="-1">Papa Mart</h2>
+<p class="store-meta">14637 Beechnut St, Houston, TX 77083 · Open 24/7 · Free delivery over $25</p>
+<ul class="rows">
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Diwali deals + meat flyer this week</span></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Chicken wings</span></div><div class="deal-side"><span class="price">$1.29<span class="unit">/lb</span></span><button class="add" type="button" data-item="Chicken wings — Papa Mart — $1.29/lb" aria-label="Add Chicken wings to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Whole chicken</span></div><div class="deal-side"><span class="price">$1.19<span class="unit">/lb</span></span><button class="add" type="button" data-item="Whole chicken — Papa Mart — $1.19/lb" aria-label="Add Whole chicken to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Chicken liver</span></div><div class="deal-side"><span class="price">99¢<span class="unit">/lb</span></span><button class="add" type="button" data-item="Chicken liver — Papa Mart — 99¢/lb" aria-label="Add Chicken liver to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Chicken gizzard</span></div><div class="deal-side"><span class="price">$1.25<span class="unit">/lb</span></span><button class="add" type="button" data-item="Chicken gizzard — Papa Mart — $1.25/lb" aria-label="Add Chicken gizzard to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Chicken breast</span></div><div class="deal-side"><span class="price">$1.90<span class="unit">/lb</span></span><button class="add" type="button" data-item="Chicken breast — Papa Mart — $1.90/lb" aria-label="Add Chicken breast to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Chicken drumsticks</span></div><div class="deal-side"><span class="price">$1.79<span class="unit">/lb</span></span><button class="add" type="button" data-item="Chicken drumsticks — Papa Mart — $1.79/lb" aria-label="Add Chicken drumsticks to my list">Add</button></div></li>
+</ul>
+<!-- /STORE: papa-mart -->
+</div>
+<div class="store-block" data-store="desi-brothers" hidden>
+<!-- STORE: desi-brothers -->
+<h2 class="store-name" tabindex="-1">Desi Brothers (Sugar Land)</h2>
+<p class="store-meta">4620 Hwy 6, Sugar Land, TX 77478 · Weekend flyer Fri–Sun</p>
+<ul class="rows">
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Beet root</span></div><div class="deal-side"><span class="price">39¢<span class="unit">/lb</span></span><button class="add" type="button" data-item="Beet root — Desi Brothers — 39¢/lb" aria-label="Add Beet root to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Yellow onion</span></div><div class="deal-side"><span class="price">39¢<span class="unit">/lb</span></span><button class="add" type="button" data-item="Yellow onion — Desi Brothers — 39¢/lb" aria-label="Add Yellow onion to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Carrots</span></div><div class="deal-side"><span class="price">49¢<span class="unit">/lb</span></span><button class="add" type="button" data-item="Carrots — Desi Brothers — 49¢/lb" aria-label="Add Carrots to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Cilantro</span></div><div class="deal-side"><span class="price">39¢ <span class="unit">each</span></span><button class="add" type="button" data-item="Cilantro — Desi Brothers — 39¢ each" aria-label="Add Cilantro to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Ginger</span></div><div class="deal-side"><span class="price">$1.09<span class="unit">/lb</span></span><button class="add" type="button" data-item="Ginger — Desi Brothers — $1.09/lb" aria-label="Add Ginger to my list">Add</button></div></li>
+</ul>
+<!-- /STORE: desi-brothers -->
+</div>
+<div class="store-block" data-store="big-basket" hidden>
+<!-- STORE: big-basket -->
+<h2 class="store-name" tabindex="-1">Big Basket (Stafford)</h2>
+<p class="store-meta">12002 Southwest Fwy, Suite E, Stafford, TX 77477 · EBT accepted</p>
+<ul class="rows">
+<li class="deal-row"><div class="deal-main"><span class="deal-name">$1 weekly sale produce</span><span class="deal-meta">many items at $1.00/lb or $1.00 each Fri–Mon</span></div><div class="deal-side"><span class="price">$1.00<span class="unit">/lb</span></span><button class="add" type="button" data-item="$1 weekly sale produce — Big Basket — $1.00/lb or $1.00 each Fri–Mon" aria-label="Add $1 weekly sale produce to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Chickpeas (can)</span></div><div class="deal-side"><span class="price">79¢</span><button class="add" type="button" data-item="Chickpeas (can) — Big Basket — 79¢" aria-label="Add Chickpeas (can) to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Paneer slab</span></div><div class="deal-side"><span class="price">$3.99</span><button class="add" type="button" data-item="Paneer slab — Big Basket — $3.99" aria-label="Add Paneer slab to my list">Add</button></div></li>
+</ul>
+<!-- /STORE: big-basket -->
+</div>
+<div class="store-block" data-store="al-madina" hidden>
+<!-- STORE: al-madina -->
+<h2 class="store-name" tabindex="-1">Al Madina Supermarket</h2>
+<p class="store-meta">3210 Hillcroft St, Houston, TX 77057 · Zabiha halal</p>
+<div class="status-note"><p>Weekday Deals Mon–Wed flyer most weeks. No new flyer priced this week — check the latest flyer on the Friday run.</p></div>
+<!-- /STORE: al-madina -->
+</div>
+<div class="store-block" data-store="jerusalem" hidden>
+<!-- STORE: jerusalem -->
+<h2 class="store-name" tabindex="-1">Jerusalem Supermarket</h2>
+<p class="store-meta">3330 Hillcroft Ave, Ste I, Houston, TX 77057</p>
+<div class="status-note"><p>In-store only for now; no posted prices found in Oct 2026. Kept on the watchlist.</p></div>
+<!-- /STORE: jerusalem -->
+</div>
+<div class="store-block" data-store="hala-market" hidden>
+<!-- STORE: hala-market -->
+<h2 class="store-name" tabindex="-1">Hala Market (Sugar Land)</h2>
+<p class="store-meta">4127 Hwy 6, Sugar Land, TX 77478 · Halal butcher</p>
+<ul class="rows">
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Goat rib / goat neck / lamb rib / lamb neck</span></div><div class="deal-side"><span class="price">$5.99<span class="unit">/lb</span></span><button class="add" type="button" data-item="Goat rib / goat neck / lamb rib / lamb neck — Hala Market — $5.99/lb" aria-label="Add Goat rib / goat neck / lamb rib / lamb neck to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">Lamb leg / lamb shoulder</span></div><div class="deal-side"><span class="price">$8.99<span class="unit">/lb</span></span><button class="add" type="button" data-item="Lamb leg / lamb shoulder — Hala Market — $8.99/lb" aria-label="Add Lamb leg / lamb shoulder to my list">Add</button></div></li>
+</ul>
+<!-- /STORE: hala-market -->
+</div>
+<div class="store-block" data-store="heb" hidden>
+<!-- STORE: heb -->
+<h2 class="store-name" tabindex="-1">H-E-B</h2>
+<p class="store-meta">Stafford / Sugar Land</p>
+<ul class="rows">
+<li class="deal-row"><div class="deal-main"><span class="deal-name">beef shoulder roast</span></div><div class="deal-side"><span class="price">$5.49<span class="unit">/lb</span></span><button class="add" type="button" data-item="beef shoulder roast — H-E-B — $5.49/lb" aria-label="Add beef shoulder roast to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">red seedless grapes</span></div><div class="deal-side"><span class="price">$1.27<span class="unit">/lb</span></span><button class="add" type="button" data-item="red seedless grapes — H-E-B — $1.27/lb" aria-label="Add red seedless grapes to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">boneless skinless chicken breast</span></div><div class="deal-side"><span class="price">$2.49<span class="unit">/lb</span></span><button class="add" type="button" data-item="boneless skinless chicken breast — H-E-B — $2.49/lb" aria-label="Add boneless skinless chicken breast to my list">Add</button></div></li>
+</ul>
+<p class="detail-smallprint">Weekly ads Wed–Tue. Spot-check prices in the store app before buying.</p>
+<!-- /STORE: heb -->
+</div>
+<div class="store-block" data-store="walmart" hidden>
+<!-- STORE: walmart -->
+<h2 class="store-name" tabindex="-1">Walmart</h2>
+<p class="store-meta">Sugar Land, Hwy 6</p>
+<ul class="rows">
+<li class="deal-row"><div class="deal-main"><span class="deal-name">beef chuck roast</span></div><div class="deal-side"><span class="price">$4.47<span class="unit">/lb</span></span><button class="add" type="button" data-item="beef chuck roast — Walmart — $4.47/lb" aria-label="Add beef chuck roast to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">frozen turkey breast, bone-in</span></div><div class="deal-side"><span class="price">$1.68<span class="unit">/lb</span></span><button class="add" type="button" data-item="frozen turkey breast, bone-in — Walmart — $1.68/lb" aria-label="Add frozen turkey breast, bone-in to my list">Add</button></div></li>
+</ul>
+<p class="detail-smallprint">Weekly ads Wed–Tue. Spot-check prices in the store app before buying.</p>
+<!-- /STORE: walmart -->
+</div>
+<div class="store-block" data-store="aldi" hidden>
+<!-- STORE: aldi -->
+<h2 class="store-name" tabindex="-1">Aldi</h2>
+<p class="store-meta">Weekly ads Wed–Tue. Spot-check prices in the store app before buying.</p>
+<div class="status-note"><p>Aldi has no coupon program.</p></div>
+<ul class="rows">
+<li class="deal-row"><div class="deal-main"><span class="deal-name">chicken drumsticks</span></div><div class="deal-side"><span class="price">$1.09<span class="unit">/lb</span></span><button class="add" type="button" data-item="chicken drumsticks — Aldi — $1.09/lb" aria-label="Add chicken drumsticks to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">chicken breast</span></div><div class="deal-side"><span class="price">$1.99<span class="unit">/lb</span></span><button class="add" type="button" data-item="chicken breast — Aldi — $1.99/lb" aria-label="Add chicken breast to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">ground beef 80%</span></div><div class="deal-side"><span class="price">$5.29<span class="unit">/lb</span></span><button class="add" type="button" data-item="ground beef 80% — Aldi — $5.29/lb" aria-label="Add ground beef 80% to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">SnapDragon apples</span></div><div class="deal-side"><span class="price">99¢<span class="unit">/lb</span></span><button class="add" type="button" data-item="SnapDragon apples — Aldi — 99¢/lb" aria-label="Add SnapDragon apples to my list">Add</button></div></li>
+</ul>
+<!-- /STORE: aldi -->
+</div>
+<div class="store-block" data-store="kroger" hidden>
+<!-- STORE: kroger -->
+<h2 class="store-name" tabindex="-1">Kroger</h2>
+<p class="store-meta">Weekly ads Wed–Tue. Spot-check prices in the store app before buying.</p>
+<ul class="rows">
+<li class="deal-row"><div class="deal-main"><span class="deal-name">eggs, large 12 ct</span></div><div class="deal-side"><span class="price">$1.49<span class="unit">/dozen</span></span><button class="add" type="button" data-item="eggs, large 12 ct — Kroger — $1.49/dozen" aria-label="Add eggs, large 12 ct to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">boneless chicken breast</span></div><div class="deal-side"><span class="price">$1.99<span class="unit">/lb</span></span><button class="add" type="button" data-item="boneless chicken breast — Kroger — $1.99/lb" aria-label="Add boneless chicken breast to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">ground beef 80%</span></div><div class="deal-side"><span class="price">$4.77<span class="unit">/lb</span></span><button class="add" type="button" data-item="ground beef 80% — Kroger — $4.77/lb" aria-label="Add ground beef 80% to my list">Add</button></div></li>
+<li class="deal-row"><div class="deal-main"><span class="deal-name">frozen whole turkey</span></div><div class="deal-side"><span class="price">$1.28<span class="unit">/lb</span></span><button class="add" type="button" data-item="frozen whole turkey — Kroger — $1.28/lb" aria-label="Add frozen whole turkey to my list">Add</button></div></li>
+</ul>
+<!-- /STORE: kroger -->
+</div>
+<div class="store-block" data-store="zaina" hidden>
+<!-- STORE: zaina -->
+<h2 class="store-name" tabindex="-1">Zaina Supermarket</h2>
+<p class="store-meta">On the Friday watchlist</p>
+<div class="status-note"><p>On the Friday watchlist. No priced deals on this week's board.</p></div>
+<!-- /STORE: zaina -->
+</div>
+<div class="store-block" data-store="prime-bazaar" hidden>
+<!-- STORE: prime-bazaar -->
+<h2 class="store-name" tabindex="-1">Prime Bazaar</h2>
+<p class="store-meta">On the Friday watchlist</p>
+<div class="status-note"><p>On the Friday watchlist. No priced deals on this week's board.</p></div>
+<!-- /STORE: prime-bazaar -->
+</div>
+<div class="store-block" data-store="meat-grinder" hidden>
+<!-- STORE: meat-grinder -->
+<h2 class="store-name" tabindex="-1">The Meat Grinder Market</h2>
+<p class="store-meta">8002 FM 1464 Rd, Richmond, TX 77407 · Halal, premium</p>
+<div class="status-note"><p>8002 FM 1464 Rd, Richmond, TX 77407 (halal, premium; in-store prices only, no public flyers found)</p></div>
+<!-- /STORE: meat-grinder -->
+</div>
+<!-- /SECTION: store-details -->
+</section>
+<section class="view" id="price-compare" role="tabpanel" aria-labelledby="tab-compare" hidden>
+<!-- VIEW: compare -->
+<h2 class="view-title" tabindex="-1">Price compare</h2>
+<!-- SECTION: price-compare-intro -->
+<p class="view-intro">Best price per item across stores, from the price database (79 prices filed, as of 2026-10-24). Full category tables follow.</p>
+<!-- /SECTION: price-compare-intro -->
+<!-- SECTION: price-table-master -->
+<div class="tw tw-master" tabindex="0" role="region" aria-label="Master price compare table — scrolls sideways"><table><thead><tr><th>Item</th><th>Category</th><th>Best</th><th>All stores</th></tr></thead><tbody><tr><td>chicken drumsticks</td><td>Meat &amp; poultry</td><td class="best">World Food Warehouse — $0.79/lb</td><td>World Food Warehouse $0.79/lb · Aldi $1.09/lb · Papa Mart $1.79/lb</td></tr>
 <tr><td>chicken wings</td><td>Meat &amp; poultry</td><td class="best">Papa Mart — $1.29/lb</td><td>Papa Mart $1.29/lb · World Food Warehouse $1.99/lb</td></tr>
 <tr><td>ground beef, 80% lean</td><td>Meat &amp; poultry</td><td class="best">Kroger — $4.77/lb</td><td>Kroger $4.77/lb · Aldi $5.29/lb</td></tr>
 <tr><td>whole chicken</td><td>Meat &amp; poultry</td><td class="best">Papa Mart — $1.19/lb</td><td>Papa Mart $1.19/lb · World Food Warehouse $1.69/lb</td></tr>
@@ -120,7 +446,10 @@ footer{color:var(--muted);font-size:13px;margin-top:28px}
 <tr><td>kabuli chana</td><td>Dals &amp; beans</td><td class="best">Desi Brothers — $2.99/each</td><td>Desi Brothers $2.99/each · Big Basket $2.99/each</td></tr>
 <tr><td>kala chana</td><td>Dals &amp; beans</td><td class="best">Desi Brothers — $2.99/each</td><td>Desi Brothers $2.99/each · Big Basket $2.99/each</td></tr>
 </tbody></table></div>
-<h3>Meat &amp; poultry</h3><div class="tw"><table><thead><tr><th>Item</th><th>Best price</th><th>Store</th></tr></thead><tbody><tr><td>chicken drumsticks</td><td class="best">$0.79/lb</td><td>World Food Warehouse</td></tr>
+<!-- /SECTION: price-table-master -->
+<!-- SECTION: price-table-meat-poultry -->
+<h3>Meat &amp; poultry</h3>
+<div class="tw tw-cat" tabindex="0" role="region" aria-label="Meat &amp; poultry table — scrolls sideways"><table><thead><tr><th>Item</th><th>Best price</th><th>Store</th></tr></thead><tbody><tr><td>chicken drumsticks</td><td class="best">$0.79/lb</td><td>World Food Warehouse</td></tr>
 <tr><td>chicken wings</td><td class="best">$1.29/lb</td><td>Papa Mart</td></tr>
 <tr><td>ground beef, 80% lean</td><td class="best">$4.77/lb</td><td>Kroger</td></tr>
 <tr><td>whole chicken</td><td class="best">$1.19/lb</td><td>Papa Mart</td></tr>
@@ -139,7 +468,10 @@ footer{color:var(--muted);font-size:13px;margin-top:28px}
 <tr><td>beef, nihari box</td><td class="best">$5.99/lb</td><td>World Food Warehouse</td></tr>
 <tr><td>chicken boti</td><td class="best">$2.49/lb</td><td>Papa Mart</td></tr>
 </tbody></table></div>
-<h3>Produce</h3><div class="tw"><table><thead><tr><th>Item</th><th>Best price</th><th>Store</th></tr></thead><tbody><tr><td>ginger</td><td class="best">$0.89/lb</td><td>World Food Warehouse</td></tr>
+<!-- /SECTION: price-table-meat-poultry -->
+<!-- SECTION: price-table-produce -->
+<h3>Produce</h3>
+<div class="tw tw-cat" tabindex="0" role="region" aria-label="Produce table — scrolls sideways"><table><thead><tr><th>Item</th><th>Best price</th><th>Store</th></tr></thead><tbody><tr><td>ginger</td><td class="best">$0.89/lb</td><td>World Food Warehouse</td></tr>
 <tr><td>eggplant</td><td class="best">$0.99/lb</td><td>Desi Brothers</td></tr>
 <tr><td>beet root</td><td class="best">$0.39/lb</td><td>Desi Brothers</td></tr>
 <tr><td>dudhi (lauki)</td><td class="best">$0.99/lb</td><td>Desi Brothers</td></tr>
@@ -158,7 +490,10 @@ footer{color:var(--muted);font-size:13px;margin-top:28px}
 <tr><td>hilsa fish, Padma, whole</td><td class="best">$22.99/each</td><td>Al Aqsa Bangla Bazaar</td></tr>
 <tr><td>hilsa fish, pack</td><td class="best">$6.99/each</td><td>Al Aqsa Bangla Bazaar</td></tr>
 </tbody></table></div>
-<h3>Other groceries</h3><div class="tw"><table><thead><tr><th>Item</th><th>Best price</th><th>Store</th></tr></thead><tbody><tr><td>almonds</td><td class="best">$9.99/each</td><td>Big Basket</td></tr>
+<!-- /SECTION: price-table-produce -->
+<!-- SECTION: price-table-other-groceries -->
+<h3>Other groceries</h3>
+<div class="tw tw-cat" tabindex="0" role="region" aria-label="Other groceries table — scrolls sideways"><table><thead><tr><th>Item</th><th>Best price</th><th>Store</th></tr></thead><tbody><tr><td>almonds</td><td class="best">$9.99/each</td><td>Big Basket</td></tr>
 <tr><td>apples, SnapDragon</td><td class="best">$0.99/lb</td><td>Aldi</td></tr>
 <tr><td>cashew pieces</td><td class="best">$7.99/each</td><td>Big Basket</td></tr>
 <tr><td>cashew whole</td><td class="best">$9.99/each</td><td>Big Basket</td></tr>
@@ -173,7 +508,10 @@ footer{color:var(--muted);font-size:13px;margin-top:28px}
 <tr><td>mango drink</td><td class="best">$7.99/each</td><td>Big Basket</td></tr>
 <tr><td>recipe mix packets</td><td class="best">$1.49/each</td><td>Papa Mart</td></tr>
 </tbody></table></div>
-<h3>Dairy, frozen &amp; breads</h3><div class="tw"><table><thead><tr><th>Item</th><th>Best price</th><th>Store</th></tr></thead><tbody><tr><td>assorted sweets</td><td class="best">$4.99/each</td><td>Big Basket</td></tr>
+<!-- /SECTION: price-table-other-groceries -->
+<!-- SECTION: price-table-dairy-frozen-breads -->
+<h3>Dairy, frozen &amp; breads</h3>
+<div class="tw tw-cat" tabindex="0" role="region" aria-label="Dairy, frozen &amp; breads table — scrolls sideways"><table><thead><tr><th>Item</th><th>Best price</th><th>Store</th></tr></thead><tbody><tr><td>assorted sweets</td><td class="best">$4.99/each</td><td>Big Basket</td></tr>
 <tr><td>gujiya</td><td class="best">$4.99/each</td><td>Big Basket</td></tr>
 <tr><td>gulab jamun</td><td class="best">$5.99/each</td><td>Big Basket</td></tr>
 <tr><td>gulab jamun bucket 200 pc</td><td class="best">$69.99/each</td><td>World Food Warehouse</td></tr>
@@ -192,7 +530,10 @@ footer{color:var(--muted);font-size:13px;margin-top:28px}
 <tr><td>pitted dates</td><td class="best">$2.99/each</td><td>Big Basket</td></tr>
 <tr><td>rasgulla</td><td class="best">$6.99/each</td><td>Big Basket</td></tr>
 </tbody></table></div>
-<h3>Grains, rice &amp; flour</h3><div class="tw"><table><thead><tr><th>Item</th><th>Best price</th><th>Store</th></tr></thead><tbody><tr><td>basmati mamra</td><td class="best">$1.49/each</td><td>Big Basket</td></tr>
+<!-- /SECTION: price-table-dairy-frozen-breads -->
+<!-- SECTION: price-table-grains-rice-flour -->
+<h3>Grains, rice &amp; flour</h3>
+<div class="tw tw-cat" tabindex="0" role="region" aria-label="Grains, rice &amp; flour table — scrolls sideways"><table><thead><tr><th>Item</th><th>Best price</th><th>Store</th></tr></thead><tbody><tr><td>basmati mamra</td><td class="best">$1.49/each</td><td>Big Basket</td></tr>
 <tr><td>basmati rice</td><td class="best">$8.99/each</td><td>Big Basket</td></tr>
 <tr><td>besan</td><td class="best">$3.99/each</td><td>Big Basket</td></tr>
 <tr><td>idli rava</td><td class="best">$3.49/each</td><td>Big Basket</td></tr>
@@ -206,7 +547,10 @@ footer{color:var(--muted);font-size:13px;margin-top:28px}
 <tr><td>thick poha</td><td class="best">$1.99/each</td><td>Big Basket</td></tr>
 <tr><td>whole wheat atta</td><td class="best">$11.99/each</td><td>Big Basket</td></tr>
 </tbody></table></div>
-<h3>Oils &amp; ghee</h3><div class="tw"><table><thead><tr><th>Item</th><th>Best price</th><th>Store</th></tr></thead><tbody><tr><td>canola oil</td><td class="best">$1.02/lb</td><td>World Food Warehouse</td></tr>
+<!-- /SECTION: price-table-grains-rice-flour -->
+<!-- SECTION: price-table-oils-ghee -->
+<h3>Oils &amp; ghee</h3>
+<div class="tw tw-cat" tabindex="0" role="region" aria-label="Oils &amp; ghee table — scrolls sideways"><table><thead><tr><th>Item</th><th>Best price</th><th>Store</th></tr></thead><tbody><tr><td>canola oil</td><td class="best">$1.02/lb</td><td>World Food Warehouse</td></tr>
 <tr><td>vegetable oil</td><td class="best">$1.02/lb</td><td>World Food Warehouse</td></tr>
 <tr><td>corn oil</td><td class="best">$1.25/lb</td><td>Big Basket</td></tr>
 <tr><td>canola oil 48 oz</td><td class="best">$3.99/each</td><td>Kroger</td></tr>
@@ -216,7 +560,10 @@ footer{color:var(--muted);font-size:13px;margin-top:28px}
 <tr><td>peanut oil</td><td class="best">$23.99/each</td><td>Big Basket</td></tr>
 <tr><td>sunflower oil</td><td class="best">$10.99/each</td><td>Big Basket</td></tr>
 </tbody></table></div>
-<h3>Spices &amp; masalas</h3><div class="tw"><table><thead><tr><th>Item</th><th>Best price</th><th>Store</th></tr></thead><tbody><tr><td>coriander powder</td><td class="best">$1.99/each</td><td>Big Basket</td></tr>
+<!-- /SECTION: price-table-oils-ghee -->
+<!-- SECTION: price-table-spices-masalas -->
+<h3>Spices &amp; masalas</h3>
+<div class="tw tw-cat" tabindex="0" role="region" aria-label="Spices &amp; masalas table — scrolls sideways"><table><thead><tr><th>Item</th><th>Best price</th><th>Store</th></tr></thead><tbody><tr><td>coriander powder</td><td class="best">$1.99/each</td><td>Big Basket</td></tr>
 <tr><td>coriander seed</td><td class="best">$1.99/each</td><td>Big Basket</td></tr>
 <tr><td>cumin seeds</td><td class="best">$2.49/each</td><td>Big Basket</td></tr>
 <tr><td>green cardamom</td><td class="best">$4.99/each</td><td>Big Basket</td></tr>
@@ -230,7 +577,10 @@ footer{color:var(--muted);font-size:13px;margin-top:28px}
 <tr><td>tamarind</td><td class="best">$2.49/each</td><td>Big Basket</td></tr>
 <tr><td>turmeric powder</td><td class="best">$1.99/each</td><td>Big Basket</td></tr>
 </tbody></table></div>
-<h3>Dals &amp; beans</h3><div class="tw"><table><thead><tr><th>Item</th><th>Best price</th><th>Store</th></tr></thead><tbody><tr><td>moong dal whole</td><td class="best">$2.99/each</td><td>Desi Brothers</td></tr>
+<!-- /SECTION: price-table-spices-masalas -->
+<!-- SECTION: price-table-dals-beans -->
+<h3>Dals &amp; beans</h3>
+<div class="tw tw-cat" tabindex="0" role="region" aria-label="Dals &amp; beans table — scrolls sideways"><table><thead><tr><th>Item</th><th>Best price</th><th>Store</th></tr></thead><tbody><tr><td>moong dal whole</td><td class="best">$2.99/each</td><td>Desi Brothers</td></tr>
 <tr><td>masoor dal</td><td class="best">$2.99/each</td><td>Big Basket</td></tr>
 <tr><td>toor dal</td><td class="best">$3.49/each</td><td>Big Basket</td></tr>
 <tr><td>chana dal</td><td class="best">$2.99/each</td><td>Desi Brothers</td></tr>
@@ -243,44 +593,95 @@ footer{color:var(--muted);font-size:13px;margin-top:28px}
 <tr><td>urad dal</td><td class="best">$3.99/each</td><td>Big Basket</td></tr>
 <tr><td>vatana white</td><td class="best">$2.99/each</td><td>Big Basket</td></tr>
 </tbody></table></div>
-
-<p class="muted">Sample basket split total from the database: $95.71 if buying each basket item at its best store (see tables_page.json in the source data).</p></section>
-
-<section id="coupons" class="card"><h2>Coupons &amp; promos</h2><ul>
-<li><strong>H-E-B:</strong> coupon gallery on heb.com is public — check it each Friday.</li>
-<li><strong>Kroger:</strong> digital coupons in the Kroger app under Savings. Aggregator lists are <em>unverified</em> until seen in the app.</li>
-<li><strong>Walmart:</strong> no coupon gallery — Walmart Cash manufacturer offers in the app.</li>
-<li><strong>Aldi:</strong> no coupon program and does not accept manufacturer coupons — ignore “Aldi coupon” posts.</li>
-<li><strong>Papa Mart:</strong> free delivery on orders over $25.</li></ul></section>
-
-<section id="free-food" class="card"><h2>Free food near Stafford</h2>
-<p class="muted">Re-verify each run — schedules and requirements move. No phone numbers are listed on this public board.</p><ul>
-<li><strong>East Fort Bend Human Needs Ministry</strong> — Stafford — Tue / Wed evening / Thu / Fri distributions</li>
-<li><strong>India House</strong> — Wed Oct 28</li>
-<li><strong>Mamie George Food Fair</strong> — Sat Oct 31</li></ul></section>
-
-<section id="watchlist" class="card"><h2>Store watchlist</h2>
-<p class="muted">Checked every Friday.</p><ul>
-<li>Al Aqsa Bangla Bazaar · World Food Warehouse · Papa Mart · Desi Brothers · Big Basket (Stafford)</li>
-<li>Al Madina Supermarket · Jerusalem Supermarket · Hala Market · Zaina Supermarket · Prime Bazaar</li>
-<li>The Meat Grinder Market — 8002 FM 1464 Rd, Richmond, TX 77407 (halal, premium; in-store prices only, no public flyers found)</li>
-<li>H-E-B · Walmart · Aldi · Kroger · Flipp for 77477</li></ul></section>
-
-<section id="my-list" class="card"><h2>My list</h2>
-<p class="muted">Saved only on this device (local storage). Use “Add to my list” on the headline deal — the full trip planner is Phase 1 of the roadmap.</p>
-<ul id="list"></ul><button class="add" id="clear">Clear list</button></section>
-
-<footer>HaulBoard — live on GitHub Pages, updated every Friday. Prices were verified for the week shown; check the flyer before you go. <a href="https://github.com/ayaan40000/haulboard">Repo</a> · <a href="https://github.com/ayaan40000/haulboard/blob/main/README.md">Documentation</a> · <a href="https://github.com/ayaan40000/haulboard/blob/main/ROADMAP.md">Roadmap</a></footer>
+<!-- /SECTION: price-table-dals-beans -->
+<!-- SECTION: sample-basket -->
+<div class="card">
+<p class="muted" style="margin:0">Sample basket split total from the database: $95.71 if buying each basket item at its best store (see tables_page.json in the source data).</p>
 </div>
+<!-- /SECTION: sample-basket -->
+<p class="smallprint">Prices were verified for the week shown; check the flyer before you go.</p>
+<!-- /VIEW: compare -->
+</section>
+<section class="view" id="coupons" role="tabpanel" aria-labelledby="tab-coupons" hidden>
+<!-- VIEW: coupons -->
+<h2 class="view-title" tabindex="-1">Coupons</h2>
+<p class="view-intro">The week's shortlist first, then the standing notes for each store.</p>
+<!-- SECTION: coupons-shortlist -->
+<p class="muted">This week's shortlist lands with the Friday run.</p>
+<!-- /SECTION: coupons-shortlist -->
+<h3 class="group-title">Standing notes</h3>
+<!-- SECTION: coupons-notes -->
+<div class="card" style="margin-top:0">
+<div class="note-row"><p><strong>H-E-B:</strong> coupon gallery on heb.com is public — check it each Friday.</p></div>
+<div class="note-row"><p><strong>Kroger:</strong> digital coupons in the Kroger app under Savings. Aggregator lists are <em>unverified</em> until seen in the app.</p></div>
+<div class="note-row"><p><strong>Walmart:</strong> no coupon gallery — Walmart Cash manufacturer offers in the app.</p></div>
+<div class="note-row"><p><strong>Aldi:</strong> no coupon program and does not accept manufacturer coupons — ignore “Aldi coupon” posts.</p></div>
+<div class="note-row"><p><strong>Papa Mart:</strong> free delivery on orders over $25.</p></div>
+</div>
+<!-- /SECTION: coupons-notes -->
+<!-- /VIEW: coupons -->
+</section>
+<section class="view" id="free-food" role="tabpanel" aria-labelledby="tab-free-food" hidden>
+<!-- VIEW: free-food -->
+<h2 class="view-title" tabindex="-1">Free food</h2>
+<!-- SECTION: free-food-list -->
+<div class="card" style="margin-top:0">
+<p class="muted" style="margin-top:0">Re-verify each run — schedules and requirements move. No phone numbers are listed on this public board.</p>
+<div class="org-row"><span class="org-name">East Fort Bend Human Needs Ministry</span><span class="org-meta">Stafford — Tue / Wed evening / Thu / Fri distributions</span></div>
+<div class="org-row"><span class="org-name">India House</span><span class="org-meta">Wed Oct 28</span></div>
+<div class="org-row"><span class="org-name">Mamie George Food Fair</span><span class="org-meta">Sat Oct 31</span></div>
+</div>
+<!-- /SECTION: free-food-list -->
+<!-- /VIEW: free-food -->
+</section>
+<section class="view" id="my-list" role="tabpanel" aria-labelledby="tab-my-list" hidden>
+<!-- VIEW: my-list -->
+<h2 class="view-title" tabindex="-1">My list</h2>
+<p class="view-intro">Saved only on this device (local storage).</p>
+<p id="listCount" hidden></p>
+<ul id="list"></ul>
+<button class="add" id="clear" type="button" style="padding:0 16px">Clear list</button>
+<p class="smallprint">Use Add on any deal to put it here before the trip.</p>
+<!-- /VIEW: my-list -->
+</section>
+</main>
+</div>
+<!-- SHELL: scripts-core -->
 <script>
 const key='haulboard-list-v1'; const ul=document.getElementById('list');
-function render(){let items=[]; try{items=JSON.parse(localStorage.getItem(key)||'[]')}catch(e){} ul.innerHTML=items.map(i=>'<li>'+i+'</li>').join('')||'<li class="muted">Nothing added yet.</li>';}
-document.querySelectorAll('.add[data-item]').forEach(b=>b.addEventListener('click',()=>{let items=[]; try{items=JSON.parse(localStorage.getItem(key)||'[]')}catch(e){} items.push(b.dataset.item); localStorage.setItem(key,JSON.stringify(items)); render();}));
+function getItems(){let items=[]; try{items=JSON.parse(localStorage.getItem(key)||'[]')}catch(e){} if(!Array.isArray(items)){items=[];} return items;}
+function render(){const items=getItems(); ul.innerHTML=''; if(!items.length){const li=document.createElement('li'); li.className='muted'; li.textContent='Nothing added yet.'; ul.appendChild(li);} items.forEach(function(text,idx){const li=document.createElement('li'); const span=document.createElement('span'); span.textContent=text; li.appendChild(span); const btn=document.createElement('button'); btn.type='button'; btn.className='remove-btn'; btn.textContent='Remove'; btn.setAttribute('aria-label','Remove '+text); btn.addEventListener('click',function(){const cur=getItems(); cur.splice(idx,1); try{localStorage.setItem(key,JSON.stringify(cur));}catch(e){} render();}); li.appendChild(btn); ul.appendChild(li);}); const badge=document.getElementById('listBadge'); if(badge){badge.textContent=items.length; badge.hidden=items.length===0;} const count=document.getElementById('listCount'); if(count){count.hidden=items.length===0; count.textContent=items.length+' items';}}
+document.querySelectorAll('.add[data-item]').forEach(b=>b.addEventListener('click',()=>{let items=[]; try{items=JSON.parse(localStorage.getItem(key)||'[]')}catch(e){} if(!Array.isArray(items)){items=[];} items.push(b.dataset.item); try{localStorage.setItem(key,JSON.stringify(items));}catch(e){} render(); if(!b.dataset.label){b.dataset.label=b.textContent;} b.textContent='Added'; if(b._addedTimer){clearTimeout(b._addedTimer);} b._addedTimer=setTimeout(function(){b.textContent=b.dataset.label;},1200);}));
 document.getElementById('clear').addEventListener('click',()=>{localStorage.removeItem(key); render();});
 render();
+</script>
+<script>
+(function(){
+var VIEW_IDS={'this-week':'view-this-week','stores':'view-stores','compare':'price-compare','coupons':'coupons','free-food':'free-food','my-list':'my-list'};
+var CANONICAL={'this-week':'this-week','stores':'stores','compare':'price-compare','coupons':'coupons','free-food':'free-food','my-list':'my-list'};
+var STORE_SLUGS=['al-aqsa','wfw','papa-mart','desi-brothers','big-basket','al-madina','jerusalem','hala-market','heb','walmart','aldi','kroger','zaina','prime-bazaar','meat-grinder'];
+var tabs=Array.prototype.slice.call(document.querySelectorAll('#tabbar [role="tab"]'));
+var currentView='this-week'; var currentStore=null; var storesScrollY=0; var returnRow=null; var detailFromApp=false;
+function setTabs(active){tabs.forEach(function(t){var on=t.dataset.view===active; t.setAttribute('aria-selected',on?'true':'false'); t.tabIndex=on?0:-1;});}
+function hideAll(){document.querySelectorAll('.view').forEach(function(v){v.hidden=true;}); document.querySelectorAll('.store-block').forEach(function(b){b.hidden=true;});}
+function titleOf(viewKey){var el=document.getElementById(VIEW_IDS[viewKey]); return el?el.querySelector('.view-title,[tabindex="-1"]'):null;}
+function showView(viewKey,opts){opts=opts||{}; var wasStore=currentStore; currentStore=null; hideAll(); var el=document.getElementById(VIEW_IDS[viewKey]); if(!el){viewKey='this-week'; el=document.getElementById(VIEW_IDS[viewKey]);} el.hidden=false; currentView=viewKey; setTabs(viewKey); if(opts.scrollTo){var target=document.getElementById(opts.scrollTo); if(target){target.scrollIntoView({block:'start'}); return;}} if(opts.restoreStores){window.scrollTo(0,storesScrollY); if(returnRow){var row=document.querySelector('a.store-row[href="#'+returnRow+'"]'); if(row){row.focus({preventScroll:true}); window.scrollTo(0,storesScrollY);} returnRow=null;} return;} window.scrollTo(0,0); if(opts.focus){var title=el.querySelector('.view-title')||titleOf(viewKey); if(title){title.focus({preventScroll:true}); window.scrollTo(0,0);}}}
+function openStore(slug,opts){opts=opts||{}; if(currentView==='stores'&&!currentStore){storesScrollY=window.scrollY; returnRow=slug;} hideAll(); var detail=document.getElementById('view-store-detail'); detail.hidden=false; var block=detail.querySelector('[data-store="'+slug+'"]'); if(block){block.hidden=false;} currentStore=slug; currentView='stores'; setTabs('stores'); window.scrollTo(0,0); if(opts.focus&&block){var name=block.querySelector('.store-name'); if(name){name.focus({preventScroll:true}); window.scrollTo(0,0);}}}
+function route(opts){opts=opts||{}; var hash=(location.hash||'').replace(/^#/,''); if(STORE_SLUGS.indexOf(hash)!==-1){openStore(hash,{focus:opts.focus!==false}); return;} switch(hash){case '': case 'this-week': showView('this-week',{focus:opts.focus}); break; case 'top-picks': showView('this-week',{scrollTo:'top-picks'}); break; case 'stores': if(currentStore){showView('stores',{restoreStores:true});}else{showView('stores',{focus:opts.focus});} break; case 'more-stores': showView('stores',{scrollTo:'more-stores'}); break; case 'big-retailers': showView('stores',{scrollTo:'big-retailers'}); break; case 'watchlist': showView('stores',{scrollTo:'watchlist'}); break; case 'price-compare': case 'compare': showView('compare',{focus:opts.focus}); break; case 'coupons': showView('coupons',{focus:opts.focus}); break; case 'free-food': showView('free-food',{focus:opts.focus}); break; case 'my-list': showView('my-list',{focus:opts.focus}); break; default: showView('this-week',{focus:opts.focus}); break;}}
+function activateTab(viewKey,moveFocus){if(viewKey===currentView&&!currentStore){return;} if(viewKey==='stores'&&currentStore){history.pushState(null,'','#stores'); showView('stores',{restoreStores:true}); return;} history.pushState(null,'','#'+CANONICAL[viewKey]); showView(viewKey,{}); if(moveFocus){var t=document.getElementById('tab-'+viewKey); if(t){t.focus();}}}
+tabs.forEach(function(t){t.addEventListener('click',function(){activateTab(t.dataset.view,false);});});
+document.getElementById('tabbar').addEventListener('keydown',function(e){if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft'){return;} var idx=tabs.indexOf(document.activeElement); if(idx===-1){return;} e.preventDefault(); var next=(idx+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length; activateTab(tabs[next].dataset.view,true);});
+document.querySelectorAll('a.store-row').forEach(function(a){a.addEventListener('click',function(){detailFromApp=true;});});
+var seeStore=document.querySelector('.see-store'); if(seeStore){seeStore.addEventListener('click',function(){detailFromApp=true; returnRow='papa-mart'; storesScrollY=0;});}
+var backBtn=document.getElementById('backToStores'); if(backBtn){backBtn.addEventListener('click',function(){if(detailFromApp&&window.history.length>1){history.back();}else{history.pushState(null,'','#stores'); showView('stores',{restoreStores:true});}});}
+window.addEventListener('hashchange',function(){route({focus:true});});
+route({focus:false});
+})();
 </script>
 <script>
 if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js').catch(function(){}); }
 </script>
 <script>(function(){var b=document.getElementById('themeToggle');if(!b)return;function label(){b.textContent=document.documentElement.dataset.theme==='dark'?'Light mode':'Dark mode';}label();b.addEventListener('click',function(){var d=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=d;try{localStorage.setItem('hb-theme',d);}catch(e){}label();});})();</script>
-</body></html>
+<!-- /SHELL: scripts-core -->
+</body>
+</html>
