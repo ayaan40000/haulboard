@@ -31,15 +31,21 @@ ul{margin:8px 0;padding-left:20px} li{margin:4px 0}
 nav{position:sticky;top:0;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line);z-index:5} nav a{display:inline-block;background:var(--surface);border:1px solid var(--line);color:var(--ink);text-decoration:none;padding:6px 10px;border-radius:999px;font-size:12.5px;margin:0 4px 4px 0}
 .add{font-size:12px;font-weight:700;border:1px solid var(--line);background:var(--surface2);border-radius:999px;padding:5px 9px;cursor:pointer;margin-left:8px}
 footer{color:var(--muted);font-size:13px;margin-top:28px}
+
+:root[data-theme="dark"]{--bg:#0d130f;--surface:#16211a;--surface2:#1a261e;--ink:#ece7d9;--muted:#9aa79d;--line:#2b3a2e;--green:#35b267;--green2:#7bc98f;--lime:#17351f;--marigold:#e8a33d}
+:root[data-theme="dark"] .badge{background:#1e7a46;color:#fff}
+.theme-toggle{float:right;font:inherit;font-size:12.5px;font-weight:700;background:var(--surface);color:var(--ink);border:1px solid var(--line);padding:7px 11px;border-radius:999px;cursor:pointer;margin-top:4px}
 </style>
+<script>try{var t=localStorage.getItem('hb-theme');if(t){document.documentElement.dataset.theme=t;}}catch(e){}</script>
 </head>
 <body><div class="wrap">
 <nav><a href="#top-picks">Top picks</a><a href="#al-aqsa">Al Aqsa</a><a href="#wfw">World Food Warehouse</a><a href="#more-stores">More stores</a><a href="#big-retailers">Big retailers</a><a href="#price-compare">Price compare</a><a href="#coupons">Coupons</a><a href="#free-food">Free food</a><a href="#watchlist">Watchlist</a><a href="#my-list">My list</a></nav>
 <header>
+<button class="theme-toggle" id="themeToggle" type="button">Dark mode</button>
 <p class="eyebrow">Stafford, TX 77477 · Weekly · As of 2026-10-24</p>
 <h1>HaulBoard — <em>Know before you go.</em></h1>
 <p class="lede">Verified grocery and meat deals for the weekend haul, decided at home — not in the aisle.</p>
-<p><span class="pill">79 prices filed</span><span class="pill">Halal meat tracked</span><span class="pill">Prototype for GitHub Pages — not published</span></p>
+<p><span class="pill">79 prices filed</span><span class="pill">Halal meat tracked</span><span class="pill">Live board — updated every Friday</span></p>
 <div class="hero-deal"><h2>Headline deal <span class="badge">VERIFIED</span></h2>
 <p class="big">Goat Mix Tray — $5.99/lb Sat &amp; Sun, $6.99/lb weekdays</p>
 <p>Al Aqsa Bangla Bazaar · Zabiha · No limit · Verified from the store's Thu Oct 22 flyer.</p>
@@ -76,7 +82,7 @@ footer{color:var(--muted);font-size:13px;margin-top:28px}
 <div><h3>Big Basket (Stafford)</h3><p class="muted">12002 Southwest Fwy, Suite E, Stafford, TX 77477 · EBT accepted</p>
 <ul><li>$1 weekly sale produce — many items at $1.00/lb or $1.00 each Fri–Mon</li><li>Chickpeas (can) — 79¢; paneer slab — $3.99</li></ul></div>
 <div><h3>Al Madina Supermarket</h3><p class="muted">3210 Hillcroft St, Houston, TX 77057 · Zabiha halal</p>
-<p>Weekday Deals Mon–Wed flyer most weeks. No new flyer priced in this prototype — check the latest flyer on the Friday run.</p></div>
+<p>Weekday Deals Mon–Wed flyer most weeks. No new flyer priced this week — check the latest flyer on the Friday run.</p></div>
 <div><h3>Jerusalem Supermarket</h3><p class="muted">3330 Hillcroft Ave, Ste I, Houston, TX 77057</p>
 <p>In-store only for now; no posted prices found in Oct 2026. Kept on the watchlist.</p></div>
 <div><h3>Hala Market (Sugar Land)</h3><p class="muted">4127 Hwy 6, Sugar Land, TX 77478 · Halal butcher</p>
@@ -248,7 +254,7 @@ footer{color:var(--muted);font-size:13px;margin-top:28px}
 <li><strong>Papa Mart:</strong> free delivery on orders over $25.</li></ul></section>
 
 <section id="free-food" class="card"><h2>Free food near Stafford</h2>
-<p class="muted">Re-verify each run — schedules and requirements move. No phone numbers are listed on this public prototype.</p><ul>
+<p class="muted">Re-verify each run — schedules and requirements move. No phone numbers are listed on this public board.</p><ul>
 <li><strong>East Fort Bend Human Needs Ministry</strong> — Stafford — Tue / Wed evening / Thu / Fri distributions</li>
 <li><strong>India House</strong> — Wed Oct 28</li>
 <li><strong>Mamie George Food Fair</strong> — Sat Oct 31</li></ul></section>
@@ -276,4 +282,5 @@ render();
 <script>
 if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js').catch(function(){}); }
 </script>
+<script>(function(){var b=document.getElementById('themeToggle');if(!b)return;function label(){b.textContent=document.documentElement.dataset.theme==='dark'?'Light mode':'Dark mode';}label();b.addEventListener('click',function(){var d=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=d;try{localStorage.setItem('hb-theme',d);}catch(e){}label();});})();</script>
 </body></html>
