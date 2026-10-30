@@ -2,6 +2,13 @@
 
 All notable deployments of the public HaulBoard page. Weekly content refreshes (new prices and deals) happen every Friday and are summarised in the commit message; this log tracks structural and feature changes.
 
+## 2026-10-30 — Weekly refresh (Oct 30)
+- New verified prices: Al Aqsa Everyday Sale rices (Jazaa Basmati 10 lb $11.99, Palli Kalijeera 10 lb $15.99, Chinigura 10 lb $20.99, Par Excellence Parboiled 25 lb $18.99), Hala Market cuts ($5.99/lb) and lamb leg/shoulder ($8.99/lb), Meat Grinder fruit $0.99/lb Fri–Sun, Prime Bazaar counter prices (leg quarters 40 lb box $33.49, chicken breast/thigh 5 lb $15 Diwali Promo)
+- Big-retailer ad transcriptions for Oct 28–Nov 3 marked UNVERIFIED (H-E-B, Kroger, Aldi, Walmart); stores with no new flyer verified this run (World Food Warehouse, Desi Brothers, Al Madina) are marked as such instead of being repriced from last week
+- Coupons shortlist for Oct 30: Dollar General Oct 31 Saturday scenarios on top (P&G basket $9.70 + $10 next trip; household basket $12.45), plus Kroger, CVS, Walgreens, Target and Walmart Cash finds
+- Access note: the pib SSH channel broke again this run, so the Pi-browser sweep used the CDP fallback; existing browser tabs were left untouched
+- Price database now holds 264 prices; data exports (prices.sql, prices.json, captures.jsonl, tables.json, tables_page.json, coupons-2026-10-30.json) republished with the board
+
 ## 2026-10-26 — App-style redesign (pending push and live verification)
 - Rebuilt `index.html` from a single scrollable page into a view-based web app per `docs/UX-REDESIGN.md`: six views (This Week, Stores with per-store detail screens, Compare, Coupons, Free Food, My List), one visible at a time, with a fixed bottom tab bar on mobile and a top pill bar on desktop, a slim sticky header, and a hash router that keeps all ten legacy hashes, the store slugs, and Back/Forward working
 - No content lost: every priced item from the previous page is present, with bundled bullets split into one deal row per item; compare tables unchanged (9 tables); watchlist moved into Stores; footer now at the bottom of This Week
