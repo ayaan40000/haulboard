@@ -81,6 +81,36 @@
     "n": 4
    },
    {
+    "item": "chicken tenders",
+    "basis": "lb",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 1.99,
+      "pack": "Weekend meat specials",
+      "bulk": [
+       {
+        "price": 49.99,
+        "note": "40 lb wholesale box"
+       }
+      ]
+     },
+     "Papa Mart": {
+      "ppu": 1.85,
+      "pack": "Meat Deal flyer Oct 17, no end date stated",
+      "bulk": []
+     },
+     "Aldi": {
+      "ppu": 2.09,
+      "pack": "Fresh Family Pack Chicken Tenderloins $2.09/lb, Aldi weekly ad meat specials; regional pricing, UNVERIFIED for Stafford",
+      "bulk": []
+     }
+    },
+    "best": 1.85,
+    "worst": 2.09,
+    "save": 0.24,
+    "n": 3
+   },
+   {
     "item": "ground lamb",
     "basis": "lb",
     "stores": {
@@ -198,31 +228,6 @@
     "best": 1.19,
     "worst": 1.69,
     "save": 0.5,
-    "n": 2
-   },
-   {
-    "item": "chicken tenders",
-    "basis": "lb",
-    "stores": {
-     "World Food Warehouse": {
-      "ppu": 1.99,
-      "pack": "Weekend meat specials",
-      "bulk": [
-       {
-        "price": 49.99,
-        "note": "40 lb wholesale box"
-       }
-      ]
-     },
-     "Papa Mart": {
-      "ppu": 1.85,
-      "pack": "Meat Deal flyer Oct 17, no end date stated",
-      "bulk": []
-     }
-    },
-    "best": 1.85,
-    "worst": 1.99,
-    "save": 0.14,
     "n": 2
    },
    {
@@ -818,6 +823,46 @@
   ],
   "Produce": [
    {
+    "item": "white onion",
+    "basis": "lb",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 0.49,
+      "pack": null,
+      "bulk": []
+     },
+     "H-E-B": {
+      "ppu": 1.39,
+      "pack": "H-E-B Organics White Onions, 2 lb bag $2.77 ea in ad (or Organics Limes 1 lb bag at same price)",
+      "bulk": []
+     }
+    },
+    "best": 0.49,
+    "worst": 1.39,
+    "save": 0.9,
+    "n": 2
+   },
+   {
+    "item": "mandarin",
+    "basis": "lb",
+    "stores": {
+     "The Meat Grinder Market": {
+      "ppu": 0.99,
+      "pack": "Fresh Mandarins, Fresh Fruit Special, Friday Saturday Sunday only",
+      "bulk": []
+     },
+     "Kroger": {
+      "ppu": 1.33,
+      "pack": "Adorbs Seedless Mandarins, 3 lb bag $3.99",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 1.33,
+    "save": 0.34,
+    "n": 2
+   },
+   {
     "item": "chili powder",
     "basis": "each",
     "stores": {
@@ -893,21 +938,6 @@
     "n": 1
    },
    {
-    "item": "mandarin",
-    "basis": "lb",
-    "stores": {
-     "The Meat Grinder Market": {
-      "ppu": 0.99,
-      "pack": "Fresh Mandarins, Fresh Fruit Special, Friday Saturday Sunday only",
-      "bulk": []
-     }
-    },
-    "best": 0.99,
-    "worst": 0.99,
-    "save": 0.0,
-    "n": 1
-   },
-   {
     "item": "russet potatoes",
     "basis": "each",
     "stores": {
@@ -919,21 +949,6 @@
     },
     "best": 5.0,
     "worst": 5.0,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "white onion",
-    "basis": "lb",
-    "stores": {
-     "World Food Warehouse": {
-      "ppu": 0.49,
-      "pack": null,
-      "bulk": []
-     }
-    },
-    "best": 0.49,
-    "worst": 0.49,
     "save": 0.0,
     "n": 1
    }
@@ -1103,6 +1118,21 @@
     },
     "best": 4.99,
     "worst": 4.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "frozen vegetables, steamable 12 oz",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 0.99,
+      "pack": "Kroger Steamable Vegetables, 12 oz, 99c in 99 Cent Mix & Match when you buy 5+ participating items",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 0.99,
     "save": 0.0,
     "n": 1
    },
@@ -1439,6 +1469,51 @@
   ],
   "Other groceries": [
    {
+    "item": "pears, Bartlett",
+    "basis": "lb",
+    "stores": {
+     "H-E-B": {
+      "ppu": 0.97,
+      "pack": "Green Bartlett Pears or Envy Apples 97c/lb in weekly ad price list; produce rows were missing from the morning run",
+      "bulk": []
+     },
+     "Kroger": {
+      "ppu": 1.79,
+      "pack": "Bartlett Pears or Honeycrisp Apples $1.79/lb with eCoupon, limit 5 per transaction - Weekly Digital Deal, UNVERIFIED",
+      "bulk": []
+     },
+     "Aldi": {
+      "ppu": 1.0,
+      "pack": "Washington Bartlett Pears, 3 lb bag $2.99, Aldi weekly ad; regional pricing, UNVERIFIED for Stafford",
+      "bulk": []
+     }
+    },
+    "best": 0.97,
+    "worst": 1.79,
+    "save": 0.82,
+    "n": 3
+   },
+   {
+    "item": "avocados",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 1.0,
+      "pack": "Avocados, 4 ct bag $3.99 (99c ea) - 3-Day Sale Thu-Sat Oct 29-31 only",
+      "bulk": []
+     },
+     "Aldi": {
+      "ppu": 0.49,
+      "pack": "Fresh avocados $0.49 ea, Aldi weekly ad - corroborated by Aisle of Shame, Passionate Penny Pincher and Smart Spending Resources transcriptions; Aldi prices are regional, UNVERIFIED for Stafford",
+      "bulk": []
+     }
+    },
+    "best": 0.49,
+    "worst": 1.0,
+    "save": 0.51,
+    "n": 2
+   },
+   {
     "item": "almonds",
     "basis": "each",
     "stores": {
@@ -1450,6 +1525,51 @@
     },
     "best": 9.99,
     "worst": 9.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "apples, Envy",
+    "basis": "lb",
+    "stores": {
+     "H-E-B": {
+      "ppu": 0.97,
+      "pack": "Envy Apples or Green Bartlett Pears 97c/lb in weekly ad price list",
+      "bulk": []
+     }
+    },
+    "best": 0.97,
+    "worst": 0.97,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "apples, Gala",
+    "basis": "lb",
+    "stores": {
+     "Aldi": {
+      "ppu": 0.66,
+      "pack": "Michigan Gala Apples, 3 lb bag $1.99, Aldi weekly ad; regional pricing, UNVERIFIED for Stafford",
+      "bulk": []
+     }
+    },
+    "best": 0.66,
+    "worst": 0.66,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "apples, Honeycrisp",
+    "basis": "lb",
+    "stores": {
+     "Kroger": {
+      "ppu": 1.79,
+      "pack": "Honeycrisp Apples or Bartlett Pears $1.79/lb with eCoupon, limit 5 per transaction - Weekly Digital Deal, UNVERIFIED (login-walled gallery, aggregator transcription)",
+      "bulk": []
+     }
+    },
+    "best": 1.79,
+    "worst": 1.79,
     "save": 0.0,
     "n": 1
    },
@@ -1574,6 +1694,21 @@
     "n": 1
    },
    {
+    "item": "green beans, French",
+    "basis": "lb",
+    "stores": {
+     "Aldi": {
+      "ppu": 2.89,
+      "pack": "French Green Beans, 1 lb pkg $2.89, Aldi weekly ad; regional pricing, UNVERIFIED for Stafford",
+      "bulk": []
+     }
+    },
+    "best": 2.89,
+    "worst": 2.89,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "green pistachio",
     "basis": "each",
     "stores": {
@@ -1585,6 +1720,21 @@
     },
     "best": 7.99,
     "worst": 7.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "limes",
+    "basis": "lb",
+    "stores": {
+     "H-E-B": {
+      "ppu": 2.77,
+      "pack": "H-E-B Organics Limes, 1 lb bag $2.77 ea in ad (or Organics White Onions 2 lb bag at same price)",
+      "bulk": []
+     }
+    },
+    "best": 2.77,
+    "worst": 2.77,
     "save": 0.0,
     "n": 1
    },
@@ -1604,6 +1754,51 @@
     "n": 1
    },
    {
+    "item": "mangoes",
+    "basis": "each",
+    "stores": {
+     "Aldi": {
+      "ppu": 0.99,
+      "pack": "Mangoes $0.99 ea, Aldi weekly ad; regional pricing, UNVERIFIED for Stafford",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 0.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "oranges, navel",
+    "basis": "lb",
+    "stores": {
+     "H-E-B": {
+      "ppu": 0.74,
+      "pack": "LARGE Navel Oranges (sold by lb) or H-E-B Fresh Cranberries 12 oz (sold by ea) listed at 74c in ad price list - unit ambiguous in transcription, confirm in store",
+      "bulk": []
+     }
+    },
+    "best": 0.74,
+    "worst": 0.74,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "pasta, Kroger brand",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 0.99,
+      "pack": "Kroger Pasta 12-16 oz, 99c in 99 Cent Mix & Match when you buy 5+ participating items",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 0.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "pomegranates",
     "basis": "lb",
     "stores": {
@@ -1615,6 +1810,21 @@
     },
     "best": 0.99,
     "worst": 0.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "raspberries",
+    "basis": "each",
+    "stores": {
+     "Aldi": {
+      "ppu": 1.69,
+      "pack": "Raspberries, 6 oz pkg $1.69, Aldi weekly ad; regional pricing, UNVERIFIED for Stafford",
+      "bulk": []
+     }
+    },
+    "best": 1.69,
+    "worst": 1.69,
     "save": 0.0,
     "n": 1
    },

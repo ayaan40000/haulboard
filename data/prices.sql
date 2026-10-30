@@ -203,6 +203,18 @@ INSERT INTO items VALUES(183,'chicken leg quarters, skinless','Meat & poultry','
 INSERT INTO items VALUES(184,'chicken leg quarters, 40 lb box','Meat & poultry','lb');
 INSERT INTO items VALUES(185,'chicken leg quarters, 40 lb box custom cut','Meat & poultry','lb');
 INSERT INTO items VALUES(186,'chicken leg quarters, seasoned value pack','Meat & poultry','lb');
+INSERT INTO items VALUES(187,'pears, Bartlett','produce','lb');
+INSERT INTO items VALUES(188,'apples, Envy','produce','lb');
+INSERT INTO items VALUES(189,'oranges, navel','produce','lb');
+INSERT INTO items VALUES(190,'limes','produce','lb');
+INSERT INTO items VALUES(191,'apples, Honeycrisp','produce','lb');
+INSERT INTO items VALUES(192,'avocados','produce','each');
+INSERT INTO items VALUES(193,'pasta, Kroger brand','grocery','each');
+INSERT INTO items VALUES(194,'frozen vegetables, steamable 12 oz','grocery','each');
+INSERT INTO items VALUES(195,'apples, Gala','produce','lb');
+INSERT INTO items VALUES(196,'green beans, French','produce','lb');
+INSERT INTO items VALUES(197,'mangoes','produce','each');
+INSERT INTO items VALUES(198,'raspberries','produce','each');
 CREATE TABLE prices (
   id INTEGER PRIMARY KEY,
   item_id INTEGER NOT NULL REFERENCES items(id),
@@ -475,6 +487,24 @@ INSERT INTO prices VALUES(267,183,12,NULL,'Fresh Zabiha chicken leg quarters ski
 INSERT INTO prices VALUES(268,184,12,NULL,'Fresh Zabiha Halal chicken leg quarters 40 lb box $33.49 (= $0.84/lb); separate listing from custom-cut box',33.4900000000000019,40.0,0.837300000000000044,'2026-10-30',NULL,'https://primebazaartx.com/collections/fresh-halal-meat',1,'2026-10-30');
 INSERT INTO prices VALUES(269,185,12,NULL,'Fresh Zabiha Halal chicken leg quarters custom cut 40 lb box $39.99 (= $1.00/lb)',39.9900000000000019,40.0,0.999800000000000022,'2026-10-30',NULL,'https://primebazaartx.com/collections/fresh-halal-meat',1,'2026-10-30');
 INSERT INTO prices VALUES(270,186,5,NULL,'Hill Country Fare Bar-B-Q seasoned, value pack; also drumsticks value pack at same price',0.989999999999999991,1.0,0.989999999999999991,'2026-10-28','2026-11-03','https://weeklyadhunters.com/heb-weekly-ad/',0,'2026-10-30');
+INSERT INTO prices VALUES(271,187,5,NULL,'Green Bartlett Pears or Envy Apples 97c/lb in weekly ad price list; produce rows were missing from the morning run',0.969999999999999973,1.0,0.969999999999999973,'2026-10-28','2026-11-03','https://weeklyadhunters.com/heb-weekly-ad/',0,'2026-10-30');
+INSERT INTO prices VALUES(272,188,5,NULL,'Envy Apples or Green Bartlett Pears 97c/lb in weekly ad price list',0.969999999999999973,1.0,0.969999999999999973,'2026-10-28','2026-11-03','https://weeklyadhunters.com/heb-weekly-ad/',0,'2026-10-30');
+INSERT INTO prices VALUES(273,189,5,NULL,'LARGE Navel Oranges (sold by lb) or H-E-B Fresh Cranberries 12 oz (sold by ea) listed at 74c in ad price list - unit ambiguous in transcription, confirm in store',0.739999999999999991,1.0,0.739999999999999991,'2026-10-28','2026-11-03','https://weeklyadhunters.com/heb-weekly-ad/',0,'2026-10-30');
+INSERT INTO prices VALUES(274,22,5,NULL,'H-E-B Organics White Onions, 2 lb bag $2.77 ea in ad (or Organics Limes 1 lb bag at same price)',2.77000000000000001,2.0,1.385,'2026-10-28','2026-11-03','https://weeklyadhunters.com/heb-weekly-ad/',0,'2026-10-30');
+INSERT INTO prices VALUES(275,190,5,NULL,'H-E-B Organics Limes, 1 lb bag $2.77 ea in ad (or Organics White Onions 2 lb bag at same price)',2.77000000000000001,1.0,2.77000000000000001,'2026-10-28','2026-11-03','https://weeklyadhunters.com/heb-weekly-ad/',0,'2026-10-30');
+INSERT INTO prices VALUES(276,191,4,NULL,'Honeycrisp Apples or Bartlett Pears $1.79/lb with eCoupon, limit 5 per transaction - Weekly Digital Deal, UNVERIFIED (login-walled gallery, aggregator transcription)',1.79000000000000003,1.0,1.79000000000000003,'2026-10-28','2026-11-03','https://www.southernsavers.com/kroger-weekly-ad-10-28-11-3/',0,'2026-10-30');
+INSERT INTO prices VALUES(277,187,4,NULL,'Bartlett Pears or Honeycrisp Apples $1.79/lb with eCoupon, limit 5 per transaction - Weekly Digital Deal, UNVERIFIED',1.79000000000000003,1.0,1.79000000000000003,'2026-10-28','2026-11-03','https://www.southernsavers.com/kroger-weekly-ad-10-28-11-3/',0,'2026-10-30');
+INSERT INTO prices VALUES(278,158,4,NULL,'Adorbs Seedless Mandarins, 3 lb bag $3.99',3.99000000000000021,3.0,1.33000000000000007,'2026-10-28','2026-11-03','https://www.southernsavers.com/kroger-weekly-ad-10-28-11-3/',0,'2026-10-30');
+INSERT INTO prices VALUES(279,192,4,NULL,'Avocados, 4 ct bag $3.99 (99c ea) - 3-Day Sale Thu-Sat Oct 29-31 only',3.99000000000000021,4.0,0.997500000000000053,'2026-10-29','2026-10-31','https://www.southernsavers.com/kroger-weekly-ad-10-28-11-3/',0,'2026-10-30');
+INSERT INTO prices VALUES(280,193,4,NULL,'Kroger Pasta 12-16 oz, 99c in 99 Cent Mix & Match when you buy 5+ participating items',0.989999999999999991,1.0,0.989999999999999991,'2026-10-28','2026-11-17','https://www.southernsavers.com/kroger-weekly-ad-10-28-11-3/',0,'2026-10-30');
+INSERT INTO prices VALUES(281,194,4,NULL,'Kroger Steamable Vegetables, 12 oz, 99c in 99 Cent Mix & Match when you buy 5+ participating items',0.989999999999999991,1.0,0.989999999999999991,'2026-10-28','2026-11-03','https://www.southernsavers.com/kroger-weekly-ad-10-28-11-3/',0,'2026-10-30');
+INSERT INTO prices VALUES(282,192,6,NULL,'Fresh avocados $0.49 ea, Aldi weekly ad - corroborated by Aisle of Shame, Passionate Penny Pincher and Smart Spending Resources transcriptions; Aldi prices are regional, UNVERIFIED for Stafford',0.489999999999999991,1.0,0.489999999999999991,'2026-10-28','2026-11-03','https://www.aisleofshame.com/aldi-weekly-ad-grocery-items/',0,'2026-10-30');
+INSERT INTO prices VALUES(283,195,6,NULL,'Michigan Gala Apples, 3 lb bag $1.99, Aldi weekly ad; regional pricing, UNVERIFIED for Stafford',1.98999999999999999,3.0,0.6633,'2026-10-28','2026-11-03','https://www.aisleofshame.com/aldi-weekly-ad-grocery-items/',0,'2026-10-30');
+INSERT INTO prices VALUES(284,187,6,NULL,'Washington Bartlett Pears, 3 lb bag $2.99, Aldi weekly ad; regional pricing, UNVERIFIED for Stafford',2.99000000000000021,3.0,0.99670000000000003,'2026-10-28','2026-11-03','https://www.aisleofshame.com/aldi-weekly-ad-grocery-items/',0,'2026-10-30');
+INSERT INTO prices VALUES(285,196,6,NULL,'French Green Beans, 1 lb pkg $2.89, Aldi weekly ad; regional pricing, UNVERIFIED for Stafford',2.89000000000000012,1.0,2.89000000000000012,'2026-10-28','2026-11-03','https://www.aisleofshame.com/aldi-weekly-ad-grocery-items/',0,'2026-10-30');
+INSERT INTO prices VALUES(286,197,6,NULL,'Mangoes $0.99 ea, Aldi weekly ad; regional pricing, UNVERIFIED for Stafford',0.989999999999999991,1.0,0.989999999999999991,'2026-10-28','2026-11-03','https://www.aisleofshame.com/aldi-weekly-ad-grocery-items/',0,'2026-10-30');
+INSERT INTO prices VALUES(287,198,6,NULL,'Raspberries, 6 oz pkg $1.69, Aldi weekly ad; regional pricing, UNVERIFIED for Stafford',1.68999999999999994,1.0,1.68999999999999994,'2026-10-28','2026-11-03','https://passionatepennypincher.com/aldi-ad/',0,'2026-10-30');
+INSERT INTO prices VALUES(288,12,6,NULL,'Fresh Family Pack Chicken Tenderloins $2.09/lb, Aldi weekly ad meat specials; regional pricing, UNVERIFIED for Stafford',2.08999999999999985,1.0,2.08999999999999985,'2026-10-28','2026-11-03','https://www.aldireviewer.com/this-week-at-aldi-the-aldi-weekly-ad-for-october-28-2026/',0,'2026-10-30');
 CREATE INDEX idx_prices_item ON prices(item_id);
 CREATE INDEX idx_prices_store ON prices(store_id);
 COMMIT;

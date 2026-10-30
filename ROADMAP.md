@@ -39,9 +39,9 @@ Last updated: 2026-10-25
 - [x] Verified sweep of store FB/IG flyers (every post, carousel image, Photos grid), big-retailer ads, free-food listings
 - [x] Price database (canonical items), price compare + category tables, in-app board + public GitHub Pages edition, Friday automation
 
-### Phase A1 — Full planner on the public page
-- [ ] Port "Plan my haul": Add on every priced item, store-grouped list, qty steppers, subtotals, trip total, coupon reminders, $0 free-food stops, savings meter, one-stop pick, copy/print
-- [ ] Acceptance: test list goat $5.99 + drumsticks $0.79 + wings $1.29 totals exactly $8.07, savings $1.70
+### Phase A1 — Full planner on the public page ✅ (2026-10-30, shell v4)
+- [x] Port "Plan my haul": Add on every priced item, store-grouped list, qty steppers, subtotals, trip total, coupon reminders, $0 free-food stops, savings meter, one-stop pick, copy/print
+- [x] Acceptance: test list goat $5.99 + drumsticks $0.79 + wings $1.29 totals exactly $8.07, savings $1.70 (verified in the planner core, 2026-10-30)
 
 ### Phase A2 — More stores and categories (after 2 clean weeks)
 - [ ] Graduate discovery stores full-time: Zaina, Prime Bazaar daily counter, Phoenicia, Awami, Texas Grocers, Simply Halal, Afgh Houston
@@ -61,7 +61,7 @@ the ones couponers have already identified and priced out.*
 - [ ] Standing highlight: Dollar General Saturday $5-off-$25 scenarios, worked out from community posts each week
 
 ### Phase B2 — Coupon tracking
-- [ ] Clip-by dates surfaced as a "clip before Saturday" checklist
+- [x] Clip-by dates surfaced as a "clip before Saturday" checklist (2026-10-30, shell v4 — `SECTION: clip-checklist` on the Coupons view, on-device persistence)
 - [ ] Deal outcomes logged: did the shortlist price match at the register? (feeds source reliability scores)
 - [ ] Expiring-digital alerts folded into the Friday summary (48-hour window)
 

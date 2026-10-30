@@ -135,6 +135,18 @@ footer a{min-height:44px;display:inline-flex;align-items:center}
 [tabindex="-1"]:focus{outline:none}
 button:active{opacity:.85}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* Planner (v4) + clip checklist */
+.plan-store{font-weight:700;margin:14px 0 4px;color:var(--ink,#14532d)}
+.plan-summary{margin:0 0 10px}
+.plan-summary .row{display:flex;justify-content:space-between;gap:12px;padding:3px 0}
+.plan-actions{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.qty-btn{width:34px;height:34px;border-radius:8px;border:1px solid #999;background:transparent;font-size:18px;line-height:1;cursor:pointer}
+.qty-n{min-width:20px;text-align:center;font-weight:600}
+li.plan-item{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.clip-row{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid rgba(128,128,128,.25)}
+.clip-row input{width:22px;height:22px;margin-top:2px;flex:none}
+.clip-row.done span{opacity:.55;text-decoration:line-through}
 </style>
 <script>try{var t=localStorage.getItem('hb-theme');if(t){document.documentElement.dataset.theme=t;}}catch(e){}</script>
 </head>
@@ -168,7 +180,7 @@ As of Oct 30
 <p class="eyebrow">Stafford, TX 77477 · Weekly · As of 2026-10-30</p>
 <h1 tabindex="-1">HaulBoard — <em>Know before you go.</em></h1>
 <p class="lede">Verified grocery and meat deals for the weekend haul, decided at home — not in the aisle.</p>
-<p><span class="pill">264 prices filed</span><span class="pill">Halal meat tracked</span><span class="pill">Live board — updated every Friday</span></p>
+<p><span class="pill">282 prices filed</span><span class="pill">Halal meat tracked</span><span class="pill">Live board — updated every Friday</span></p>
 <p class="muted">Pi browser note: the pib SSH channel broke again this run (same as Oct 28), so the sweep used the Pi browser over its CDP fallback. Stores with no new flyer verified this run are marked as such, not repriced from last week.</p>
 <!-- /SECTION: lede -->
 <!-- SECTION: headline-deal -->
@@ -412,6 +424,7 @@ As of Oct 30
 <li class="deal-row"><div class="deal-main"><span class="deal-name">Fresh mandarins</span><span class="deal-meta">Fresh Fruit Special · Fri–Sun only · VERIFIED</span></div><div class="deal-side"><span class="price">$0.99<span class="unit">/lb</span></span><button class="add" type="button" data-item="Fresh mandarins — The Meat Grinder Market — $0.99" aria-label="Add Fresh mandarins to my list">Add</button></div></li>
 <li class="deal-row"><div class="deal-main"><span class="deal-name">Fuyu persimmons</span><span class="deal-meta">Fresh Fruit Special · Fri–Sun only · VERIFIED</span></div><div class="deal-side"><span class="price">$0.99<span class="unit">/lb</span></span><button class="add" type="button" data-item="Fuyu persimmons — The Meat Grinder Market — $0.99" aria-label="Add Fuyu persimmons to my list">Add</button></div></li>
 </ul>
+<p class="detail-smallprint">Weekend-deals reel posted Oct 29 for Sat Oct 31–Sun Nov 1: prices are spoken in the video and are not on the board yet — transcription pending. <a href="https://www.instagram.com/themeatgrindertx/reel/DfF3iIrB6p7/">Watch the reel</a></p>
 <p class="detail-smallprint">View flyer post: <a href="https://www.instagram.com/themeatgrindertx/p/DfGNmLvhX8h/">Meat Grinder fruit special post</a></p>
 <!-- /STORE: meat-grinder -->
 </div>
@@ -421,7 +434,7 @@ As of Oct 30
 <!-- VIEW: compare -->
 <h2 class="view-title" tabindex="-1">Price compare</h2>
 <!-- SECTION: price-compare-intro -->
-<p class="view-intro">Best price per item across stores, from the price database (264 prices filed, as of 2026-10-30). Tables include standing prices with no end date from earlier runs alongside this week's prices; check the flyer before you go. Full category tables follow.</p>
+<p class="view-intro">Best price per item across stores, from the price database (282 prices filed, as of 2026-10-30). Tables include standing prices with no end date from earlier runs alongside this week's prices; check the flyer before you go. Full category tables follow.</p>
 <!-- /SECTION: price-compare-intro -->
 <!-- SECTION: price-table-master -->
 <div class="tw tw-master" tabindex="0" role="region" aria-label="Master price compare table — scrolls sideways"><table><thead><tr><th>Item</th><th>Category</th><th>Best</th><th>All stores</th></tr></thead><tbody><tr><td>chicken breast</td><td>Meat &amp; poultry</td><td class="best">Papa Mart — $1.90/lb</td><td>Papa Mart $1.90/lb · Aldi $1.99/lb · H-E-B $2.49/lb · Kroger $1.99/lb · Prime Bazaar $3.00/lb</td></tr>
@@ -749,6 +762,19 @@ As of Oct 30
 <!-- VIEW: coupons -->
 <h2 class="view-title" tabindex="-1">Coupons</h2>
 <p class="view-intro">The week's shortlist first, then the standing notes for each store.</p>
+<!-- SECTION: clip-checklist -->
+<div class="card">
+<h3>Clip before Saturday</h3>
+<p class="muted" style="margin-top:0">Tick these off in the store apps before the Saturday deals run — unclipped digitals do not apply at the register. Saved on this device only.</p>
+<label class="clip-row"><input type="checkbox" data-clip="dg-5off25"><span><strong>Dollar General app:</strong> $5 off $25 store coupon (Saturday Oct 31 only)</span></label>
+<label class="clip-row"><input type="checkbox" data-clip="dg-pg10"><span><strong>Dollar General app:</strong> Spend $30 on P&amp;G, get $10 off next purchase</span></label>
+<label class="clip-row"><input type="checkbox" data-clip="dg-basket1"><span><strong>Dollar General app:</strong> $3.50/2 Febreze Car · $5/3 Oral-B · $5/2 Aussie · $2 Dawn Powerwash (for the $9.70 P&amp;G basket)</span></label>
+<label class="clip-row"><input type="checkbox" data-clip="dg-basket2"><span><strong>Dollar General app:</strong> $2/1 Arm &amp; Hammer · $1.40 Angel Soft · $4/2 Snuggle · $1.50 Palmolive · $2 Finish (for the $12.45 household basket)</span></label>
+<label class="clip-row"><input type="checkbox" data-clip="kroger-digitals"><span><strong>Kroger app → Savings:</strong> Weekly Digitals for Tide $3.99, eggs $3.99, ice cream $1.99, Campbell's Chunky $1.49 (clip by Tue Nov 3)</span></label>
+<label class="clip-row"><input type="checkbox" data-clip="heb-pg5"><span><strong>H-E-B app/coupon gallery:</strong> $5 off a $30 P&amp;G basket (VERIFIED in the H-E-B gallery)</span></label>
+<label class="clip-row"><input type="checkbox" data-clip="target-circle"><span><strong>Target Circle:</strong> $2/1 OxiClean spray and $2/1 Benadryl Itch Relief Stick (through Oct 31)</span></label>
+</div>
+<!-- /SECTION: clip-checklist -->
 <!-- SECTION: coupons-shortlist -->
 <div class="card">
 <h3>Top 5</h3>
@@ -782,7 +808,7 @@ As of Oct 30
 <h3 class="group-title">Standing notes</h3>
 <!-- SECTION: coupons-notes -->
 <div class="card" style="margin-top:0">
-<div class="note-row"><p><strong>H-E-B:</strong> coupon gallery on heb.com is public — check it each Friday.</p></div>
+<div class="note-row"><p><strong>H-E-B:</strong> 32 live coupons pulled from the heb.com gallery on Oct 30 (all VERIFIED) — strongest: $5 off a $30 P&amp;G basket, $3 off Royal Sona Masoori 20 lb, $2 off Royal Basmati, $6 off Texas Olive Ranch olive oil 2 L, free steamable vegetables with a hot chicken Combo Loco. Full list in the repo data (coupons-2026-10-30.json).</p></div>
 <div class="note-row"><p><strong>Kroger:</strong> digital coupons in the Kroger app under Savings. Aggregator lists are <em>unverified</em> until seen in the app.</p></div>
 <div class="note-row"><p><strong>Walmart:</strong> no coupon gallery — Walmart Cash manufacturer offers in the app.</p></div>
 <div class="note-row"><p><strong>Aldi:</strong> no coupon program and does not accept manufacturer coupons — ignore “Aldi coupon” posts.</p></div>
@@ -796,11 +822,14 @@ As of Oct 30
 <h2 class="view-title" tabindex="-1">Free food</h2>
 <!-- SECTION: free-food-list -->
 <div class="card" style="margin-top:0">
-<p class="muted" style="margin-top:0">Re-verify each run — schedules and requirements move. No phone numbers are listed on this public board.</p>
-<div class="org-row"><span class="org-name">East Fort Bend Human Needs Ministry</span><span class="org-meta">435 Stafford Run, Stafford — Fri Oct 30, Tue Nov 3, Thu Nov 5, Fri Nov 6, 10:00 AM–12:30 PM · ID + proof of East Fort Bend County residency</span></div>
-<div class="org-row"><span class="org-name">India House</span><span class="org-meta">8888 W Bellfort — pattern is 2nd &amp; 4th Wednesdays (next Nov 11, outside this 7-day window); first 250 families — confirm before going</span></div>
+<p class="muted" style="margin-top:0">Re-verified Oct 30 on each organisation's own page — schedules and requirements move. No phone numbers are listed on this public board.</p>
+<div class="org-row"><span class="org-name">East Fort Bend Human Needs Ministry</span><span class="org-meta">435 Stafford Run, Stafford — Fri Oct 30, Tue Nov 3, Thu Nov 5, Fri Nov 6, 10:00 AM–12:30 PM · East Fort Bend residents, no appointment, one order per week · No Wednesday-evening session this week (resumes Nov 12)</span></div>
+<div class="org-row"><span class="org-name">Houston Food Bank special distribution (at Mamie George)</span><span class="org-meta">1111 Collins Rd, Richmond — Sun Nov 1, 9:30 AM–1:00 PM · For neighbours whose SNAP benefits were interrupted or federal employees without paychecks · Reported in a Fort Bend resource guide — confirm on houstonfoodbank.org before going · UNVERIFIED</span></div>
+<div class="org-row"><span class="org-name">Mamie George Community Center</span><span class="org-meta">1111 Collins Rd, Richmond — weekday distributions, open to all, no appointment · Exact days/times on the centre's schedule; the Oct 31 Food Fair could not be re-confirmed on the centre's own page</span></div>
+<div class="org-row"><span class="org-name">CCSC Emergency Aid — Southwest</span><span class="org-meta">6856 Bellaire Blvd, Houston — Sat Oct 31, 9:00 AM–12:00 PM; Mon, Tue, Thu, Fri 10:00 AM–2:00 PM · Food packages, no appointment, first-come first-served · ID requested but not required</span></div>
+<div class="org-row"><span class="org-name">ICNA Relief Halal Food Pantry</span><span class="org-meta">NEW LOCATION: 5645 Hillcroft Ave, Suite 405, Houston — Tue–Fri 4:00–6:00 PM, Sat 12:00–2:00 PM · Registration required — pantry is by appointment only; registered clients get a text with their slot</span></div>
+<div class="org-row"><span class="org-name">India House</span><span class="org-meta">8888 W Bellfort — no distribution in the Oct 30–Nov 6 window · Next: Wed Nov 11, 10:30–11:30 AM, first 250 families</span></div>
 <div class="org-row"><span class="org-name">Second Mile Mission Center</span><span class="org-meta">1135 Highway 90A, Missouri City — pickup schedule not published; call first</span></div>
-<div class="org-row"><span class="org-name">Mamie George Community Center</span><span class="org-meta">1111 Collins Rd, Richmond — Oct 31 Food Fair NOT confirmed this run; check Catholic Charities before going</span></div>
 <div class="org-row"><span class="org-name">Houston Food Bank partner locator</span><span class="org-meta">Check the locator for other distributions near Stafford</span></div>
 </div>
 <!-- /SECTION: free-food-list -->
@@ -809,22 +838,48 @@ As of Oct 30
 <section class="view" id="my-list" role="tabpanel" aria-labelledby="tab-my-list" hidden>
 <!-- VIEW: my-list -->
 <h2 class="view-title" tabindex="-1">My list</h2>
-<p class="view-intro">Saved only on this device (local storage).</p>
+<p class="view-intro">Plan my haul — saved only on this device. Set quantities; totals, savings and the one-stop pick update as you go.</p>
 <p id="listCount" hidden></p>
+<div class="card plan-summary" id="planSummary" hidden>
+<div class="row"><span>Trip total</span><strong id="planTotal">$0.00</strong></div>
+<div class="row"><span>You save vs next-best listed prices</span><strong id="planSavings">$0.00</strong></div>
+<div class="row"><span>Fewest stops</span><span id="planOneStop">—</span></div>
+<div class="row"><span>Coupons this week</span><span id="planCoupons">See the Coupons tab</span></div>
+<div class="row"><span>Free-food stops ($0)</span><span id="planFreeFood">See the Free Food tab</span></div>
+</div>
 <ul id="list"></ul>
+<div class="plan-actions">
+<button class="add" id="copyList" type="button" style="padding:0 16px">Copy list</button>
+<button class="add" id="printList" type="button" style="padding:0 16px">Print</button>
 <button class="add" id="clear" type="button" style="padding:0 16px">Clear list</button>
-<p class="smallprint">Use Add on any deal to put it here before the trip.</p>
+</div>
+<p class="smallprint">Use Add on any deal to put it here before the trip. Savings compare each item with the next-best listed price for the same item this week — a guide, not a promise.</p>
 <!-- /VIEW: my-list -->
 </section>
 </main>
 </div>
+<!-- DATA: plan -->
+<script>window.HB_PLAN={"stamp":"2026-10-30","alt":{"goat meat, mix tray with bone":[[5.99,"Al Aqsa Bangla Bazaar"],[6.99,"Al Aqsa Bangla Bazaar"]],"hilsa fish, padma, whole":[[22.99,"Al Aqsa Bangla Bazaar"],[28.99,"Al Aqsa Bangla Bazaar"]],"hilsa fish, chandpuri, whole":[[21.99,"Al Aqsa Bangla Bazaar"],[27.99,"Al Aqsa Bangla Bazaar"]],"hilsa fish, pack":[[6.99,"Al Aqsa Bangla Bazaar"],[18.99,"Al Aqsa Bangla Bazaar"],[21.99,"Al Aqsa Bangla Bazaar"]],"chicken drumsticks":[[0.79,"World Food Warehouse"],[1.09,"Aldi"],[1.79,"Papa Mart"],[3.49,"Prime Bazaar"]],"chicken wings":[[1.29,"Papa Mart"],[1.99,"World Food Warehouse"]],"chicken tenders":[[1.25,"World Food Warehouse"],[1.85,"Papa Mart"],[1.99,"World Food Warehouse"],[2.09,"Aldi"]],"chicken leg quarters":[[0.69,"Kroger"],[21.99,"Papa Mart"],[24.99,"World Food Warehouse"],[25.99,"Papa Mart"],[29.99,"World Food Warehouse"]],"whole chicken":[[1.19,"Papa Mart"],[1.29,"Al Madina Supermarket"],[1.29,"Papa Mart"],[1.69,"World Food Warehouse"]],"white onion":[[0.49,"World Food Warehouse"],[1.39,"H-E-B"]],"canola oil":[[1.02,"World Food Warehouse"],[1.09,"Big Basket"]],"vegetable oil":[[1.02,"World Food Warehouse"],[1.09,"Big Basket"]],"corn oil":[[1.25,"Big Basket"],[1.26,"World Food Warehouse"]],"chicken breast":[[1.9,"Papa Mart"],[1.99,"Aldi"],[1.99,"Kroger"],[2.49,"H-E-B"],[3.0,"Prime Bazaar"],[5.99,"Prime Bazaar"]],"ground beef, 80% lean":[[4.77,"Kroger"],[4.99,"Kroger"],[5.29,"Aldi"]],"chicken thighs, boneless":[[2.99,"Aldi"],[3.0,"Prime Bazaar"],[3.49,"Kroger"],[5.99,"Prime Bazaar"]],"eggs, large, 12 ct":[[1.49,"Kroger"],[1.67,"Walmart"]],"ground lamb":[[7.99,"Aldi"],[12.49,"Prime Bazaar"]],"beef chuck roast":[[4.47,"Walmart"],[7.99,"Kroger"]],"beet root":[[0.39,"Desi Brothers"],[0.5,"Big Basket"]],"dudhi (lauki)":[[0.99,"Desi Brothers"],[1.0,"Big Basket"]],"eggplant":[[0.99,"Desi Brothers"],[0.99,"World Food Warehouse"],[1.0,"Big Basket"]],"karela (bitter melon)":[[0.99,"Desi Brothers"],[1.0,"Big Basket"]],"ginger":[[0.89,"World Food Warehouse"],[1.0,"Big Basket"],[1.09,"Desi Brothers"]],"masoor dal":[[2.99,"Big Basket"],[3.99,"Desi Brothers"]],"moong dal whole":[[2.99,"Desi Brothers"],[4.99,"Big Basket"]],"toor dal":[[3.49,"Big Basket"],[3.99,"Desi Brothers"]],"papaya":[[0.79,"World Food Warehouse"],[1.0,"Big Basket"]],"basmati rice":[[8.99,"Big Basket"],[9.52,"Walmart"],[12.99,"Big Basket"]],"ginger garlic paste":[[2.49,"Big Basket"],[3.99,"Big Basket"]],"tea (loose)":[[6.99,"Big Basket"],[7.99,"Big Basket"]],"sunflower oil":[[10.99,"Big Basket"],[11.99,"Big Basket"]],"ghee":[[9.99,"Big Basket"],[10.99,"Big Basket"]],"peanuts":[[4.49,"Big Basket"],[5.99,"Big Basket"]],"samosa (frozen)":[[9.99,"Big Basket"],[10.99,"Big Basket"]],"motichoor ladoo":[[3.99,"Big Basket"],[5.99,"Big Basket"]],"assorted sweets":[[4.99,"Big Basket"],[5.99,"Big Basket"]],"lamb leg":[[8.99,"Hala Market"],[12.49,"Prime Bazaar"]],"mandarin":[[0.99,"The Meat Grinder Market"],[1.33,"Kroger"],[1.49,"World Food Warehouse"]],"ground beef":[[2.99,"Aldi"],[5.99,"Prime Bazaar"]],"pears, bartlett":[[0.97,"H-E-B"],[1.0,"Aldi"],[1.79,"Kroger"]],"avocados":[[0.49,"Aldi"],[1.0,"Kroger"]]},"coupons":20,"freeFood":8};</script>
+<!-- /DATA: plan -->
 <!-- SHELL: scripts-core -->
 <script>
-const key='haulboard-list-v1'; const ul=document.getElementById('list');
+/* HB-PLANNER-CORE-BEGIN (pure functions; acceptance-tested) */
+function hbParseEntry(text){var parts=String(text).split(' \u2014 ');var pricePart=parts.length>1?parts[parts.length-1]:'';var m=/\$([0-9]+(?:\.[0-9]{1,2})?)/.exec(pricePart);var unitM=/\/\s*([a-z]+)/i.exec(pricePart);return{name:parts[0]||String(text),store:parts.length>2?parts.slice(1,-1).join(' \u2014 '):(parts.length===2?'':''),price:m?parseFloat(m[1]):null,unit:unitM?unitM[1].toLowerCase():''};}
+function hbNorm(s){return String(s).toLowerCase().replace(/[^a-z0-9 ]+/g,' ').replace(/\s+/g,' ').trim();}
+function hbTokens(s){return hbNorm(s).split(' ').filter(Boolean);}
+function hbAltFor(name,alt){if(!alt)return null;var key=hbNorm(name);if(alt[key])return alt[key];var t=hbTokens(name);var best=null,bestScore=0;Object.keys(alt).forEach(function(k){var kt=hbTokens(k);var shorter=kt.length<=t.length?kt:t;var longer=kt.length<=t.length?t:kt;var ok=shorter.every(function(w){return longer.indexOf(w)!==-1;});if(ok&&shorter.length>bestScore){bestScore=shorter.length;best=alt[k];}});return best;}
+function hbComputePlan(items,qtyMap,plan){var alt=(plan&&plan.alt)||{};var groups=[];var byStore={};var total=0,savings=0;var storeItemCounts={};items.forEach(function(text,idx){var e=hbParseEntry(text);var q=Math.max(1,(qtyMap&&qtyMap[text])||1);var g=byStore[e.store];if(!g){g={store:e.store,rows:[],subtotal:0};byStore[e.store]=g;groups.push(g);}var line=e.price===null?null:Math.round(e.price*q*100)/100;var save=0;if(e.price!==null){var alts=hbAltFor(e.name,alt);if(alts){var higher=alts.map(function(a){return a[0];}).filter(function(p){return p>e.price+0.001;});if(higher.length){save=Math.round((Math.min.apply(null,higher)-e.price)*q*100)/100;}}}if(line!==null){g.subtotal=Math.round((g.subtotal+line)*100)/100;total=Math.round((total+line)*100)/100;}savings=Math.round((savings+save)*100)/100;storeItemCounts[e.store]=storeItemCounts[e.store]||{};storeItemCounts[e.store][hbNorm(e.name)]=1;g.rows.push({idx:idx,text:text,name:e.name,price:e.price,unit:e.unit,qty:q,line:line,save:save});});var oneStop=null;Object.keys(storeItemCounts).forEach(function(s){var c=Object.keys(storeItemCounts[s]).length;if(!oneStop||c>oneStop.count){oneStop={store:s,count:c};}});return{groups:groups,total:total,savings:savings,oneStop:oneStop,itemCount:items.length};}
+/* HB-PLANNER-CORE-END */
+const key='haulboard-list-v1'; const qtyKey='haulboard-list-qty-v1'; const ul=document.getElementById('list');
 function getItems(){let items=[]; try{items=JSON.parse(localStorage.getItem(key)||'[]')}catch(e){} if(!Array.isArray(items)){items=[];} return items;}
-function render(){const items=getItems(); ul.innerHTML=''; if(!items.length){const li=document.createElement('li'); li.className='muted'; li.textContent='Nothing added yet.'; ul.appendChild(li);} items.forEach(function(text,idx){const li=document.createElement('li'); const span=document.createElement('span'); span.textContent=text; li.appendChild(span); const btn=document.createElement('button'); btn.type='button'; btn.className='remove-btn'; btn.textContent='Remove'; btn.setAttribute('aria-label','Remove '+text); btn.addEventListener('click',function(){const cur=getItems(); cur.splice(idx,1); try{localStorage.setItem(key,JSON.stringify(cur));}catch(e){} render();}); li.appendChild(btn); ul.appendChild(li);}); const badge=document.getElementById('listBadge'); if(badge){badge.textContent=items.length; badge.hidden=items.length===0;} const count=document.getElementById('listCount'); if(count){count.hidden=items.length===0; count.textContent=items.length+' items';}}
+function getQty(){let q={}; try{q=JSON.parse(localStorage.getItem(qtyKey)||'{}')}catch(e){} if(!q||typeof q!=='object'||Array.isArray(q)){q={};} return q;}
+function setQty(q){try{localStorage.setItem(qtyKey,JSON.stringify(q));}catch(e){}}
+function money(n){return '$'+n.toFixed(2);}
+function render(){const items=getItems(); const qty=getQty(); const plan=hbComputePlan(items,qty,window.HB_PLAN||{}); ul.innerHTML=''; if(!items.length){const li=document.createElement('li'); li.className='muted'; li.textContent='Nothing added yet.'; ul.appendChild(li);} plan.groups.forEach(function(g){const h=document.createElement('li'); h.className='plan-store'; h.textContent=g.store?g.store+' \u2014 '+money(g.subtotal):'Other \u2014 '+money(g.subtotal); ul.appendChild(h); g.rows.forEach(function(r){const li=document.createElement('li'); li.className='plan-item'; const span=document.createElement('span'); span.textContent=r.name+(r.price===null?'':' \u2014 '+money(r.price)+(r.unit?'/'+r.unit:''))+(r.line!==null&&r.qty>1?' \u00d7 '+r.qty+' = '+money(r.line):'')+(r.save>0?' (saves '+money(r.save)+')':''); li.appendChild(span); const minus=document.createElement('button'); minus.type='button'; minus.className='qty-btn'; minus.textContent='\u2212'; minus.setAttribute('aria-label','Decrease quantity of '+r.name); minus.addEventListener('click',function(){const q=getQty(); const cur=Math.max(1,q[r.text]||1); if(cur<=1){delete q[r.text];}else{q[r.text]=cur-1;} setQty(q); render();}); li.appendChild(minus); const qn=document.createElement('span'); qn.className='qty-n'; qn.textContent=r.qty; li.appendChild(qn); const plus=document.createElement('button'); plus.type='button'; plus.className='qty-btn'; plus.textContent='+'; plus.setAttribute('aria-label','Increase quantity of '+r.name); plus.addEventListener('click',function(){const q=getQty(); q[r.text]=Math.min(99,(q[r.text]||1)+1); setQty(q); render();}); li.appendChild(plus); const btn=document.createElement('button'); btn.type='button'; btn.className='remove-btn'; btn.textContent='Remove'; btn.setAttribute('aria-label','Remove '+r.text); btn.addEventListener('click',function(){const cur=getItems(); cur.splice(r.idx,1); try{localStorage.setItem(key,JSON.stringify(cur));}catch(e){} render();}); li.appendChild(btn); ul.appendChild(li);});}); const badge=document.getElementById('listBadge'); if(badge){badge.textContent=items.length; badge.hidden=items.length===0;} const count=document.getElementById('listCount'); if(count){count.hidden=items.length===0; count.textContent=items.length+' items';} const sum=document.getElementById('planSummary'); if(sum){sum.hidden=items.length===0; if(items.length){document.getElementById('planTotal').textContent=money(plan.total); document.getElementById('planSavings').textContent=money(plan.savings); document.getElementById('planOneStop').textContent=plan.oneStop?(plan.oneStop.store+' covers '+plan.oneStop.count+' of your items'):'\u2014'; const P=window.HB_PLAN||{}; document.getElementById('planCoupons').textContent=P.coupons?(P.coupons+' deals in the Coupons tab'):'See the Coupons tab'; document.getElementById('planFreeFood').textContent=P.freeFood?(P.freeFood+' listed in the Free Food tab'):'See the Free Food tab';}}}
 document.querySelectorAll('.add[data-item]').forEach(b=>b.addEventListener('click',()=>{let items=[]; try{items=JSON.parse(localStorage.getItem(key)||'[]')}catch(e){} if(!Array.isArray(items)){items=[];} items.push(b.dataset.item); try{localStorage.setItem(key,JSON.stringify(items));}catch(e){} render(); if(!b.dataset.label){b.dataset.label=b.textContent;} b.textContent='Added'; if(b._addedTimer){clearTimeout(b._addedTimer);} b._addedTimer=setTimeout(function(){b.textContent=b.dataset.label;},1200);}));
-document.getElementById('clear').addEventListener('click',()=>{localStorage.removeItem(key); render();});
+document.getElementById('clear').addEventListener('click',()=>{localStorage.removeItem(key); localStorage.removeItem(qtyKey); render();});
+document.getElementById('copyList').addEventListener('click',function(){const plan=hbComputePlan(getItems(),getQty(),window.HB_PLAN||{}); const lines=['My HaulBoard list']; plan.groups.forEach(function(g){lines.push(''); lines.push(g.store+' \u2014 '+money(g.subtotal)); g.rows.forEach(function(r){lines.push('- '+r.name+(r.qty>1?' x'+r.qty:'')+(r.line!==null?' \u2014 '+money(r.line):''));});}); lines.push(''); lines.push('Trip total: '+money(plan.total)+' \u00b7 You save: '+money(plan.savings)); const txt=lines.join('\n'); function done(){const b=document.getElementById('copyList'); const old=b.textContent; b.textContent='Copied'; setTimeout(function(){b.textContent=old;},1200);} if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done).catch(function(){done();});}else{const ta=document.createElement('textarea'); ta.value=txt; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy');}catch(e){} ta.remove(); done();}});
+document.getElementById('printList').addEventListener('click',function(){window.print();});
 render();
 </script>
 <script>
@@ -854,6 +909,9 @@ route({focus:false});
 if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js').catch(function(){}); }
 </script>
 <script>(function(){var b=document.getElementById('themeToggle');if(!b)return;function label(){b.textContent=document.documentElement.dataset.theme==='dark'?'Light mode':'Dark mode';}label();b.addEventListener('click',function(){var d=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=d;try{localStorage.setItem('hb-theme',d);}catch(e){}label();});})();</script>
+<script>
+(function(){var ck='hb-clip-v1';var stamp=(window.HB_PLAN&&window.HB_PLAN.stamp)||'';var state={};try{state=JSON.parse(localStorage.getItem(ck)||'{}')}catch(e){}if(!state||state.stamp!==stamp){state={stamp:stamp,checks:{}};}document.querySelectorAll('input[data-clip]').forEach(function(box){var id=box.getAttribute('data-clip');box.checked=!!state.checks[id];box.closest('.clip-row').classList.toggle('done',box.checked);box.addEventListener('change',function(){state.checks[id]=box.checked;try{localStorage.setItem(ck,JSON.stringify(state));}catch(e){}box.closest('.clip-row').classList.toggle('done',box.checked);});});})();
+</script>
 <!-- /SHELL: scripts-core -->
 </body>
 </html>
