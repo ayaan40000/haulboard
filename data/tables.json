@@ -1,9 +1,12 @@
 {
- "as_of": "2026-10-30",
+ "as_of": "2026-10-31",
  "stores": [
   "Al Aqsa Bangla Bazaar",
+  "Al Madina Supermarket",
   "Aldi",
   "Big Basket",
+  "Big Basket (Stafford)",
+  "Desi Brothers",
   "H-E-B",
   "Hala Market",
   "Kroger",
@@ -11,10 +14,46 @@
   "Prime Bazaar",
   "The Meat Grinder Market",
   "Walmart",
+  "Walmart (Sugar Land Hwy 6)",
   "World Food Warehouse"
  ],
  "categories": {
   "Meat & poultry": [
+   {
+    "item": "chicken drumsticks",
+    "basis": "lb",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 0.79,
+      "pack": "Mon-Thu meat special",
+      "bulk": []
+     },
+     "Papa Mart": {
+      "ppu": 1.79,
+      "pack": "Meat Deal flyer Oct 17, no end date stated",
+      "bulk": []
+     },
+     "Aldi": {
+      "ppu": 1.09,
+      "pack": "Family pack, next ad",
+      "bulk": []
+     },
+     "Prime Bazaar": {
+      "ppu": 3.49,
+      "pack": "Fresh Zabiha chicken drumstick, per lb",
+      "bulk": []
+     },
+     "H-E-B": {
+      "ppu": 0.99,
+      "pack": "Weekly ad Oct 28-Nov 3 via ad roundup, UNVERIFIED",
+      "bulk": []
+     }
+    },
+    "best": 0.79,
+    "worst": 3.49,
+    "save": 2.7,
+    "n": 5
+   },
    {
     "item": "chicken breast",
     "basis": "lb",
@@ -51,36 +90,6 @@
     "n": 5
    },
    {
-    "item": "chicken drumsticks",
-    "basis": "lb",
-    "stores": {
-     "World Food Warehouse": {
-      "ppu": 0.79,
-      "pack": "Mon-Thu meat special",
-      "bulk": []
-     },
-     "Papa Mart": {
-      "ppu": 1.79,
-      "pack": "Meat Deal flyer Oct 17, no end date stated",
-      "bulk": []
-     },
-     "Aldi": {
-      "ppu": 1.09,
-      "pack": "Family pack, next ad",
-      "bulk": []
-     },
-     "Prime Bazaar": {
-      "ppu": 3.49,
-      "pack": "Fresh Zabiha chicken drumstick, per lb",
-      "bulk": []
-     }
-    },
-    "best": 0.79,
-    "worst": 3.49,
-    "save": 2.7,
-    "n": 4
-   },
-   {
     "item": "chicken tenders",
     "basis": "lb",
     "stores": {
@@ -103,12 +112,17 @@
       "ppu": 2.09,
       "pack": "Fresh Family Pack Chicken Tenderloins $2.09/lb, Aldi weekly ad meat specials; regional pricing, UNVERIFIED for Stafford",
       "bulk": []
+     },
+     "The Meat Grinder Market": {
+      "ppu": 0.99,
+      "pack": "Weekend reel deal 5, limit 3 trays per family; price on screen ~0:39",
+      "bulk": []
      }
     },
-    "best": 1.85,
+    "best": 0.99,
     "worst": 2.09,
-    "save": 0.24,
-    "n": 3
+    "save": 1.1,
+    "n": 4
    },
    {
     "item": "ground lamb",
@@ -211,6 +225,26 @@
     "n": 2
    },
    {
+    "item": "chicken thighs, boneless",
+    "basis": "lb",
+    "stores": {
+     "Aldi": {
+      "ppu": 2.49,
+      "pack": "Weekly ad Oct 28-Nov 3 via ad roundup, UNVERIFIED",
+      "bulk": []
+     },
+     "Prime Bazaar": {
+      "ppu": 3.0,
+      "pack": "Diwali Promo: Fresh Zabiha Halal boneless thigh 5 lb $15.00 (= $3.00/lb)",
+      "bulk": []
+     }
+    },
+    "best": 2.49,
+    "worst": 3.0,
+    "save": 0.51,
+    "n": 2
+   },
+   {
     "item": "whole chicken",
     "basis": "lb",
     "stores": {
@@ -231,26 +265,6 @@
     "n": 2
    },
    {
-    "item": "chicken thighs, boneless",
-    "basis": "lb",
-    "stores": {
-     "Aldi": {
-      "ppu": 2.99,
-      "pack": "Fresh family pack boneless skinless",
-      "bulk": []
-     },
-     "Prime Bazaar": {
-      "ppu": 3.0,
-      "pack": "Diwali Promo: Fresh Zabiha Halal boneless thigh 5 lb $15.00 (= $3.00/lb)",
-      "bulk": []
-     }
-    },
-    "best": 2.99,
-    "worst": 3.0,
-    "save": 0.01,
-    "n": 2
-   },
-   {
     "item": "baby cow, cut up",
     "basis": "lb",
     "stores": {
@@ -262,6 +276,21 @@
     },
     "best": 4.99,
     "worst": 4.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "baby goat/lamb leg",
+    "basis": "lb",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 9.99,
+      "pack": "Fresh baby goat/lamb leg; Tomorrow-Sunday only",
+      "bulk": []
+     }
+    },
+    "best": 9.99,
+    "worst": 9.99,
     "save": 0.0,
     "n": 1
    },
@@ -371,6 +400,21 @@
     "n": 1
    },
    {
+    "item": "beef, marinated taco",
+    "basis": "lb",
+    "stores": {
+     "Hala Market": {
+      "ppu": 8.99,
+      "pack": "Marinated & Ready to Cook",
+      "bulk": []
+     }
+    },
+    "best": 8.99,
+    "worst": 8.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "beef, nihari box",
     "basis": "lb",
     "stores": {
@@ -401,6 +445,21 @@
     "n": 1
    },
    {
+    "item": "chicken breast, 5 lb Diwali promo",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 3.0,
+      "pack": "Diwali promo 5 lb",
+      "bulk": []
+     }
+    },
+    "best": 3.0,
+    "worst": 3.0,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "chicken breast, boneless",
     "basis": "lb",
     "stores": {
@@ -412,6 +471,21 @@
     },
     "best": 1.99,
     "worst": 1.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chicken fajita, marinated",
+    "basis": "lb",
+    "stores": {
+     "Hala Market": {
+      "ppu": 4.99,
+      "pack": "Marinated & Ready to Cook",
+      "bulk": []
+     }
+    },
+    "best": 4.99,
+    "worst": 4.99,
     "save": 0.0,
     "n": 1
    },
@@ -466,7 +540,7 @@
     "stores": {
      "Prime Bazaar": {
       "ppu": 0.84,
-      "pack": "Fresh Zabiha Halal chicken leg quarters 40 lb box $33.49 (= $0.84/lb); separate listing from custom-cut box",
+      "pack": "40 lb box",
       "bulk": []
      }
     },
@@ -481,12 +555,27 @@
     "stores": {
      "Prime Bazaar": {
       "ppu": 1.0,
-      "pack": "Fresh Zabiha Halal chicken leg quarters custom cut 40 lb box $39.99 (= $1.00/lb)",
+      "pack": "40 lb box, custom cut",
       "bulk": []
      }
     },
     "best": 1.0,
     "worst": 1.0,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chicken leg quarters, Kroger 10 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Kroger": {
+      "ppu": 0.69,
+      "pack": "Heritage Farm 10 lb bag; weekly ad Oct 28-Nov 3 via ad roundup, UNVERIFIED",
+      "bulk": []
+     }
+    },
+    "best": 0.69,
+    "worst": 0.69,
     "save": 0.0,
     "n": 1
    },
@@ -502,6 +591,21 @@
     },
     "best": 3.49,
     "worst": 3.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chicken leg quarters, marinated",
+    "basis": "lb",
+    "stores": {
+     "Hala Market": {
+      "ppu": 2.69,
+      "pack": "Marinated & Ready to Cook",
+      "bulk": []
+     }
+    },
+    "best": 2.69,
+    "worst": 2.69,
     "save": 0.0,
     "n": 1
    },
@@ -562,6 +666,81 @@
     },
     "best": 4.59,
     "worst": 4.59,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chicken thighs, boneless, 5 lb Diwali promo",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 3.0,
+      "pack": "Diwali promo 5 lb",
+      "bulk": []
+     }
+    },
+    "best": 3.0,
+    "worst": 3.0,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chicken, marinated taco",
+    "basis": "lb",
+    "stores": {
+     "Hala Market": {
+      "ppu": 4.99,
+      "pack": "Marinated & Ready to Cook",
+      "bulk": []
+     }
+    },
+    "best": 4.99,
+    "worst": 4.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chicken, whole chargha skinless",
+    "basis": "lb",
+    "stores": {
+     "Papa Mart": {
+      "ppu": 1.59,
+      "pack": "Weekend Sale Chicken Fri-Sun",
+      "bulk": []
+     }
+    },
+    "best": 1.59,
+    "worst": 1.59,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chicken, whole chargha with skin",
+    "basis": "lb",
+    "stores": {
+     "Papa Mart": {
+      "ppu": 1.39,
+      "pack": "Weekend Sale Chicken Fri-Sun",
+      "bulk": []
+     }
+    },
+    "best": 1.39,
+    "worst": 1.39,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chicken, whole cut up",
+    "basis": "lb",
+    "stores": {
+     "Papa Mart": {
+      "ppu": 1.79,
+      "pack": "Weekend Sale Chicken Fri-Sun",
+      "bulk": []
+     }
+    },
+    "best": 1.79,
+    "worst": 1.79,
     "save": 0.0,
     "n": 1
    },
@@ -652,6 +831,21 @@
     },
     "best": 5.99,
     "worst": 5.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "goat/lamb mix",
+    "basis": "lb",
+    "stores": {
+     "The Meat Grinder Market": {
+      "ppu": 6.99,
+      "pack": "Weekend reel deal 3, limit 3 trays per family; price on screen ~0:21",
+      "bulk": []
+     }
+    },
+    "best": 6.99,
+    "worst": 6.99,
     "save": 0.0,
     "n": 1
    },
@@ -791,6 +985,21 @@
     "n": 1
    },
    {
+    "item": "papaya",
+    "basis": "lb",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 0.79,
+      "pack": "Maradol papaya; Produce Special",
+      "bulk": []
+     }
+    },
+    "best": 0.79,
+    "worst": 0.79,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "turkey breast, frozen bone-in",
     "basis": "lb",
     "stores": {
@@ -802,6 +1011,21 @@
     },
     "best": 1.68,
     "worst": 1.68,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "turkey, frozen whole",
+    "basis": "lb",
+    "stores": {
+     "Walmart (Sugar Land Hwy 6)": {
+      "ppu": 0.97,
+      "pack": "Holiday Meal Basket national announcement through Dec 24, NOT a Hwy 6 weekly ad; UNVERIFIED for this store",
+      "bulk": []
+     }
+    },
+    "best": 0.97,
+    "worst": 0.97,
     "save": 0.0,
     "n": 1
    },
@@ -823,6 +1047,31 @@
   ],
   "Produce": [
    {
+    "item": "mandarin",
+    "basis": "lb",
+    "stores": {
+     "The Meat Grinder Market": {
+      "ppu": 0.99,
+      "pack": "Fresh Mandarins, Fresh Fruit Special, Friday Saturday Sunday only",
+      "bulk": []
+     },
+     "Kroger": {
+      "ppu": 1.33,
+      "pack": "Adorbs Seedless Mandarins, 3 lb bag $3.99",
+      "bulk": []
+     },
+     "World Food Warehouse": {
+      "ppu": 1.49,
+      "pack": "Produce Special",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 1.49,
+    "save": 0.5,
+    "n": 3
+   },
+   {
     "item": "white onion",
     "basis": "lb",
     "stores": {
@@ -843,24 +1092,119 @@
     "n": 2
    },
    {
-    "item": "mandarin",
+    "item": "eggplant",
     "basis": "lb",
     "stores": {
-     "The Meat Grinder Market": {
+     "World Food Warehouse": {
       "ppu": 0.99,
-      "pack": "Fresh Mandarins, Fresh Fruit Special, Friday Saturday Sunday only",
+      "pack": "Jumbo eggplant; Produce Special",
       "bulk": []
      },
-     "Kroger": {
-      "ppu": 1.33,
-      "pack": "Adorbs Seedless Mandarins, 3 lb bag $3.99",
+     "Desi Brothers": {
+      "ppu": 1.49,
+      "pack": "Indian eggplant; Weekend Special",
       "bulk": []
      }
     },
     "best": 0.99,
-    "worst": 1.33,
-    "save": 0.34,
+    "worst": 1.49,
+    "save": 0.5,
     "n": 2
+   },
+   {
+    "item": "ginger",
+    "basis": "lb",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 0.89,
+      "pack": "Ginger root; Produce Special",
+      "bulk": []
+     },
+     "Desi Brothers": {
+      "ppu": 1.29,
+      "pack": "Chinese ginger; Weekend Special",
+      "bulk": []
+     }
+    },
+    "best": 0.89,
+    "worst": 1.29,
+    "save": 0.4,
+    "n": 2
+   },
+   {
+    "item": "karela (bitter melon)",
+    "basis": "lb",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 0.99,
+      "pack": "Indian bittermelon; Produce Special",
+      "bulk": []
+     },
+     "Desi Brothers": {
+      "ppu": 1.29,
+      "pack": "Weekend Special",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 1.29,
+    "save": 0.3,
+    "n": 2
+   },
+   {
+    "item": "beet root",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 0.49,
+      "pack": "Weekend Special",
+      "bulk": []
+     },
+     "Big Basket (Stafford)": {
+      "ppu": 0.5,
+      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "bulk": []
+     }
+    },
+    "best": 0.49,
+    "worst": 0.5,
+    "save": 0.01,
+    "n": 2
+   },
+   {
+    "item": "dudhi (lauki)",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 0.99,
+      "pack": "Indian dudhi; Weekend Special",
+      "bulk": []
+     },
+     "Big Basket (Stafford)": {
+      "ppu": 0.99,
+      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2 Indian dudhi",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 0.99,
+    "save": 0.0,
+    "n": 2
+   },
+   {
+    "item": "carrots",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 0.49,
+      "pack": "Weekend Special",
+      "bulk": []
+     }
+    },
+    "best": 0.49,
+    "worst": 0.49,
+    "save": 0.0,
+    "n": 1
    },
    {
     "item": "chili powder",
@@ -874,6 +1218,36 @@
     },
     "best": 2.49,
     "worst": 2.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "cilantro",
+    "basis": "each",
+    "stores": {
+     "Big Basket (Stafford)": {
+      "ppu": 0.25,
+      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2 4 for $1",
+      "bulk": []
+     }
+    },
+    "best": 0.25,
+    "worst": 0.25,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "eggplant, Indian round",
+    "basis": "lb",
+    "stores": {
+     "Big Basket (Stafford)": {
+      "ppu": 0.99,
+      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 0.99,
     "save": 0.0,
     "n": 1
    },
@@ -908,6 +1282,21 @@
     "n": 1
    },
    {
+    "item": "garlic, 5 ct sleeve",
+    "basis": "each",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 1.59,
+      "pack": "Garlic 5 ct sleeve; Produce Special",
+      "bulk": []
+     }
+    },
+    "best": 1.59,
+    "worst": 1.59,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "ginger garlic paste",
     "basis": "each",
     "stores": {
@@ -923,12 +1312,117 @@
     "n": 1
    },
    {
+    "item": "ginger, organic",
+    "basis": "lb",
+    "stores": {
+     "Big Basket (Stafford)": {
+      "ppu": 0.99,
+      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 0.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "green Thai chili",
     "basis": "lb",
     "stores": {
      "World Food Warehouse": {
       "ppu": 0.99,
       "pack": null,
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 0.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "long chilli",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 2.99,
+      "pack": "Weekend Special",
+      "bulk": []
+     }
+    },
+    "best": 2.99,
+    "worst": 2.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "mexican squash",
+    "basis": "lb",
+    "stores": {
+     "Hala Market": {
+      "ppu": 1.99,
+      "pack": "Weekend Sale, no end date printed",
+      "bulk": []
+     }
+    },
+    "best": 1.99,
+    "worst": 1.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "okra, Indian",
+    "basis": "lb",
+    "stores": {
+     "Big Basket (Stafford)": {
+      "ppu": 1.49,
+      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "bulk": []
+     }
+    },
+    "best": 1.49,
+    "worst": 1.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "persian cucumber",
+    "basis": "lb",
+    "stores": {
+     "Hala Market": {
+      "ppu": 1.89,
+      "pack": "Weekend Sale, no end date printed",
+      "bulk": []
+     }
+    },
+    "best": 1.89,
+    "worst": 1.89,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "red onion",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 0.69,
+      "pack": "Weekend Special",
+      "bulk": []
+     }
+    },
+    "best": 0.69,
+    "worst": 0.69,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "red potatoes, loose",
+    "basis": "lb",
+    "stores": {
+     "Big Basket (Stafford)": {
+      "ppu": 0.99,
+      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
       "bulk": []
      }
     },
@@ -949,6 +1443,66 @@
     },
     "best": 5.0,
     "worst": 5.0,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "small chilies",
+    "basis": "lb",
+    "stores": {
+     "Big Basket (Stafford)": {
+      "ppu": 1.49,
+      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "bulk": []
+     }
+    },
+    "best": 1.49,
+    "worst": 1.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "spinach",
+    "basis": "each",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 0.99,
+      "pack": "Spinach bunch; Produce Special",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 0.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "tomatoes, Roma",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 1.49,
+      "pack": "Roma tomato; Weekend Special",
+      "bulk": []
+     }
+    },
+    "best": 1.49,
+    "worst": 1.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "yellow onion",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 0.49,
+      "pack": "Weekend Special",
+      "bulk": []
+     }
+    },
+    "best": 0.49,
+    "worst": 0.49,
     "save": 0.0,
     "n": 1
    }
@@ -1030,6 +1584,21 @@
     "n": 1
    },
    {
+    "item": "ghee, Nanak 28 oz",
+    "basis": "each",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 10.99,
+      "pack": "Nanak Ghee 28 oz",
+      "bulk": []
+     }
+    },
+    "best": 10.99,
+    "worst": 10.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "gingelly oil",
     "basis": "each",
     "stores": {
@@ -1041,6 +1610,21 @@
     },
     "best": 28.99,
     "worst": 28.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "gingelly oil, Amma's Kitchen 5 Ltr",
+    "basis": "each",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 20.99,
+      "pack": "Amma's Kitchen Gingelly Oil 5 Ltr",
+      "bulk": []
+     }
+    },
+    "best": 20.99,
+    "worst": 20.99,
     "save": 0.0,
     "n": 1
    },
@@ -1103,9 +1687,124 @@
     "worst": 10.99,
     "save": 0.0,
     "n": 1
+   },
+   {
+    "item": "sunflower oil, SIRMA",
+    "basis": "each",
+    "stores": {
+     "The Meat Grinder Market": {
+      "ppu": 9.99,
+      "pack": "Weekend reel deal 4, was $13.99 on screen ~0:30",
+      "bulk": []
+     }
+    },
+    "best": 9.99,
+    "worst": 9.99,
+    "save": 0.0,
+    "n": 1
    }
   ],
   "Dairy, frozen & breads": [
+   {
+    "item": "motichoor ladoo",
+    "basis": "each",
+    "stores": {
+     "Big Basket": {
+      "ppu": 3.99,
+      "pack": "Diwali Sale sweets panel",
+      "bulk": []
+     },
+     "Big Basket (Stafford)": {
+      "ppu": 1.99,
+      "pack": "Bikano 340 gm",
+      "bulk": []
+     }
+    },
+    "best": 1.99,
+    "worst": 3.99,
+    "save": 2.0,
+    "n": 2
+   },
+   {
+    "item": "gulab jamun",
+    "basis": "each",
+    "stores": {
+     "Big Basket": {
+      "ppu": 5.99,
+      "pack": "Diwali Sale sweets panel",
+      "bulk": []
+     },
+     "Big Basket (Stafford)": {
+      "ppu": 5.99,
+      "pack": "Nanak 12 pc",
+      "bulk": []
+     }
+    },
+    "best": 5.99,
+    "worst": 5.99,
+    "save": 0.0,
+    "n": 2
+   },
+   {
+    "item": "mango pulp",
+    "basis": "each",
+    "stores": {
+     "Big Basket": {
+      "ppu": 12.99,
+      "pack": "Diwali Sale sweets panel",
+      "bulk": []
+     },
+     "Big Basket (Stafford)": {
+      "ppu": 12.99,
+      "pack": "Swad 6 pack",
+      "bulk": []
+     }
+    },
+    "best": 12.99,
+    "worst": 12.99,
+    "save": 0.0,
+    "n": 2
+   },
+   {
+    "item": "rasgulla",
+    "basis": "each",
+    "stores": {
+     "Big Basket": {
+      "ppu": 6.99,
+      "pack": "Diwali Sale sweets panel",
+      "bulk": []
+     },
+     "Big Basket (Stafford)": {
+      "ppu": 6.99,
+      "pack": "Laxmi 908 g",
+      "bulk": []
+     }
+    },
+    "best": 6.99,
+    "worst": 6.99,
+    "save": 0.0,
+    "n": 2
+   },
+   {
+    "item": "rasmalai",
+    "basis": "each",
+    "stores": {
+     "Big Basket": {
+      "ppu": 7.99,
+      "pack": "Diwali Sale sweets panel",
+      "bulk": []
+     },
+     "Big Basket (Stafford)": {
+      "ppu": 7.99,
+      "pack": "Nanak 20 pc",
+      "bulk": []
+     }
+    },
+    "best": 7.99,
+    "worst": 7.99,
+    "save": 0.0,
+    "n": 2
+   },
    {
     "item": "assorted sweets",
     "basis": "each",
@@ -1148,21 +1847,6 @@
     },
     "best": 4.99,
     "worst": 4.99,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "gulab jamun",
-    "basis": "each",
-    "stores": {
-     "Big Basket": {
-      "ppu": 5.99,
-      "pack": "Diwali Sale sweets panel",
-      "bulk": []
-     }
-    },
-    "best": 5.99,
-    "worst": 5.99,
     "save": 0.0,
     "n": 1
    },
@@ -1223,36 +1907,6 @@
     },
     "best": 7.99,
     "worst": 7.99,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "mango pulp",
-    "basis": "each",
-    "stores": {
-     "Big Basket": {
-      "ppu": 12.99,
-      "pack": "Diwali Sale sweets panel",
-      "bulk": []
-     }
-    },
-    "best": 12.99,
-    "worst": 12.99,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "motichoor ladoo",
-    "basis": "each",
-    "stores": {
-     "Big Basket": {
-      "ppu": 3.99,
-      "pack": "Diwali Sale sweets panel",
-      "bulk": []
-     }
-    },
-    "best": 3.99,
-    "worst": 3.99,
     "save": 0.0,
     "n": 1
    },
@@ -1328,36 +1982,6 @@
     },
     "best": 2.99,
     "worst": 2.99,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "rasgulla",
-    "basis": "each",
-    "stores": {
-     "Big Basket": {
-      "ppu": 6.99,
-      "pack": "Diwali Sale sweets panel",
-      "bulk": []
-     }
-    },
-    "best": 6.99,
-    "worst": 6.99,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "rasmalai",
-    "basis": "each",
-    "stores": {
-     "Big Basket": {
-      "ppu": 7.99,
-      "pack": "Diwali Sale sweets panel",
-      "bulk": []
-     }
-    },
-    "best": 7.99,
-    "worst": 7.99,
     "save": 0.0,
     "n": 1
    },
@@ -1452,6 +2076,51 @@
     "n": 1
    },
    {
+    "item": "tea bags, Dawn round 300 ct",
+    "basis": "each",
+    "stores": {
+     "Papa Mart": {
+      "ppu": 8.99,
+      "pack": "Weekend Mega Sale Fri-Sun; Dawn Round Tea Bags 300 ct",
+      "bulk": []
+     }
+    },
+    "best": 8.99,
+    "worst": 8.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "tea, Akma chamomile flower 60 g",
+    "basis": "each",
+    "stores": {
+     "Papa Mart": {
+      "ppu": 3.49,
+      "pack": "Weekend Mega Sale Fri-Sun",
+      "bulk": []
+     }
+    },
+    "best": 3.49,
+    "worst": 3.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "tea, Akma lemon leaves 50 g",
+    "basis": "each",
+    "stores": {
+     "Papa Mart": {
+      "ppu": 3.49,
+      "pack": "Weekend Mega Sale Fri-Sun",
+      "bulk": []
+     }
+    },
+    "best": 3.49,
+    "worst": 3.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "yogurt bucket",
     "basis": "lb",
     "stores": {
@@ -1514,6 +2183,111 @@
     "n": 2
    },
    {
+    "item": "pomegranates",
+    "basis": "lb",
+    "stores": {
+     "The Meat Grinder Market": {
+      "ppu": 0.99,
+      "pack": "Fresh Fruit Special, Friday Saturday Sunday only, posted 15h before Oct 30 run",
+      "bulk": []
+     },
+     "Al Madina Supermarket": {
+      "ppu": 1.49,
+      "pack": "Fresh pomegranates, bin price",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 1.49,
+    "save": 0.5,
+    "n": 2
+   },
+   {
+    "item": "arvi",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 1.29,
+      "pack": "Weekend Special",
+      "bulk": []
+     },
+     "Big Basket (Stafford)": {
+      "ppu": 1.49,
+      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2 Edo (arvi)",
+      "bulk": []
+     }
+    },
+    "best": 1.29,
+    "worst": 1.49,
+    "save": 0.2,
+    "n": 2
+   },
+   {
+    "item": "mango drink",
+    "basis": "each",
+    "stores": {
+     "Big Basket": {
+      "ppu": 7.99,
+      "pack": "Diwali Sale sweets panel",
+      "bulk": []
+     },
+     "Big Basket (Stafford)": {
+      "ppu": 7.99,
+      "pack": "Frooti 27 ct",
+      "bulk": []
+     }
+    },
+    "best": 7.99,
+    "worst": 7.99,
+    "save": 0.0,
+    "n": 2
+   },
+   {
+    "item": "Laxmi grated coconut, 400 gm",
+    "basis": "each",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 2.49,
+      "pack": "400 gm",
+      "bulk": []
+     }
+    },
+    "best": 2.49,
+    "worst": 2.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "Laxmi sesame seeds, 400 gm",
+    "basis": "each",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 2.99,
+      "pack": "White/Brown 400 gm",
+      "bulk": []
+     }
+    },
+    "best": 2.99,
+    "worst": 2.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "Laxmi shredded coconut, 400 gm",
+    "basis": "each",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 2.49,
+      "pack": "400 gm",
+      "bulk": []
+     }
+    },
+    "best": 2.49,
+    "worst": 2.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "almonds",
     "basis": "each",
     "stores": {
@@ -1525,6 +2299,21 @@
     },
     "best": 9.99,
     "worst": 9.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "almonds, Aara 3 lb",
+    "basis": "lb",
+    "stores": {
+     "Papa Mart": {
+      "ppu": 5.0,
+      "pack": "Weekend Mega Sale Fri-Sun",
+      "bulk": []
+     }
+    },
+    "best": 5.0,
+    "worst": 5.0,
     "save": 0.0,
     "n": 1
    },
@@ -1589,6 +2378,51 @@
     "n": 1
    },
    {
+    "item": "bananas",
+    "basis": "lb",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 0.49,
+      "pack": "Produce Special",
+      "bulk": []
+     }
+    },
+    "best": 0.49,
+    "worst": 0.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "butter, Kroger 2 x 16 oz",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 3.99,
+      "pack": "3-Day Sale Oct 29-31 only; via ad roundup, UNVERIFIED",
+      "bulk": []
+     }
+    },
+    "best": 3.99,
+    "worst": 3.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "cabbage",
+    "basis": "lb",
+    "stores": {
+     "Big Basket (Stafford)": {
+      "ppu": 0.69,
+      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "bulk": []
+     }
+    },
+    "best": 0.69,
+    "worst": 0.69,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "cashew pieces",
     "basis": "each",
     "stores": {
@@ -1619,6 +2453,36 @@
     "n": 1
    },
    {
+    "item": "cashews whole, 3 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 4.66,
+      "pack": "Laxmi Cashews Whole 3 lb",
+      "bulk": []
+     }
+    },
+    "best": 4.66,
+    "worst": 4.66,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "cauliflower",
+    "basis": "each",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 0.99,
+      "pack": "Produce Special",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 0.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "coconut milk",
     "basis": "each",
     "stores": {
@@ -1630,6 +2494,36 @@
     },
     "best": 1.79,
     "worst": 1.79,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "daikon",
+    "basis": "lb",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 0.99,
+      "pack": "Daikon with leaves; Produce Special",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 0.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "deshi shak",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 0.99,
+      "pack": "Per bunch; Everyday Sale 7 days a week",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 0.99,
     "save": 0.0,
     "n": 1
    },
@@ -1664,6 +2558,21 @@
     "n": 1
    },
    {
+    "item": "flat valor",
+    "basis": "lb",
+    "stores": {
+     "Big Basket (Stafford)": {
+      "ppu": 2.99,
+      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "bulk": []
+     }
+    },
+    "best": 2.99,
+    "worst": 2.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "fuyu persimmons",
     "basis": "lb",
     "stores": {
@@ -1690,6 +2599,21 @@
     },
     "best": 4.99,
     "worst": 4.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "grapes, red seedless",
+    "basis": "lb",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 1.99,
+      "pack": "Produce Special",
+      "bulk": []
+     }
+    },
+    "best": 1.99,
+    "worst": 1.99,
     "save": 0.0,
     "n": 1
    },
@@ -1724,6 +2648,51 @@
     "n": 1
    },
    {
+    "item": "guvar",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 2.29,
+      "pack": "Weekend Special",
+      "bulk": []
+     }
+    },
+    "best": 2.29,
+    "worst": 2.29,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "jam, Honest 1.2 kg",
+    "basis": "each",
+    "stores": {
+     "Papa Mart": {
+      "ppu": 7.99,
+      "pack": "Weekend Mega Sale Fri-Sun; Mix Fruit, Strawberry, Pineapple, Red Apple, Orange Marmalade",
+      "bulk": []
+     }
+    },
+    "best": 7.99,
+    "worst": 7.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "lal shak",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 1.99,
+      "pack": "Per bunch; Everyday Sale",
+      "bulk": []
+     }
+    },
+    "best": 1.99,
+    "worst": 1.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "limes",
     "basis": "lb",
     "stores": {
@@ -1739,17 +2708,17 @@
     "n": 1
    },
    {
-    "item": "mango drink",
+    "item": "limes, 10 for $1",
     "basis": "each",
     "stores": {
-     "Big Basket": {
-      "ppu": 7.99,
-      "pack": "Diwali Sale sweets panel",
+     "World Food Warehouse": {
+      "ppu": 0.1,
+      "pack": "10 for $1; Produce Special",
       "bulk": []
      }
     },
-    "best": 7.99,
-    "worst": 7.99,
+    "best": 0.1,
+    "worst": 0.1,
     "save": 0.0,
     "n": 1
    },
@@ -1765,6 +2734,21 @@
     },
     "best": 0.99,
     "worst": 0.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "moong whole, 4 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 1.12,
+      "pack": "Diwali offer, 4 lb bag",
+      "bulk": []
+     }
+    },
+    "best": 1.12,
+    "worst": 1.12,
     "save": 0.0,
     "n": 1
    },
@@ -1799,17 +2783,122 @@
     "n": 1
    },
    {
-    "item": "pomegranates",
+    "item": "persimmon, Fuyu",
+    "basis": "each",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 0.33,
+      "pack": "Produce Special",
+      "bulk": []
+     }
+    },
+    "best": 0.33,
+    "worst": 0.33,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "persimmon, Hachiya",
+    "basis": "each",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 0.49,
+      "pack": "Produce Special",
+      "bulk": []
+     }
+    },
+    "best": 0.49,
+    "worst": 0.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "persimmons",
     "basis": "lb",
     "stores": {
-     "The Meat Grinder Market": {
+     "Al Madina Supermarket": {
+      "ppu": 1.29,
+      "pack": "Fresh persimmons, bin price",
+      "bulk": []
+     }
+    },
+    "best": 1.29,
+    "worst": 1.29,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "pineapple",
+    "basis": "each",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 1.49,
+      "pack": "Produce Special",
+      "bulk": []
+     }
+    },
+    "best": 1.49,
+    "worst": 1.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "pomegranates, each",
+    "basis": "each",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 1.49,
+      "pack": "Produce Special",
+      "bulk": []
+     }
+    },
+    "best": 1.49,
+    "worst": 1.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "pumpkin",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
       "ppu": 0.99,
-      "pack": "Fresh Fruit Special, Friday Saturday Sunday only, posted 15h before Oct 30 run",
+      "pack": "Weekend Special",
       "bulk": []
      }
     },
     "best": 0.99,
     "worst": 0.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "pumpkin, white",
+    "basis": "lb",
+    "stores": {
+     "Big Basket (Stafford)": {
+      "ppu": 0.79,
+      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "bulk": []
+     }
+    },
+    "best": 0.79,
+    "worst": 0.79,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "pumpkin, yellow",
+    "basis": "lb",
+    "stores": {
+     "Big Basket (Stafford)": {
+      "ppu": 0.79,
+      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "bulk": []
+     }
+    },
+    "best": 0.79,
+    "worst": 0.79,
     "save": 0.0,
     "n": 1
    },
@@ -1844,6 +2933,21 @@
     "n": 1
    },
    {
+    "item": "roti, fresh uncooked whole wheat chapathi, 12 ct",
+    "basis": "each",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 4.99,
+      "pack": "12 ct",
+      "bulk": []
+     }
+    },
+    "best": 4.99,
+    "worst": 4.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "shrimp",
     "basis": "lb",
     "stores": {
@@ -1855,6 +2959,21 @@
     },
     "best": 5.97,
     "worst": 5.97,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "snake gourd",
+    "basis": "lb",
+    "stores": {
+     "Big Basket (Stafford)": {
+      "ppu": 1.29,
+      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "bulk": []
+     }
+    },
+    "best": 1.29,
+    "worst": 1.29,
     "save": 0.0,
     "n": 1
    },
@@ -1872,9 +2991,154 @@
     "worst": 5.97,
     "save": 0.0,
     "n": 1
+   },
+   {
+    "item": "turia",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 1.99,
+      "pack": "Weekend Special",
+      "bulk": []
+     }
+    },
+    "best": 1.99,
+    "worst": 1.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "urad gota, 4 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 1.0,
+      "pack": "Diwali offer, 4 lb bag",
+      "bulk": []
+     }
+    },
+    "best": 1.0,
+    "worst": 1.0,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "walnuts, Ariana inshell Chandler, 22 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Al Madina Supermarket": {
+      "ppu": 2.27,
+      "pack": "Ariana Inshell Chandler Walnuts 22 lb bag",
+      "bulk": []
+     }
+    },
+    "best": 2.27,
+    "worst": 2.27,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "walnuts, Ariana inshell Chandler, 7 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Al Madina Supermarket": {
+      "ppu": 2.43,
+      "pack": "Ariana Inshell Chandler Walnuts 7 lb bag ($2.42/lb)",
+      "bulk": []
+     }
+    },
+    "best": 2.43,
+    "worst": 2.43,
+    "save": 0.0,
+    "n": 1
    }
   ],
   "Spices & masalas": [
+   {
+    "item": "methi leaves",
+    "basis": "each",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 1.29,
+      "pack": "Methi per bunch; Weekend Special",
+      "bulk": []
+     },
+     "Big Basket (Stafford)": {
+      "ppu": 1.49,
+      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2 Per bunch",
+      "bulk": []
+     }
+    },
+    "best": 1.29,
+    "worst": 1.49,
+    "save": 0.2,
+    "n": 2
+   },
+   {
+    "item": "saffron",
+    "basis": "each",
+    "stores": {
+     "Big Basket": {
+      "ppu": 2.99,
+      "pack": "Diwali Sale sweets panel",
+      "bulk": []
+     },
+     "Big Basket (Stafford)": {
+      "ppu": 2.99,
+      "pack": "Gathering 1 gm",
+      "bulk": []
+     }
+    },
+    "best": 2.99,
+    "worst": 2.99,
+    "save": 0.0,
+    "n": 2
+   },
+   {
+    "item": "MTR rasam powder, 200 gm",
+    "basis": "each",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 2.99,
+      "pack": "MTR Masala Rasam Powder 200 gm",
+      "bulk": []
+     }
+    },
+    "best": 2.99,
+    "worst": 2.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "MTR sambar powder, 200 gm",
+    "basis": "each",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 2.99,
+      "pack": "MTR Masala Sambar Powder 200 gm",
+      "bulk": []
+     }
+    },
+    "best": 2.99,
+    "worst": 2.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "MTR spiced chutney powder, 200 gm",
+    "basis": "each",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 2.99,
+      "pack": "MTR Powder Spiced Chutney 200 gm",
+      "bulk": []
+     }
+    },
+    "best": 2.99,
+    "worst": 2.99,
+    "save": 0.0,
+    "n": 1
+   },
    {
     "item": "coriander powder",
     "basis": "each",
@@ -2011,21 +3275,6 @@
     "n": 1
    },
    {
-    "item": "saffron",
-    "basis": "each",
-    "stores": {
-     "Big Basket": {
-      "ppu": 2.99,
-      "pack": "Diwali Sale sweets panel",
-      "bulk": []
-     }
-    },
-    "best": 2.99,
-    "worst": 2.99,
-    "save": 0.0,
-    "n": 1
-   },
-   {
     "item": "spice mix",
     "basis": "each",
     "stores": {
@@ -2088,6 +3337,21 @@
     "n": 1
    },
    {
+    "item": "chana dal, 4 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 0.75,
+      "pack": "Diwali offer, 4 lb bag",
+      "bulk": []
+     }
+    },
+    "best": 0.75,
+    "worst": 0.75,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "chana dalia",
     "basis": "each",
     "stores": {
@@ -2118,6 +3382,21 @@
     "n": 1
    },
    {
+    "item": "green vatana, 4 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 0.75,
+      "pack": "Diwali offer, 4 lb bag",
+      "bulk": []
+     }
+    },
+    "best": 0.75,
+    "worst": 0.75,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "kabuli chana",
     "basis": "each",
     "stores": {
@@ -2129,6 +3408,21 @@
     },
     "best": 2.99,
     "worst": 2.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "kabuli chana, 4 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 0.75,
+      "pack": "Diwali offer, 4 lb bag",
+      "bulk": []
+     }
+    },
+    "best": 0.75,
+    "worst": 0.75,
     "save": 0.0,
     "n": 1
    },
@@ -2148,6 +3442,21 @@
     "n": 1
    },
    {
+    "item": "kala chana, 4 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 0.75,
+      "pack": "Diwali offer, 4 lb bag",
+      "bulk": []
+     }
+    },
+    "best": 0.75,
+    "worst": 0.75,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "masoor dal",
     "basis": "each",
     "stores": {
@@ -2159,6 +3468,21 @@
     },
     "best": 2.99,
     "worst": 2.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "masoor dal, 4 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 0.75,
+      "pack": "Diwali offer, 4 lb bag",
+      "bulk": []
+     }
+    },
+    "best": 0.75,
+    "worst": 0.75,
     "save": 0.0,
     "n": 1
    },
@@ -2193,6 +3517,21 @@
     "n": 1
    },
    {
+    "item": "moong dal, 4 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 1.0,
+      "pack": "Diwali offer, 4 lb bag",
+      "bulk": []
+     }
+    },
+    "best": 1.0,
+    "worst": 1.0,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "peanuts",
     "basis": "each",
     "stores": {
@@ -2208,6 +3547,21 @@
     "n": 1
    },
    {
+    "item": "peanuts, fresh",
+    "basis": "lb",
+    "stores": {
+     "Big Basket (Stafford)": {
+      "ppu": 2.49,
+      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "bulk": []
+     }
+    },
+    "best": 2.49,
+    "worst": 2.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "toor dal",
     "basis": "each",
     "stores": {
@@ -2219,6 +3573,21 @@
     },
     "best": 3.49,
     "worst": 3.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "toor dal, 4 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 1.0,
+      "pack": "Diwali offer, 4 lb bag",
+      "bulk": []
+     }
+    },
+    "best": 1.0,
+    "worst": 1.0,
     "save": 0.0,
     "n": 1
    },
@@ -2251,6 +3620,21 @@
     "worst": 2.99,
     "save": 0.0,
     "n": 1
+   },
+   {
+    "item": "yellow vatana, 4 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 0.75,
+      "pack": "Diwali offer, 4 lb bag",
+      "bulk": []
+     }
+    },
+    "best": 0.75,
+    "worst": 0.75,
+    "save": 0.0,
+    "n": 1
    }
   ],
   "Grains, rice & flour": [
@@ -2275,6 +3659,26 @@
     "n": 2
    },
    {
+    "item": "idli rava",
+    "basis": "each",
+    "stores": {
+     "Big Basket": {
+      "ppu": 3.49,
+      "pack": "Diwali Sale grid",
+      "bulk": []
+     },
+     "Desi Brothers": {
+      "ppu": 3.99,
+      "pack": "Laxmi Idli Rava 4 lb bag",
+      "bulk": []
+     }
+    },
+    "best": 3.49,
+    "worst": 3.99,
+    "save": 0.5,
+    "n": 2
+   },
+   {
     "item": "all-purpose flour",
     "basis": "each",
     "stores": {
@@ -2286,6 +3690,21 @@
     },
     "best": 1.97,
     "worst": 1.97,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "atta, Swarna Chakki Fresh 20 lb",
+    "basis": "each",
+    "stores": {
+     "Papa Mart": {
+      "ppu": 12.99,
+      "pack": "Shelf tag in store photo",
+      "bulk": []
+     }
+    },
+    "best": 12.99,
+    "worst": 12.99,
     "save": 0.0,
     "n": 1
    },
@@ -2305,6 +3724,21 @@
     "n": 1
    },
    {
+    "item": "basmati rice, Famous Sella 10 lb",
+    "basis": "each",
+    "stores": {
+     "The Meat Grinder Market": {
+      "ppu": 8.99,
+      "pack": "Weekend reel deal 2, was $11.99 on screen ~0:12; Famous Sella 10 lb shelf tag",
+      "bulk": []
+     }
+    },
+    "best": 8.99,
+    "worst": 8.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "basmati rice, Jazaa Elite",
     "basis": "lb",
     "stores": {
@@ -2316,6 +3750,21 @@
     },
     "best": 1.2,
     "worst": 1.2,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "basmati rice, Royal 20 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 0.95,
+      "pack": "Diwali offer, 20 lb bag",
+      "bulk": []
+     }
+    },
+    "best": 0.95,
+    "worst": 0.95,
     "save": 0.0,
     "n": 1
    },
@@ -2350,21 +3799,6 @@
     "n": 1
    },
    {
-    "item": "idli rava",
-    "basis": "each",
-    "stores": {
-     "Big Basket": {
-      "ppu": 3.49,
-      "pack": "Diwali Sale grid",
-      "bulk": []
-     }
-    },
-    "best": 3.49,
-    "worst": 3.49,
-    "save": 0.0,
-    "n": 1
-   },
-   {
     "item": "idli rice",
     "basis": "each",
     "stores": {
@@ -2376,6 +3810,36 @@
     },
     "best": 12.99,
     "worst": 12.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "idli rice, Laxmi 20 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 0.65,
+      "pack": "Diwali offer, 20 lb bag",
+      "bulk": []
+     }
+    },
+    "best": 0.65,
+    "worst": 0.65,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "idli rice, Swaraj 20 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 0.6,
+      "pack": "Diwali offer, 20 lb bag",
+      "bulk": []
+     }
+    },
+    "best": 0.6,
+    "worst": 0.6,
     "save": 0.0,
     "n": 1
    },
@@ -2455,6 +3919,36 @@
     "n": 1
    },
    {
+    "item": "sonamasoori rice, Laxmi 20 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 0.6,
+      "pack": "Diwali offer, 20 lb bag",
+      "bulk": []
+     }
+    },
+    "best": 0.6,
+    "worst": 0.6,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "sonamasoori rice, Swaraj 20 lb bag",
+    "basis": "lb",
+    "stores": {
+     "Desi Brothers": {
+      "ppu": 0.55,
+      "pack": "Diwali offer, 20 lb bag",
+      "bulk": []
+     }
+    },
+    "best": 0.55,
+    "worst": 0.55,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "sooji coarse",
     "basis": "each",
     "stores": {
@@ -2530,7 +4024,8 @@
     "World Food Warehouse": 2.37,
     "Papa Mart": 5.37,
     "Aldi": 3.27,
-    "Prime Bazaar": 10.47
+    "Prime Bazaar": 10.47,
+    "H-E-B": 2.97
    }
   },
   {
@@ -2575,6 +4070,14 @@
    }
   },
   {
+   "item": "yellow onion",
+   "basis": "lb",
+   "qty": 5,
+   "stores": {
+    "Desi Brothers": 2.45
+   }
+  },
+  {
    "item": "ginger garlic paste",
    "basis": "each",
    "qty": 1,
@@ -2597,8 +4100,8 @@
    "n": 2
   },
   "H-E-B": {
-   "total": 4.98,
-   "n": 1
+   "total": 7.95,
+   "n": 2
   },
   "Kroger": {
    "total": 17.51,
@@ -2615,9 +4118,13 @@
   "Big Basket": {
    "total": 61.35,
    "n": 4
+  },
+  "Desi Brothers": {
+   "total": 2.45,
+   "n": 1
   }
  },
- "basket_split_total": 90.79,
- "basket_items_found": 9,
+ "basket_split_total": 93.24,
+ "basket_items_found": 10,
  "basket_items": 12
 }
