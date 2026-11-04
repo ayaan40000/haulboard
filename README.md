@@ -15,7 +15,7 @@ Sections on the page:
 - **Store sections** — core stores checked every run: Al Aqsa Bangla Bazaar, World Food Warehouse, and Al Madina Supermarket; plus Hala Market, Papa Mart, Desi Brothers, Big Basket Stafford, Jerusalem, Prime Bazaar, and Meat Grinder Market
 - **Big retailers** — H-E-B, Walmart (Sugar Land, Hwy 6), Aldi, Kroger weekly ads for 77477, plus Flipp
 - **Price compare** — best price per item across stores, plus full price tables by category, rebuilt weekly from the price database
-- **Coupons & promos** — a weekly shortlist (Top 5 plus per-store picks) with a "Clip before Saturday" checklist for the Saturday digitals; H-E-B coupon gallery pulled from heb.com, Kroger digital coupons (aggregator listings tagged UNVERIFIED until seen in the app), Walmart Cash offers; Aldi has no coupon program
+- **Coupons & promos** — a weekly shortlist (Top 5 plus per-store picks) with a "Clip this week" checklist for the week's digitals; H-E-B coupon gallery pulled from heb.com, Kroger digital coupons (aggregator listings tagged UNVERIFIED until seen in the app), Walmart Cash offers; Aldi has no coupon program
 - **Free food near Stafford** — food distributions within ~10 miles in the next 10 days, re-verified each run
 - **Store watchlist** — every store checked each week
 - **My list / Plan my haul** — add deals, set quantities, and the planner groups them by store with subtotals, a trip total, a savings meter (vs the next-best listed price for the same item), a fewest-stops pick, and Copy/Print. Saved only on your own device (browser local storage, nothing is sent anywhere)
