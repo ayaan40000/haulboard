@@ -17,6 +17,7 @@ Sections on the page:
 - **Price compare** — best price per item across stores, plus full price tables by category, rebuilt weekly from the price database
 - **Coupons & promos** — a weekly shortlist (Top 5 plus per-store picks) with a "Clip this week" checklist for the week's digitals; H-E-B coupon gallery pulled from heb.com, Kroger digital coupons (aggregator listings tagged UNVERIFIED until seen in the app), Walmart Cash offers; Aldi has no coupon program
 - **Free food near Stafford** — food distributions within ~10 miles in the next 10 days, re-verified each run
+- **Events** — family events within ~30 minutes' drive of Stafford for two adults and a 4-year-old: festivals, Diwali celebrations, halal food events, free museum nights and library toddler programs. Verified on the organiser's or venue's own page, or marked UNVERIFIED with the missing detail named. Refreshed every Friday with a rolling 21-day lookahead; known travel windows are honoured (events during a trip are noted as skipped, never presented as options)
 - **Store watchlist** — every store checked each week
 - **My list / Plan my haul** — add deals, set quantities, and the planner groups them by store with subtotals, a trip total, a savings meter (vs the next-best listed price for the same item), a fewest-stops pick, and Copy/Print. Saved only on your own device (browser local storage, nothing is sent anywhere)
 
@@ -26,7 +27,7 @@ Every Friday (~9:37 AM CT) an automated run:
 
 1. Sweeps each watchlist store's Facebook and Instagram flyers — every post, every carousel image, and the Photos grid, because prices live in the flyer images
 2. Pulls the big retailers' weekly ads and coupon sources
-3. Re-verifies free-food distributions
+3. Re-verifies free-food distributions and refreshes the Events tab (rolling 21-day lookahead)
 4. Files **every** captured price into the price database (deals, coupon prices, and regular flyer prices; expired prices stay as history)
 5. Rebuilds the price-compare and category tables, refreshes this page, privacy-scans it, and pushes it to this repo — GitHub Pages then redeploys automatically
 6. Posts a short Friday summary (best deals, coupon finds, free distributions) in the owner's chat
