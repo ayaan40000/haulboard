@@ -22,10 +22,32 @@ The PWA files are deliberately tiny and boring:
 
 1. HTML parses with no unclosed tags; doctype first, `</html>` last
 2. Hash-router compatibility (replaces the old section-id rule): every legacy hash (`#top-picks`, `#al-aqsa`, `#wfw`, `#more-stores`, `#big-retailers`, `#watchlist`, `#price-compare`, `#coupons`, `#free-food`, `#my-list`), the `#compare` and `#stores` aliases, and all 15 store slugs route to the right view or store detail per `docs/UX-REDESIGN.md` §3.3; an unknown hash opens This Week. The Events view (added 2026-11-04) routes at `#events` to element id `view-events`. The retained DOM ids — `top-picks`, `more-stores`, `big-retailers`, `watchlist`, `price-compare`, `coupons`, `free-food`, `view-events`, `my-list`, plus the functional ids `themeToggle`, `list`, `clear` — each appear exactly once. The legacy store section ids `al-aqsa` and `wfw` are hash routes only, not element ids
-3. No external URLs in the page except intentional links (repo/docs links)
+3. No external URLs in the page except intentional links: repo/docs links, product photos (see the Nov 3 changelog entry), and the Coupons view's store-app search and coupon-gallery links (registered below)
 4. **Privacy scan (blocking):** search the full publish set for the owner's personal name, home street patterns, and phone-number patterns. A hit stops the push — no exceptions. Only "Stafford, TX 77477" and public store addresses may appear
 5. File sizes sane: `index.html` should stay well under 1 MB
 6. Service worker cache version bumped if `sw.js` or the shell changed
+
+## Coupons view format (standing, owner order 2026-11-05)
+
+Every "Best per store" row in the Coupons view is built the same way:
+
+- Row title is the basket/deal name only — never the run-on item sentence.
+- Under the deal meta, an item table (`<table class="items">`, styles in a `<style>` block at the top of `SECTION: clip-checklist`): one row per item — Qty ×, item name, shelf price each where known. Each item cell also carries the exact app search query as a link, text `Search: <item> ↗`, built from the store's search template below (URL-encoded query). On the owner's phone these HTTPS links open the store app, so the basket cart can be built item by item. Penny-list rows show the item's UPC in the cell.
+- Under the table, the deal's coupons as chips (`<a class="chip">`) in a `.clip-line` labelled "Clip in the <store> app:", each chip linking to the store's coupon gallery below.
+- Each `SECTION: clip-checklist` row is wrapped in `.clip-item` and followed by an "Open in <store> app ↗" link to the same gallery (the combined CVS/Walgreens row carries both links).
+- Photo strips, prices, poster math, and the Add button's `data-item` string are unchanged by this layout.
+
+Store link templates (`{q}` = URL-encoded query):
+
+| Store | Item search | Coupon gallery |
+| --- | --- | --- |
+| Dollar General | `https://www.dollargeneral.com/product-search?q={q}&productSearchedMode=manual` (verified live 2026-11-05) | `https://coupons.dollargeneral.com/coupons/` |
+| Walmart | `https://www.walmart.com/search?q={q}` | item search (Walmart Cash offers live on the product) |
+| Target | `https://www.target.com/s?searchTerm={q}` (verified live 2026-11-05) | `https://www.target.com/circle/offers` |
+| Kroger | `https://www.kroger.com/search?query={q}` (verified live 2026-11-05) | `https://www.kroger.com/savings/coupons` |
+| H-E-B | `https://www.heb.com/search/?q={q}` | `https://www.heb.com/coupons` |
+| CVS | `https://www.cvs.com/search?searchTerm={q}` | `https://www.cvs.com/coupons` |
+| Walgreens | `https://www.walgreens.com/search/results.jsp?Ntt={q}` | `https://www.walgreens.com/offers/offers.jsp` |
 
 ## Publishing
 
