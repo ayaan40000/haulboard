@@ -28,7 +28,7 @@ Every Friday (~9:37 AM CT) an automated run:
 1. Sweeps each watchlist store's Facebook and Instagram flyers — every post, every carousel image, and the Photos grid, because prices live in the flyer images
 2. Pulls the big retailers' weekly ads and coupon sources
 3. Re-verifies free-food distributions and refreshes the Events tab (rolling 21-day lookahead)
-4. Files **every** captured price into the price database (deals, coupon prices, and regular flyer prices; expired prices stay as history)
+4. Files **every** captured price into the price database (deals, coupon prices, and regular flyer prices; expired prices stay as history). Undated flyer prices are closed when a later flyer supersedes them, so a stale price never shows as current
 5. Rebuilds the price-compare and category tables, refreshes this page, privacy-scans it, and pushes it to this repo — GitHub Pages then redeploys automatically
 6. Posts a short Friday summary (best deals, coupon finds, free distributions) in the owner's chat
 

@@ -13,7 +13,7 @@ The data behind the board, published with it every week. All files are plain tex
 
 ## Why there is no `prices.db` file here
 
-The live database is SQLite (binary). The publishing flow for this repo accepts validated text snapshots only, so the database is published as a SQL dump plus a JSON export instead — both rebuild the exact same database (212 prices, 161 canonical items, 11 stores as of 2026-10-24), and text diffs make weekly changes reviewable in git history.
+The live database is SQLite (binary). The publishing flow for this repo accepts validated text snapshots only, so the database is published as a SQL dump plus a JSON export instead — both rebuild the exact same database (664 prices, 435 canonical items, 24 stores as of 2026-11-06), and text diffs make weekly changes reviewable in git history.
 
 ## Schema (summary)
 

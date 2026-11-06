@@ -1,0 +1,297 @@
+{
+ "deals": [
+  {
+   "name": "Scenario #1: 1 Suavitel + 1 Bloom Energy Drink + 1 C4 Energy Drink + 1 Palmolive Oxy + 3 Colgate MaxFresh + 1 Gold Bond",
+   "clip_location": "Dollar General app",
+   "coupons": [
+    "$5 off $25 (store)",
+    "$2 off Suavitel",
+    "$1.50 off Bloom (select accounts)",
+    "$1.50 off C4",
+    "$1.50 off Palmolive",
+    "$7/3 Colgate",
+    "$3.50 off Gold Bond"
+   ],
+   "credit": "TheFreebieGuy, Nov 2-7, 2026",
+   "final_before_tax": 4.0,
+   "items": [
+    {
+     "item": "Suavitel",
+     "qty": 1,
+     "price_each": null
+    },
+    {
+     "item": "Bloom Energy Drink",
+     "qty": 1,
+     "price_each": null
+    },
+    {
+     "item": "C4 Energy Drink",
+     "qty": 1,
+     "price_each": null
+    },
+    {
+     "item": "Palmolive Oxy",
+     "qty": 1,
+     "price_each": null
+    },
+    {
+     "item": "Colgate MaxFresh",
+     "qty": 3,
+     "price_each": null
+    },
+    {
+     "item": "Gold Bond",
+     "qty": 1,
+     "price_each": null
+    }
+   ]
+  },
+  {
+   "name": "Scenario #7: 3 Colgate Optic White Toothpastes + 1 Gold Bond Vanilla Dream Hand Cream + 1 Gain Grinchmas Fireworks + 1 Suavitel Fabric Softener + 1 Ricola Throat Drops",
+   "clip_location": "Dollar General app",
+   "coupons": [
+    "$5 off $25 (store)",
+    "$7/3 Colgate",
+    "$3.50 off Gold Bond",
+    "$2.50 off Gain Grinchmas Fireworks",
+    "$2 off Suavitel",
+    "$1.50 off Ricola"
+   ],
+   "credit": "TheFreebieGuy, Nov 2-7, 2026",
+   "final_before_tax": 5.0,
+   "items": [
+    {
+     "item": "Colgate Optic White Toothpastes",
+     "qty": 3,
+     "price_each": null
+    },
+    {
+     "item": "Gold Bond Vanilla Dream Hand Cream",
+     "qty": 1,
+     "price_each": null
+    },
+    {
+     "item": "Gain Grinchmas Fireworks",
+     "qty": 1,
+     "price_each": null
+    },
+    {
+     "item": "Suavitel Fabric Softener",
+     "qty": 1,
+     "price_each": null
+    },
+    {
+     "item": "Ricola Throat Drops",
+     "qty": 1,
+     "price_each": null
+    }
+   ]
+  },
+  {
+   "name": "10-item household basket: 2 Suave Body Wash + 2 Pantene Shampoos + 3 Colgate Optic White or Max Fresh + 1 Gold Bond Vanilla Dream Hand Cream + 2 Aussie Shampoos",
+   "clip_location": "Dollar General app",
+   "coupons": [
+    "$2 DG coupon (Suave)",
+    "$5 off $25 basket coupon",
+    "$19.50 in manufacturer coupons"
+   ],
+   "credit": "DG Diva, Bargain Hunters DG Penny List & Clearance Deals (FB), Nov 6, 2026",
+   "final_before_tax": 13.75,
+   "items": [
+    {
+     "item": "Suave Body Wash",
+     "qty": 2,
+     "price_each": null
+    },
+    {
+     "item": "Pantene Shampoos",
+     "qty": 2,
+     "price_each": null
+    },
+    {
+     "item": "Colgate Optic White or Max Fresh",
+     "qty": 3,
+     "price_each": null
+    },
+    {
+     "item": "Gold Bond Vanilla Dream Hand Cream",
+     "qty": 1,
+     "price_each": null
+    },
+    {
+     "item": "Aussie Shampoos",
+     "qty": 2,
+     "price_each": null
+    }
+   ]
+  },
+  {
+   "name": "Cold & flu basket: 2 Clorox Disinfectant Wipes + Puffs 4-pack + Advil + Benadryl + Mucinex 4 ct + Robitussin + Mucinex Throat Drops + Ricola",
+   "clip_location": "Dollar General app",
+   "coupons": [
+    "$5 off $25 basket coupon",
+    "$2 Clorox",
+    "$1 Puffs",
+    "$2 Advil",
+    "$2 Benadryl",
+    "2x $2 Mucinex",
+    "$1.50 Ricola"
+   ],
+   "credit": "DG Diva, Bargain Hunters DG Penny List & Clearance Deals (FB), Nov 5, 2026",
+   "final_before_tax": 17.2,
+   "items": [
+    {
+     "item": "Clorox Disinfectant Wipes",
+     "qty": 2,
+     "price_each": null
+    },
+    {
+     "item": "Puffs 4-pack",
+     "qty": 1,
+     "price_each": null
+    },
+    {
+     "item": "Advil",
+     "qty": 1,
+     "price_each": null
+    },
+    {
+     "item": "Benadryl",
+     "qty": 1,
+     "price_each": null
+    },
+    {
+     "item": "Mucinex 4 ct",
+     "qty": 1,
+     "price_each": null
+    },
+    {
+     "item": "Robitussin",
+     "qty": 1,
+     "price_each": null
+    },
+    {
+     "item": "Mucinex Throat Drops",
+     "qty": 1,
+     "price_each": null
+    },
+    {
+     "item": "Ricola",
+     "qty": 1,
+     "price_each": null
+    }
+   ]
+  },
+  {
+   "clip_location": "Dollar General app",
+   "coupons": [
+    "Colgate $7 off 3",
+    "Dawn $2 off Powerwash Refill",
+    "Gold Bond $3.50 off",
+    "Febreze $3.50 off 2",
+    "DG $5 off $25 Weekday coupon"
+   ],
+   "credit": "Sarah CK Jones, Couponing For Beginners And Experts (FB), Nov 3, 2026",
+   "final_before_tax": 4.25,
+   "items": [
+    {
+     "image_url": "https://assets.tryandreview.com/uploads/images/reviews/c21a901408610bbc56ff27fb807e9b8a47876789.png",
+     "item": "Colgate Optic White Toothpaste",
+     "price_each": 3.25,
+     "qty": 3
+    },
+    {
+     "image_url": "https://images.albertsons-media.com/is/image/ABS/970011670-C1N1?$ng-ecom-pdp-desktop$&defaultImage=Not_Available",
+     "item": "Dawn Powerwash Refill",
+     "price_each": 4.0,
+     "qty": 1
+    },
+    {
+     "image_url": "https://tb-static.uber.com/prod/image-proc/processed_images/6a214ab8c0c3751058046063b70cd32d/b4665c191b34baf3d0e0fa45dfdd3d1d.jpeg",
+     "item": "Gold Bond Vanilla Dream Hand Cream 3 oz",
+     "price_each": 4.5,
+     "qty": 1
+    },
+    {
+     "image_url": "https://i5.walmartimages.com/seo/Febreze-Air-Mist-Air-Freshener-Spray-Odor-Fighting-Room-Spray-Air-Fresheners-Home-Bathroom-Kitchen-Aerosol-Can-Gain-Original-Scent-8-8Oz-6-Count-Pack_05872bc2-6986-4117-8e3c-428d6c88c680.cd4fe6721f89e5b759cd8a45b6d569a7.jpeg",
+     "item": "Febreze Air Mist",
+     "price_each": 3.5,
+     "qty": 2
+    }
+   ],
+   "name": "Weekday personal-care basket: 3 Colgate Optic White Toothpaste + 1 Dawn Powerwash Refill + 1 Gold Bond Vanilla Dream Hand Cream 3 oz + 2 Febreze Air Mist",
+   "shelf_total": 25.25,
+   "source_url": "https://facebook.com/groups/couponningstores/permalink/2184739415450713/",
+   "total_savings": 21.0,
+   "valid": "2026-11-02 to 2026-11-06",
+   "verified": true
+  },
+  {
+   "name": "Gain basket (any day): 1 Gain Plus 75 loads + 3 Colgate Toothpastes + 1 Dawn 5.8 oz",
+   "clip_location": "Dollar General app",
+   "coupons": [
+    "$5 off $25 (store)",
+    "$3 off Gain digital",
+    "$7/3 Colgate"
+   ],
+   "credit": "Kisha Twins Journey, via Sarah CK Jones album (FB), Nov 3, 2026",
+   "final_before_tax": 14.0,
+   "items": [
+    {
+     "item": "Gain Plus 75 loads",
+     "qty": 1,
+     "price_each": null
+    },
+    {
+     "item": "Colgate Toothpastes",
+     "qty": 3,
+     "price_each": null
+    },
+    {
+     "item": "Dawn 5.8 oz",
+     "qty": 1,
+     "price_each": null
+    }
+   ]
+  },
+  {
+   "name": "Weekday Advil/Aussie/AXE: 1 Advil 24 ct + 1 Aussie Shampoo + 1 Aussie Conditioner + 2 AXE",
+   "clip_location": "Dollar General app",
+   "coupons": [
+    "$5 off $25 weekday coupon",
+    "$2 off Advil",
+    "$5/2 Aussie",
+    "$6/2 AXE"
+   ],
+   "credit": "Sarah CK Jones, Couponing For Beginners And Experts (FB), Nov 3, 2026",
+   "final_before_tax": 8.75,
+   "items": [
+    {
+     "item": "Advil 24 ct",
+     "qty": 1,
+     "price_each": null
+    },
+    {
+     "item": "Aussie Shampoo",
+     "qty": 1,
+     "price_each": null
+    },
+    {
+     "item": "Aussie Conditioner",
+     "qty": 1,
+     "price_each": null
+    },
+    {
+     "item": "AXE",
+     "qty": 2,
+     "price_each": null
+    }
+   ]
+  }
+ ],
+ "source": "Dollar General coupon-community Facebook posts, Nov 2-7, 2026",
+ "store": "Dollar General",
+ "updated": "2026-11-06",
+ "week": "2026-11-06"
+}

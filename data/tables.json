@@ -1,94 +1,33 @@
 {
- "as_of": "2026-10-31",
+ "as_of": "2026-11-06",
  "stores": [
   "Al Aqsa Bangla Bazaar",
   "Al Madina Supermarket",
   "Aldi",
   "Big Basket",
   "Big Basket (Stafford)",
+  "CCSC Emergency Aid Southwest",
+  "CVS",
   "Desi Brothers",
+  "Dollar General",
+  "East Fort Bend Human Needs Ministry",
   "H-E-B",
   "Hala Market",
+  "ICNA Relief Halal Food Pantry",
+  "India House Houston",
   "Kroger",
+  "Mamie George Community Center",
   "Papa Mart",
   "Prime Bazaar",
+  "Second Mile Mission Center",
   "The Meat Grinder Market",
+  "Walgreens",
   "Walmart",
   "Walmart (Sugar Land Hwy 6)",
   "World Food Warehouse"
  ],
  "categories": {
   "Meat & poultry": [
-   {
-    "item": "chicken drumsticks",
-    "basis": "lb",
-    "stores": {
-     "World Food Warehouse": {
-      "ppu": 0.79,
-      "pack": "Mon-Thu meat special",
-      "bulk": []
-     },
-     "Papa Mart": {
-      "ppu": 1.79,
-      "pack": "Meat Deal flyer Oct 17, no end date stated",
-      "bulk": []
-     },
-     "Aldi": {
-      "ppu": 1.09,
-      "pack": "Family pack, next ad",
-      "bulk": []
-     },
-     "Prime Bazaar": {
-      "ppu": 3.49,
-      "pack": "Fresh Zabiha chicken drumstick, per lb",
-      "bulk": []
-     },
-     "H-E-B": {
-      "ppu": 0.99,
-      "pack": "Weekly ad Oct 28-Nov 3 via ad roundup, UNVERIFIED",
-      "bulk": []
-     }
-    },
-    "best": 0.79,
-    "worst": 3.49,
-    "save": 2.7,
-    "n": 5
-   },
-   {
-    "item": "chicken breast",
-    "basis": "lb",
-    "stores": {
-     "Papa Mart": {
-      "ppu": 1.9,
-      "pack": "Meat Deal flyer Oct 17, no end date stated",
-      "bulk": []
-     },
-     "Aldi": {
-      "ppu": 1.99,
-      "pack": "Family pack, next ad",
-      "bulk": []
-     },
-     "H-E-B": {
-      "ppu": 2.49,
-      "pack": "H-E-B seasoned boneless skinless breasts for fajitas, Texas-Size Pack",
-      "bulk": []
-     },
-     "Kroger": {
-      "ppu": 1.99,
-      "pack": "Heritage Farm boneless chicken breast",
-      "bulk": []
-     },
-     "Prime Bazaar": {
-      "ppu": 3.0,
-      "pack": "Diwali Promo: Fresh Zabiha Halal chicken breast 5 lb $15.00 (= $3.00/lb)",
-      "bulk": []
-     }
-    },
-    "best": 1.9,
-    "worst": 3.0,
-    "save": 1.1,
-    "n": 5
-   },
    {
     "item": "chicken tenders",
     "basis": "lb",
@@ -103,65 +42,35 @@
        }
       ]
      },
-     "Papa Mart": {
-      "ppu": 1.85,
-      "pack": "Meat Deal flyer Oct 17, no end date stated",
-      "bulk": []
-     },
-     "Aldi": {
-      "ppu": 2.09,
-      "pack": "Fresh Family Pack Chicken Tenderloins $2.09/lb, Aldi weekly ad meat specials; regional pricing, UNVERIFIED for Stafford",
-      "bulk": []
-     },
-     "The Meat Grinder Market": {
-      "ppu": 0.99,
-      "pack": "Weekend reel deal 5, limit 3 trays per family; price on screen ~0:39",
-      "bulk": []
-     }
-    },
-    "best": 0.99,
-    "worst": 2.09,
-    "save": 1.1,
-    "n": 4
-   },
-   {
-    "item": "ground lamb",
-    "basis": "lb",
-    "stores": {
-     "Aldi": {
-      "ppu": 7.99,
-      "pack": "Next ad, not labeled halal",
-      "bulk": []
-     },
      "Prime Bazaar": {
-      "ppu": 12.49,
-      "pack": "Fresh Zabiha Halal ground lamb (keema), per lb",
+      "ppu": 5.99,
+      "pack": "Zabiha halal; daily counter price",
       "bulk": []
      }
     },
-    "best": 7.99,
-    "worst": 12.49,
-    "save": 4.5,
+    "best": 1.99,
+    "worst": 5.99,
+    "save": 4.0,
     "n": 2
    },
    {
-    "item": "beef chuck roast",
+    "item": "chicken thighs, boneless",
     "basis": "lb",
     "stores": {
-     "Walmart": {
-      "ppu": 4.47,
-      "pack": "Claimed Oct 25-31, no clean dated flyer",
+     "Prime Bazaar": {
+      "ppu": 5.99,
+      "pack": "Fresh Zabiha Halal boneless chicken thigh, per lb",
       "bulk": []
      },
-     "Kroger": {
-      "ppu": 7.99,
-      "pack": "Boneless, $9.99/lb less $2/lb digital coupon = $7.99/lb, limit 5",
+     "Aldi": {
+      "ppu": 2.29,
+      "pack": "Fresh family pack; per smartspendingresources.com Aldi ad roundup (Raleigh NC store, prices may vary by region)",
       "bulk": []
      }
     },
-    "best": 4.47,
-    "worst": 7.99,
-    "save": 3.52,
+    "best": 2.29,
+    "worst": 5.99,
+    "save": 3.7,
     "n": 2
    },
    {
@@ -185,23 +94,43 @@
     "n": 2
    },
    {
-    "item": "ground beef",
+    "item": "lamb shoulder",
     "basis": "lb",
     "stores": {
-     "Aldi": {
-      "ppu": 2.99,
-      "pack": "5 lb chub, lean % not stated; Fresh ground beef chub, 5 lb pack $14.95",
+     "Hala Market": {
+      "ppu": 8.99,
+      "pack": "Weekend Sale, seen on IG profile Oct 30, no end date stated",
       "bulk": []
      },
      "Prime Bazaar": {
-      "ppu": 5.99,
-      "pack": "Fresh Zabiha Halal ground beef 80/20, 1 lb",
+      "ppu": 12.49,
+      "pack": "Zabiha halal; daily counter price",
       "bulk": []
      }
     },
-    "best": 2.99,
-    "worst": 5.99,
-    "save": 3.0,
+    "best": 8.99,
+    "worst": 12.49,
+    "save": 3.5,
+    "n": 2
+   },
+   {
+    "item": "chicken drumsticks",
+    "basis": "lb",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 0.79,
+      "pack": "Mon-Thu meat special",
+      "bulk": []
+     },
+     "Prime Bazaar": {
+      "ppu": 3.49,
+      "pack": "Fresh Zabiha chicken drumstick, per lb",
+      "bulk": []
+     }
+    },
+    "best": 0.79,
+    "worst": 3.49,
+    "save": 2.7,
     "n": 2
    },
    {
@@ -213,56 +142,86 @@
       "pack": "Weekend meat specials",
       "bulk": []
      },
-     "Papa Mart": {
-      "ppu": 1.29,
-      "pack": "Meat Deal flyer Oct 17, no end date stated",
-      "bulk": []
-     }
-    },
-    "best": 1.29,
-    "worst": 1.99,
-    "save": 0.7,
-    "n": 2
-   },
-   {
-    "item": "chicken thighs, boneless",
-    "basis": "lb",
-    "stores": {
-     "Aldi": {
-      "ppu": 2.49,
-      "pack": "Weekly ad Oct 28-Nov 3 via ad roundup, UNVERIFIED",
-      "bulk": []
-     },
      "Prime Bazaar": {
-      "ppu": 3.0,
-      "pack": "Diwali Promo: Fresh Zabiha Halal boneless thigh 5 lb $15.00 (= $3.00/lb)",
+      "ppu": 3.49,
+      "pack": "Zabiha halal; daily counter price",
       "bulk": []
      }
     },
-    "best": 2.49,
-    "worst": 3.0,
-    "save": 0.51,
+    "best": 1.99,
+    "worst": 3.49,
+    "save": 1.5,
     "n": 2
    },
    {
-    "item": "whole chicken",
+    "item": "turkey, frozen whole",
     "basis": "lb",
     "stores": {
-     "World Food Warehouse": {
-      "ppu": 1.69,
-      "pack": null,
+     "Walmart (Sugar Land Hwy 6)": {
+      "ppu": 0.97,
+      "pack": "Holiday Meal Basket national announcement through Dec 24, NOT a Hwy 6 weekly ad; UNVERIFIED for this store",
       "bulk": []
      },
-     "Papa Mart": {
-      "ppu": 1.19,
-      "pack": "Whole chargha with skin, Meat Deal flyer Oct 17",
+     "Aldi": {
+      "ppu": 0.99,
+      "pack": "Limit 2; per smartspendingresources.com Aldi ad roundup (Raleigh NC store, prices may vary by region)",
       "bulk": []
      }
     },
-    "best": 1.19,
-    "worst": 1.69,
-    "save": 0.5,
+    "best": 0.97,
+    "worst": 0.99,
+    "save": 0.02,
     "n": 2
+   },
+   {
+    "item": "turkey, whole frozen",
+    "basis": "lb",
+    "stores": {
+     "Kroger": {
+      "ppu": 0.98,
+      "pack": "Unadvertised deal with Kroger Card, 14-16 lb bird; per couponsforyourfamily.com",
+      "bulk": []
+     },
+     "Walmart": {
+      "ppu": 0.97,
+      "pack": "Walmart Thanksgiving basket price; checked in Tampa Bay by inflationbites.com, Houston price may vary; basket runs through Dec 24",
+      "bulk": []
+     }
+    },
+    "best": 0.97,
+    "worst": 0.98,
+    "save": 0.01,
+    "n": 2
+   },
+   {
+    "item": "Hillshire Farm deli thin lunch meat",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 2.99,
+      "pack": "7-9 oz; $3.99 shelf, $1/1 Kroger Super Saver Digital Coupon (use up to 5x per transaction), clip in Kroger app; with coupon",
+      "bulk": []
+     }
+    },
+    "best": 2.99,
+    "worst": 2.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "Tyson chicken wings, bites, fries, or strips",
+    "basis": "each",
+    "stores": {
+     "H-E-B": {
+      "ppu": 6.5,
+      "pack": "20-24 oz, or Any'tizers Chicken Fries 26.5 oz; H-E-B digital coupon 2 for $13, clip in H-E-B app / heb.com; with coupon",
+      "bulk": []
+     }
+    },
+    "best": 6.5,
+    "worst": 6.5,
+    "save": 0.0,
+    "n": 1
    },
    {
     "item": "baby cow, cut up",
@@ -280,12 +239,42 @@
     "n": 1
    },
    {
-    "item": "baby goat/lamb leg",
+    "item": "beef bacon, 12 oz",
+    "basis": "each",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 10.99,
+      "pack": "Zabiha halal; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 10.99,
+    "worst": 10.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "beef brisket, 10 lb",
     "basis": "lb",
     "stores": {
-     "World Food Warehouse": {
+     "Prime Bazaar": {
+      "ppu": 6.2,
+      "pack": "Zabiha halal; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 6.2,
+    "worst": 6.2,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "beef chuck",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
       "ppu": 9.99,
-      "pack": "Fresh baby goat/lamb leg; Tomorrow-Sunday only",
+      "pack": "Zabiha halal; daily counter price",
       "bulk": []
      }
     },
@@ -325,6 +314,36 @@
     "n": 1
    },
    {
+    "item": "beef flank steak",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 9.99,
+      "pack": "Zabiha halal; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 9.99,
+    "worst": 9.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "beef marrow bones",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 5.99,
+      "pack": "Zabiha halal; nulli bones; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 5.99,
+    "worst": 5.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "beef paya",
     "basis": "lb",
     "stores": {
@@ -340,17 +359,47 @@
     "n": 1
    },
    {
-    "item": "beef pot roast kit",
-    "basis": "lb",
+    "item": "beef pepperoni, 8 oz pack",
+    "basis": "each",
     "stores": {
-     "Aldi": {
-      "ppu": 4.49,
-      "pack": "Next ad",
+     "Prime Bazaar": {
+      "ppu": 7.99,
+      "pack": "Zabiha halal; daily counter price",
       "bulk": []
      }
     },
-    "best": 4.49,
-    "worst": 4.49,
+    "best": 7.99,
+    "worst": 7.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "beef shank with bone",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 6.99,
+      "pack": "Zabiha halal; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 6.99,
+    "worst": 6.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "beef skirt steak",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 9.99,
+      "pack": "Zabiha halal; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 9.99,
+    "worst": 9.99,
     "save": 0.0,
     "n": 1
    },
@@ -361,6 +410,21 @@
      "Prime Bazaar": {
       "ppu": 7.99,
       "pack": "Fresh Zabiha Halal beef stew, per lb",
+      "bulk": []
+     }
+    },
+    "best": 7.99,
+    "worst": 7.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "beef stew meat",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 7.99,
+      "pack": "Zabiha halal; daily counter price",
       "bulk": []
      }
     },
@@ -430,17 +494,92 @@
     "n": 1
    },
    {
-    "item": "chicken boti",
+    "item": "boneless beef eye of round roast",
     "basis": "lb",
     "stores": {
-     "Papa Mart": {
-      "ppu": 2.49,
-      "pack": "Meat Deal flyer Oct 17, no end date stated",
+     "H-E-B": {
+      "ppu": 4.99,
+      "pack": "Weekly ad price list; ad dates confirmed on heb.com but prices transcribed from roundup blog, not the H-E-B flyer itself",
       "bulk": []
      }
     },
-    "best": 2.49,
-    "worst": 2.49,
+    "best": 4.99,
+    "worst": 4.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "boneless chicken box, 10 lb",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 2.8,
+      "pack": "Zabiha halal; breast, thigh or mix, 2 lb trays; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 2.8,
+    "worst": 2.8,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "boneless chicken thigh",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 5.99,
+      "pack": "Zabiha halal; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 5.99,
+    "worst": 5.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chicken breast",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 5.99,
+      "pack": "Fresh Zabiha Halal chicken breast, per lb",
+      "bulk": []
+     }
+    },
+    "best": 5.99,
+    "worst": 5.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chicken breast cubes",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 5.99,
+      "pack": "Zabiha halal; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 5.99,
+    "worst": 5.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chicken breast, 40 lb box, as-is",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 1.7,
+      "pack": "Zabiha halal; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 1.7,
+    "worst": 1.7,
     "save": 0.0,
     "n": 1
    },
@@ -460,17 +599,107 @@
     "n": 1
    },
    {
+    "item": "chicken breast, 5 lb, Diwali deal",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 3.1,
+      "pack": "Zabiha halal; Diwali deal, $3.10/lb equivalent; ends with Diwali Nov 8",
+      "bulk": []
+     }
+    },
+    "best": 3.1,
+    "worst": 3.1,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "chicken breast, boneless",
     "basis": "lb",
     "stores": {
      "Kroger": {
       "ppu": 1.99,
-      "pack": "Heritage Farm, next ad",
+      "pack": "Headline deal in Kroger weekly ad roundup; price not seen on kroger.com itself this run",
       "bulk": []
      }
     },
     "best": 1.99,
     "worst": 1.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chicken breast, boneless skinless split with rib meat",
+    "basis": "lb",
+    "stores": {
+     "H-E-B": {
+      "ppu": 2.49,
+      "pack": "Weekly ad price list; ad dates confirmed on heb.com but prices transcribed from roundup blog, not the H-E-B flyer itself",
+      "bulk": []
+     }
+    },
+    "best": 2.49,
+    "worst": 2.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chicken breast, fajita cut",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 5.99,
+      "pack": "Zabiha halal; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 5.99,
+    "worst": 5.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chicken breasts, family pack",
+    "basis": "lb",
+    "stores": {
+     "Aldi": {
+      "ppu": 1.99,
+      "pack": "Fresh family pack; per smartspendingresources.com Aldi ad roundup (Raleigh NC store, prices may vary by region)",
+      "bulk": []
+     }
+    },
+    "best": 1.99,
+    "worst": 1.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chicken drumsticks, 40 lb box",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 1.77,
+      "pack": "Zabiha halal; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 1.77,
+    "worst": 1.77,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chicken drumsticks, family pack",
+    "basis": "lb",
+    "stores": {
+     "Aldi": {
+      "ppu": 1.09,
+      "pack": "Fresh family pack; per smartspendingresources.com Aldi ad roundup (Raleigh NC store, prices may vary by region)",
+      "bulk": []
+     }
+    },
+    "best": 1.09,
+    "worst": 1.09,
     "save": 0.0,
     "n": 1
    },
@@ -490,32 +719,32 @@
     "n": 1
    },
    {
-    "item": "chicken gizzard",
+    "item": "chicken gizzards",
     "basis": "lb",
     "stores": {
-     "Papa Mart": {
-      "ppu": 1.25,
-      "pack": "Meat Deal flyer Oct 17, no end date stated",
+     "Prime Bazaar": {
+      "ppu": 2.99,
+      "pack": "Zabiha halal; daily counter price",
       "bulk": []
      }
     },
-    "best": 1.25,
-    "worst": 1.25,
+    "best": 2.99,
+    "worst": 2.99,
     "save": 0.0,
     "n": 1
    },
    {
-    "item": "chicken keema (breast)",
-    "basis": "lb",
+    "item": "chicken hot dogs, 8 ct",
+    "basis": "each",
     "stores": {
-     "Papa Mart": {
-      "ppu": 1.85,
-      "pack": "Meat Deal flyer Oct 17, no end date stated",
+     "Prime Bazaar": {
+      "ppu": 7.99,
+      "pack": "Zabiha halal; fully cooked, 12.6 oz; daily counter price",
       "bulk": []
      }
     },
-    "best": 1.85,
-    "worst": 1.85,
+    "best": 7.99,
+    "worst": 7.99,
     "save": 0.0,
     "n": 1
    },
@@ -565,17 +794,32 @@
     "n": 1
    },
    {
-    "item": "chicken leg quarters, Kroger 10 lb bag",
+    "item": "chicken leg quarters, 40 lb box, as-is",
     "basis": "lb",
     "stores": {
-     "Kroger": {
-      "ppu": 0.69,
-      "pack": "Heritage Farm 10 lb bag; weekly ad Oct 28-Nov 3 via ad roundup, UNVERIFIED",
+     "Prime Bazaar": {
+      "ppu": 0.75,
+      "pack": "Zabiha halal; daily counter price, recheck; $0.75/lb equivalent",
       "bulk": []
      }
     },
-    "best": 0.69,
-    "worst": 0.69,
+    "best": 0.75,
+    "worst": 0.75,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chicken leg quarters, 40 lb box, custom cut",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 1.0,
+      "pack": "Zabiha halal; daily counter price, recheck",
+      "bulk": []
+     }
+    },
+    "best": 1.0,
+    "worst": 1.0,
     "save": 0.0,
     "n": 1
    },
@@ -610,17 +854,17 @@
     "n": 1
    },
    {
-    "item": "chicken leg quarters, seasoned value pack",
+    "item": "chicken leg quarters, per lb",
     "basis": "lb",
     "stores": {
-     "H-E-B": {
-      "ppu": 0.99,
-      "pack": "Hill Country Fare Bar-B-Q seasoned, value pack; also drumsticks value pack at same price",
+     "Prime Bazaar": {
+      "ppu": 3.49,
+      "pack": "Zabiha halal; cut up, per lb; daily counter price",
       "bulk": []
      }
     },
-    "best": 0.99,
-    "worst": 0.99,
+    "best": 3.49,
+    "worst": 3.49,
     "save": 0.0,
     "n": 1
    },
@@ -643,14 +887,14 @@
     "item": "chicken liver",
     "basis": "lb",
     "stores": {
-     "Papa Mart": {
-      "ppu": 0.99,
-      "pack": "Meat Deal flyer Oct 17, no end date stated",
+     "Prime Bazaar": {
+      "ppu": 2.49,
+      "pack": "Zabiha halal; daily counter price",
       "bulk": []
      }
     },
-    "best": 0.99,
-    "worst": 0.99,
+    "best": 2.49,
+    "worst": 2.49,
     "save": 0.0,
     "n": 1
    },
@@ -670,6 +914,21 @@
     "n": 1
    },
    {
+    "item": "chicken thigh, 5 lb, Diwali promo",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 3.1,
+      "pack": "Zabiha halal; Diwali promo, $3.10/lb equivalent; ends with Diwali Nov 8",
+      "bulk": []
+     }
+    },
+    "best": 3.1,
+    "worst": 3.1,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "chicken thighs, boneless, 5 lb Diwali promo",
     "basis": "lb",
     "stores": {
@@ -681,6 +940,21 @@
     },
     "best": 3.0,
     "worst": 3.0,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chicken, frozen, 16-26 oz",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 5.99,
+      "pack": "$8.99 shelf, $5.99 with $3 Kroger Super Saver digital coupon (up to 5x); per iheartkroger.com",
+      "bulk": []
+     }
+    },
+    "best": 5.99,
+    "worst": 5.99,
     "save": 0.0,
     "n": 1
    },
@@ -700,47 +974,17 @@
     "n": 1
    },
    {
-    "item": "chicken, whole chargha skinless",
+    "item": "family chicken box, 15 lb",
     "basis": "lb",
     "stores": {
-     "Papa Mart": {
-      "ppu": 1.59,
-      "pack": "Weekend Sale Chicken Fri-Sun",
+     "Prime Bazaar": {
+      "ppu": 2.67,
+      "pack": "Zabiha halal; custom cut; daily counter price",
       "bulk": []
      }
     },
-    "best": 1.59,
-    "worst": 1.59,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "chicken, whole chargha with skin",
-    "basis": "lb",
-    "stores": {
-     "Papa Mart": {
-      "ppu": 1.39,
-      "pack": "Weekend Sale Chicken Fri-Sun",
-      "bulk": []
-     }
-    },
-    "best": 1.39,
-    "worst": 1.39,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "chicken, whole cut up",
-    "basis": "lb",
-    "stores": {
-     "Papa Mart": {
-      "ppu": 1.79,
-      "pack": "Weekend Sale Chicken Fri-Sun",
-      "bulk": []
-     }
-    },
-    "best": 1.79,
-    "worst": 1.79,
+    "best": 2.67,
+    "worst": 2.67,
     "save": 0.0,
     "n": 1
    },
@@ -760,6 +1004,21 @@
     "n": 1
    },
    {
+    "item": "goat chops, bone-in, 5 pieces",
+    "basis": "each",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 12.99,
+      "pack": "Zabiha halal; 5 pieces per pack; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 12.99,
+    "worst": 12.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "goat leg",
     "basis": "lb",
     "stores": {
@@ -775,12 +1034,57 @@
     "n": 1
    },
    {
+    "item": "goat liver",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 9.99,
+      "pack": "Zabiha halal; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 9.99,
+    "worst": 9.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "goat meat curry cut",
     "basis": "lb",
     "stores": {
      "Prime Bazaar": {
       "ppu": 11.99,
       "pack": "Fresh Zabiha Halal goat meat curry cut, per lb; standing counter price on own site, no end date shown",
+      "bulk": []
+     }
+    },
+    "best": 11.99,
+    "worst": 11.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "goat meat, boneless",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 14.99,
+      "pack": "Zabiha halal; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 14.99,
+    "worst": 14.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "goat meat, curry cut",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 11.99,
+      "pack": "Zabiha halal; daily counter price",
       "bulk": []
      }
     },
@@ -820,6 +1124,21 @@
     "n": 1
    },
    {
+    "item": "goat paya (trotters), skinless",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 10.99,
+      "pack": "Zabiha halal; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 10.99,
+    "worst": 10.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "goat rib",
     "basis": "lb",
     "stores": {
@@ -835,47 +1154,107 @@
     "n": 1
    },
    {
-    "item": "goat/lamb mix",
+    "item": "goat shoulder",
     "basis": "lb",
     "stores": {
-     "The Meat Grinder Market": {
-      "ppu": 6.99,
-      "pack": "Weekend reel deal 3, limit 3 trays per family; price on screen ~0:21",
+     "Prime Bazaar": {
+      "ppu": 12.49,
+      "pack": "Zabiha halal; daily counter price",
       "bulk": []
      }
     },
-    "best": 6.99,
-    "worst": 6.99,
+    "best": 12.49,
+    "worst": 12.49,
     "save": 0.0,
     "n": 1
    },
    {
-    "item": "ground beef, 80% lean",
+    "item": "ground beef",
     "basis": "lb",
     "stores": {
-     "Kroger": {
-      "ppu": 4.77,
-      "pack": "Next ad",
+     "Prime Bazaar": {
+      "ppu": 5.99,
+      "pack": "Fresh Zabiha Halal ground beef 80/20, 1 lb",
       "bulk": []
      }
     },
-    "best": 4.77,
-    "worst": 4.77,
+    "best": 5.99,
+    "worst": 5.99,
     "save": 0.0,
     "n": 1
    },
    {
-    "item": "ground chicken",
-    "basis": "pack",
+    "item": "ground beef, 5 lb chub",
+    "basis": "lb",
     "stores": {
      "Aldi": {
-      "ppu": 7.99,
-      "pack": "Fresh family pack, 48 oz",
+      "ppu": 2.99,
+      "pack": "$14.95 for 5 lb chub = $2.99/lb; per smartspendingresources.com Aldi ad roundup",
       "bulk": []
      }
     },
-    "best": 7.99,
-    "worst": 7.99,
+    "best": 2.99,
+    "worst": 2.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "ground beef, 80/20",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 5.99,
+      "pack": "Zabiha halal; 1 lb pack; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 5.99,
+    "worst": 5.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "ground beef, 80/20, 10 lb",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 5.4,
+      "pack": "Zabiha halal; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 5.4,
+    "worst": 5.4,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "ground beef, organic grass-fed 85/15, 1 lb",
+    "basis": "each",
+    "stores": {
+     "Aldi": {
+      "ppu": 5.99,
+      "pack": "Per smartspendingresources.com Aldi ad roundup (Raleigh NC store, prices may vary by region)",
+      "bulk": []
+     }
+    },
+    "best": 5.99,
+    "worst": 5.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "ground chicken breast, 20 lb",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 2.65,
+      "pack": "Zabiha halal; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 2.65,
+    "worst": 2.65,
     "save": 0.0,
     "n": 1
    },
@@ -895,6 +1274,36 @@
     "n": 1
    },
    {
+    "item": "ground lamb",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 12.49,
+      "pack": "Fresh Zabiha Halal ground lamb (keema), per lb",
+      "bulk": []
+     }
+    },
+    "best": 12.49,
+    "worst": 12.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "ground lamb, 1 lb",
+    "basis": "each",
+    "stores": {
+     "Aldi": {
+      "ppu": 7.99,
+      "pack": "Fresh; per smartspendingresources.com Aldi ad roundup (Raleigh NC store, prices may vary by region)",
+      "bulk": []
+     }
+    },
+    "best": 7.99,
+    "worst": 7.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "lamb boneless",
     "basis": "lb",
     "stores": {
@@ -910,17 +1319,17 @@
     "n": 1
    },
    {
-    "item": "lamb loin chops",
-    "basis": "lb",
+    "item": "lamb chops, bone-in, 5 pieces",
+    "basis": "each",
     "stores": {
-     "Aldi": {
-      "ppu": 10.99,
-      "pack": "Next ad, not labeled halal",
+     "Prime Bazaar": {
+      "ppu": 12.99,
+      "pack": "Zabiha halal; 5 pieces per pack; daily counter price",
       "bulk": []
      }
     },
-    "best": 10.99,
-    "worst": 10.99,
+    "best": 12.99,
+    "worst": 12.99,
     "save": 0.0,
     "n": 1
    },
@@ -931,6 +1340,36 @@
      "Prime Bazaar": {
       "ppu": 11.99,
       "pack": "Fresh Zabiha Halal lamb meat curry cut, per lb; standing counter price, no end date shown",
+      "bulk": []
+     }
+    },
+    "best": 11.99,
+    "worst": 11.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "lamb meat, boneless",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 14.99,
+      "pack": "Zabiha halal; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 14.99,
+    "worst": 14.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "lamb meat, curry cut",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 11.99,
+      "pack": "Zabiha halal; daily counter price",
       "bulk": []
      }
     },
@@ -970,17 +1409,47 @@
     "n": 1
    },
    {
-    "item": "lamb shoulder",
+    "item": "lamb shank",
     "basis": "lb",
     "stores": {
-     "Hala Market": {
-      "ppu": 8.99,
-      "pack": "Weekend Sale, seen on IG profile Oct 30, no end date stated",
+     "Prime Bazaar": {
+      "ppu": 12.49,
+      "pack": "Zabiha halal; daily counter price",
       "bulk": []
      }
     },
-    "best": 8.99,
-    "worst": 8.99,
+    "best": 12.49,
+    "worst": 12.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "lunch meat, 7-9 oz",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 2.99,
+      "pack": "$3.99 shelf, $2.99 with $1 Kroger Super Saver digital coupon (up to 5x); per iheartkroger.com",
+      "bulk": []
+     }
+    },
+    "best": 2.99,
+    "worst": 2.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "noodles, Cocola egg & chicken",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 1.33,
+      "pack": "Weekend 3-Day Sale, Nov 6-8. 3 for $3.99",
+      "bulk": []
+     }
+    },
+    "best": 1.33,
+    "worst": 1.33,
     "save": 0.0,
     "n": 1
    },
@@ -1000,209 +1469,159 @@
     "n": 1
    },
    {
-    "item": "turkey breast, frozen bone-in",
-    "basis": "lb",
+    "item": "roasted chicken, fully cooked, 2 lb",
+    "basis": "each",
     "stores": {
-     "Walmart": {
-      "ppu": 1.68,
-      "pack": "Claimed Oct 25-31, no clean dated flyer",
+     "Kroger": {
+      "ppu": 6.0,
+      "pack": "Per southernsavers.com Kroger meal plan; not seen on kroger.com this run",
       "bulk": []
      }
     },
-    "best": 1.68,
-    "worst": 1.68,
+    "best": 6.0,
+    "worst": 6.0,
     "save": 0.0,
     "n": 1
    },
    {
-    "item": "turkey, frozen whole",
-    "basis": "lb",
+    "item": "turkey bacon, 12 oz",
+    "basis": "each",
     "stores": {
-     "Walmart (Sugar Land Hwy 6)": {
-      "ppu": 0.97,
-      "pack": "Holiday Meal Basket national announcement through Dec 24, NOT a Hwy 6 weekly ad; UNVERIFIED for this store",
+     "Prime Bazaar": {
+      "ppu": 9.99,
+      "pack": "Zabiha halal; daily counter price",
       "bulk": []
      }
     },
-    "best": 0.97,
-    "worst": 0.97,
+    "best": 9.99,
+    "worst": 9.99,
     "save": 0.0,
     "n": 1
    },
    {
-    "item": "whole chicken, cut up",
+    "item": "whole chicken",
     "basis": "lb",
     "stores": {
-     "Papa Mart": {
-      "ppu": 1.75,
-      "pack": "Meat Deal flyer Oct 17, no end date stated",
+     "World Food Warehouse": {
+      "ppu": 1.69,
+      "pack": null,
       "bulk": []
      }
     },
-    "best": 1.75,
-    "worst": 1.75,
+    "best": 1.69,
+    "worst": 1.69,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "whole chicken, 10 lb",
+    "basis": "lb",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 2.5,
+      "pack": "Zabiha halal; cut your way; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 2.5,
+    "worst": 2.5,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "whole chicken, each",
+    "basis": "each",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 11.99,
+      "pack": "Zabiha halal; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 11.99,
+    "worst": 11.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "whole chicken, organic",
+    "basis": "lb",
+    "stores": {
+     "Aldi": {
+      "ppu": 2.79,
+      "pack": "Fresh organic; per smartspendingresources.com Aldi ad roundup (Raleigh NC store, prices may vary by region)",
+      "bulk": []
+     }
+    },
+    "best": 2.79,
+    "worst": 2.79,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "whole chickens, 3-pack",
+    "basis": "each",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 7.33,
+      "pack": "Zabiha halal; cut your way; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 7.33,
+    "worst": 7.33,
     "save": 0.0,
     "n": 1
    }
   ],
   "Produce": [
    {
-    "item": "mandarin",
-    "basis": "lb",
+    "item": "garlic, 5 ct sleeve",
+    "basis": "each",
     "stores": {
-     "The Meat Grinder Market": {
-      "ppu": 0.99,
-      "pack": "Fresh Mandarins, Fresh Fruit Special, Friday Saturday Sunday only",
+     "World Food Warehouse": {
+      "ppu": 1.59,
+      "pack": "Garlic 5 ct sleeve; Produce Special",
       "bulk": []
      },
+     "Big Basket (Stafford)": {
+      "ppu": 1.49,
+      "pack": "Weekly Sale, Thu Nov 5 - Sun Nov 8, 2026. 5-pack, $1.49 each",
+      "bulk": []
+     }
+    },
+    "best": 1.49,
+    "worst": 1.59,
+    "save": 0.1,
+    "n": 2
+   },
+   {
+    "item": "Idahoan mashed potatoes",
+    "basis": "each",
+    "stores": {
      "Kroger": {
-      "ppu": 1.33,
-      "pack": "Adorbs Seedless Mandarins, 3 lb bag $3.99",
-      "bulk": []
-     },
-     "World Food Warehouse": {
-      "ppu": 1.49,
-      "pack": "Produce Special",
-      "bulk": []
-     }
-    },
-    "best": 0.99,
-    "worst": 1.49,
-    "save": 0.5,
-    "n": 3
-   },
-   {
-    "item": "white onion",
-    "basis": "lb",
-    "stores": {
-     "World Food Warehouse": {
-      "ppu": 0.49,
-      "pack": null,
-      "bulk": []
-     },
-     "H-E-B": {
-      "ppu": 1.39,
-      "pack": "H-E-B Organics White Onions, 2 lb bag $2.77 ea in ad (or Organics Limes 1 lb bag at same price)",
-      "bulk": []
-     }
-    },
-    "best": 0.49,
-    "worst": 1.39,
-    "save": 0.9,
-    "n": 2
-   },
-   {
-    "item": "eggplant",
-    "basis": "lb",
-    "stores": {
-     "World Food Warehouse": {
       "ppu": 0.99,
-      "pack": "Jumbo eggplant; Produce Special",
-      "bulk": []
-     },
-     "Desi Brothers": {
-      "ppu": 1.49,
-      "pack": "Indian eggplant; Weekend Special",
-      "bulk": []
-     }
-    },
-    "best": 0.99,
-    "worst": 1.49,
-    "save": 0.5,
-    "n": 2
-   },
-   {
-    "item": "ginger",
-    "basis": "lb",
-    "stores": {
-     "World Food Warehouse": {
-      "ppu": 0.89,
-      "pack": "Ginger root; Produce Special",
-      "bulk": []
-     },
-     "Desi Brothers": {
-      "ppu": 1.29,
-      "pack": "Chinese ginger; Weekend Special",
-      "bulk": []
-     }
-    },
-    "best": 0.89,
-    "worst": 1.29,
-    "save": 0.4,
-    "n": 2
-   },
-   {
-    "item": "karela (bitter melon)",
-    "basis": "lb",
-    "stores": {
-     "World Food Warehouse": {
-      "ppu": 0.99,
-      "pack": "Indian bittermelon; Produce Special",
-      "bulk": []
-     },
-     "Desi Brothers": {
-      "ppu": 1.29,
-      "pack": "Weekend Special",
-      "bulk": []
-     }
-    },
-    "best": 0.99,
-    "worst": 1.29,
-    "save": 0.3,
-    "n": 2
-   },
-   {
-    "item": "beet root",
-    "basis": "lb",
-    "stores": {
-     "Desi Brothers": {
-      "ppu": 0.49,
-      "pack": "Weekend Special",
-      "bulk": []
-     },
-     "Big Basket (Stafford)": {
-      "ppu": 0.5,
-      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
-      "bulk": []
-     }
-    },
-    "best": 0.49,
-    "worst": 0.5,
-    "save": 0.01,
-    "n": 2
-   },
-   {
-    "item": "dudhi (lauki)",
-    "basis": "lb",
-    "stores": {
-     "Desi Brothers": {
-      "ppu": 0.99,
-      "pack": "Indian dudhi; Weekend Special",
-      "bulk": []
-     },
-     "Big Basket (Stafford)": {
-      "ppu": 0.99,
-      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2 Indian dudhi",
+      "pack": "4-4.1 oz; 99c Mix & Match, buy 5+ participating items; with coupon",
       "bulk": []
      }
     },
     "best": 0.99,
     "worst": 0.99,
     "save": 0.0,
-    "n": 2
+    "n": 1
    },
    {
-    "item": "carrots",
+    "item": "beet root",
     "basis": "lb",
     "stores": {
-     "Desi Brothers": {
-      "ppu": 0.49,
-      "pack": "Weekend Special",
+     "Big Basket (Stafford)": {
+      "ppu": 0.5,
+      "pack": "Weekly Sale, Thu Nov 5 - Sun Nov 8, 2026. ",
       "bulk": []
      }
     },
-    "best": 0.49,
-    "worst": 0.49,
+    "best": 0.5,
+    "worst": 0.5,
     "save": 0.0,
     "n": 1
    },
@@ -1222,27 +1641,42 @@
     "n": 1
    },
    {
-    "item": "cilantro",
+    "item": "cucumber, each",
     "basis": "each",
     "stores": {
-     "Big Basket (Stafford)": {
-      "ppu": 0.25,
-      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2 4 for $1",
+     "Walmart": {
+      "ppu": 0.76,
+      "pack": "Per southernsavers.com Walmart ad roundup (Nov 2-8 ad)",
       "bulk": []
      }
     },
-    "best": 0.25,
-    "worst": 0.25,
+    "best": 0.76,
+    "worst": 0.76,
     "save": 0.0,
     "n": 1
    },
    {
-    "item": "eggplant, Indian round",
+    "item": "dudhi (lauki)",
     "basis": "lb",
     "stores": {
      "Big Basket (Stafford)": {
+      "ppu": 0.79,
+      "pack": "Weekly Sale, Thu Nov 5 - Sun Nov 8, 2026. Indian dudhi",
+      "bulk": []
+     }
+    },
+    "best": 0.79,
+    "worst": 0.79,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "eggplant",
+    "basis": "lb",
+    "stores": {
+     "World Food Warehouse": {
       "ppu": 0.99,
-      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "pack": "Jumbo eggplant; Produce Special",
       "bulk": []
      }
     },
@@ -1282,17 +1716,17 @@
     "n": 1
    },
    {
-    "item": "garlic, 5 ct sleeve",
-    "basis": "each",
+    "item": "ginger",
+    "basis": "lb",
     "stores": {
      "World Food Warehouse": {
-      "ppu": 1.59,
-      "pack": "Garlic 5 ct sleeve; Produce Special",
+      "ppu": 0.89,
+      "pack": "Ginger root; Produce Special",
       "bulk": []
      }
     },
-    "best": 1.59,
-    "worst": 1.59,
+    "best": 0.89,
+    "worst": 0.89,
     "save": 0.0,
     "n": 1
    },
@@ -1317,7 +1751,7 @@
     "stores": {
      "Big Basket (Stafford)": {
       "ppu": 0.99,
-      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "pack": "Weekly Sale, Thu Nov 5 - Sun Nov 8, 2026. ",
       "bulk": []
      }
     },
@@ -1342,17 +1776,107 @@
     "n": 1
    },
    {
-    "item": "long chilli",
-    "basis": "lb",
+    "item": "green onion",
+    "basis": "each",
     "stores": {
-     "Desi Brothers": {
-      "ppu": 2.99,
-      "pack": "Weekend Special",
+     "Big Basket (Stafford)": {
+      "ppu": 0.5,
+      "pack": "Weekly Sale, Thu Nov 5 - Sun Nov 8, 2026. 2 for $1",
       "bulk": []
      }
     },
-    "best": 2.99,
-    "worst": 2.99,
+    "best": 0.5,
+    "worst": 0.5,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "hilsa fish, Chandpuri, 3-pack",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 39.99,
+      "pack": "4.5 LB or more per pack; Emerald, 2 Kg (4.41 lb)/pack checked",
+      "bulk": []
+     }
+    },
+    "best": 39.99,
+    "worst": 39.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "hilsa fish, Padma, 2-pack",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 27.99,
+      "pack": "3 LB or more per pack",
+      "bulk": []
+     }
+    },
+    "best": 27.99,
+    "worst": 27.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "hilsa fish, Padma, whole",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 18.99,
+      "pack": "Weekend Sale, Nov 6-8. 800-1000 GM (2 LB or more). Buy 2 for $35.99; buy 3 for $49.99. Free cut & scale",
+      "bulk": []
+     }
+    },
+    "best": 18.99,
+    "worst": 18.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "hilsa fish, pack",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 25.99,
+      "pack": "Weekend Sale, Nov 6-8. 4-pack, 4 LB or more, 600-800 GM. Free cut only",
+      "bulk": []
+     }
+    },
+    "best": 25.99,
+    "worst": 25.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "karela (bitter melon)",
+    "basis": "lb",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 0.99,
+      "pack": "Indian bittermelon; Produce Special",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 0.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "mandarin",
+    "basis": "lb",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 1.49,
+      "pack": "Produce Special",
+      "bulk": []
+     }
+    },
+    "best": 1.49,
+    "worst": 1.49,
     "save": 0.0,
     "n": 1
    },
@@ -1377,7 +1901,7 @@
     "stores": {
      "Big Basket (Stafford)": {
       "ppu": 1.49,
-      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "pack": "Weekly Sale, Thu Nov 5 - Sun Nov 8, 2026. ",
       "bulk": []
      }
     },
@@ -1402,27 +1926,12 @@
     "n": 1
    },
    {
-    "item": "red onion",
-    "basis": "lb",
-    "stores": {
-     "Desi Brothers": {
-      "ppu": 0.69,
-      "pack": "Weekend Special",
-      "bulk": []
-     }
-    },
-    "best": 0.69,
-    "worst": 0.69,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "red potatoes, loose",
+    "item": "poi leaves",
     "basis": "lb",
     "stores": {
      "Big Basket (Stafford)": {
       "ppu": 0.99,
-      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "pack": "Weekly Sale, Thu Nov 5 - Sun Nov 8, 2026. ",
       "bulk": []
      }
     },
@@ -1432,32 +1941,47 @@
     "n": 1
    },
    {
-    "item": "russet potatoes",
+    "item": "red bell peppers",
     "basis": "each",
     "stores": {
-     "Kroger": {
-      "ppu": 5.0,
-      "pack": "10-lb bag",
+     "H-E-B": {
+      "ppu": 0.87,
+      "pack": "Weekly ad price list; ad dates confirmed on heb.com but prices transcribed from roundup blog, not the H-E-B flyer itself",
       "bulk": []
      }
     },
-    "best": 5.0,
-    "worst": 5.0,
+    "best": 0.87,
+    "worst": 0.87,
     "save": 0.0,
     "n": 1
    },
    {
-    "item": "small chilies",
+    "item": "red potato",
     "basis": "lb",
     "stores": {
      "Big Basket (Stafford)": {
-      "ppu": 1.49,
-      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "ppu": 0.99,
+      "pack": "Weekly Sale, Thu Nov 5 - Sun Nov 8, 2026. Loose",
       "bulk": []
      }
     },
-    "best": 1.49,
-    "worst": 1.49,
+    "best": 0.99,
+    "worst": 0.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "russet potatoes, 5 lb",
+    "basis": "each",
+    "stores": {
+     "Walmart": {
+      "ppu": 2.47,
+      "pack": "Per southernsavers.com Walmart ad roundup (Nov 2-8 ad)",
+      "bulk": []
+     }
+    },
+    "best": 2.47,
+    "worst": 2.47,
     "save": 0.0,
     "n": 1
    },
@@ -1477,17 +2001,32 @@
     "n": 1
    },
    {
-    "item": "tomatoes, Roma",
+    "item": "white onion",
     "basis": "lb",
     "stores": {
-     "Desi Brothers": {
-      "ppu": 1.49,
-      "pack": "Roma tomato; Weekend Special",
+     "World Food Warehouse": {
+      "ppu": 0.49,
+      "pack": null,
       "bulk": []
      }
     },
-    "best": 1.49,
-    "worst": 1.49,
+    "best": 0.49,
+    "worst": 0.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "white potato",
+    "basis": "lb",
+    "stores": {
+     "Big Basket (Stafford)": {
+      "ppu": 0.99,
+      "pack": "Weekly Sale, Thu Nov 5 - Sun Nov 8, 2026. Loose",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 0.99,
     "save": 0.0,
     "n": 1
    },
@@ -1495,14 +2034,29 @@
     "item": "yellow onion",
     "basis": "lb",
     "stores": {
-     "Desi Brothers": {
+     "Big Basket (Stafford)": {
       "ppu": 0.49,
-      "pack": "Weekend Special",
+      "pack": "Weekly Sale, Thu Nov 5 - Sun Nov 8, 2026. Loose",
       "bulk": []
      }
     },
     "best": 0.49,
     "worst": 0.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "yellow onions, 3 lb",
+    "basis": "each",
+    "stores": {
+     "Walmart": {
+      "ppu": 2.15,
+      "pack": "Per southernsavers.com Walmart ad roundup (Nov 2-8 ad)",
+      "bulk": []
+     }
+    },
+    "best": 2.15,
+    "worst": 2.15,
     "save": 0.0,
     "n": 1
    }
@@ -1584,21 +2138,6 @@
     "n": 1
    },
    {
-    "item": "ghee, Nanak 28 oz",
-    "basis": "each",
-    "stores": {
-     "Desi Brothers": {
-      "ppu": 10.99,
-      "pack": "Nanak Ghee 28 oz",
-      "bulk": []
-     }
-    },
-    "best": 10.99,
-    "worst": 10.99,
-    "save": 0.0,
-    "n": 1
-   },
-   {
     "item": "gingelly oil",
     "basis": "each",
     "stores": {
@@ -1614,17 +2153,17 @@
     "n": 1
    },
    {
-    "item": "gingelly oil, Amma's Kitchen 5 Ltr",
+    "item": "jilapi, Ghee Vaja",
     "basis": "each",
     "stores": {
-     "Desi Brothers": {
-      "ppu": 20.99,
-      "pack": "Amma's Kitchen Gingelly Oil 5 Ltr",
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 2.5,
+      "pack": "Weekend Sale, Nov 6-8. Buy 2 for $4.99. ",
       "bulk": []
      }
     },
-    "best": 20.99,
-    "worst": 20.99,
+    "best": 2.5,
+    "worst": 2.5,
     "save": 0.0,
     "n": 1
    },
@@ -1644,12 +2183,27 @@
     "n": 1
    },
    {
+    "item": "mustard oil, 1000 ml",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 6.5,
+      "pack": "Weekend 3-Day Sale, Nov 6-8. 2 for $12.99",
+      "bulk": []
+     }
+    },
+    "best": 6.5,
+    "worst": 6.5,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "parboiled rice",
     "basis": "lb",
     "stores": {
      "Al Aqsa Bangla Bazaar": {
       "ppu": 0.76,
-      "pack": "Par Excellence Long Grain Enriched Parboiled Rice 25 LB, regular $24.99, no limit, Everyday Sale",
+      "pack": "Everyday Sale. Reg $24.99. No limit",
       "bulk": []
      }
     },
@@ -1685,21 +2239,6 @@
     },
     "best": 10.99,
     "worst": 10.99,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "sunflower oil, SIRMA",
-    "basis": "each",
-    "stores": {
-     "The Meat Grinder Market": {
-      "ppu": 9.99,
-      "pack": "Weekend reel deal 4, was $13.99 on screen ~0:30",
-      "bulk": []
-     }
-    },
-    "best": 9.99,
-    "worst": 9.99,
     "save": 0.0,
     "n": 1
    }
@@ -1806,6 +2345,51 @@
     "n": 2
    },
    {
+    "item": "Kroger cheese",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 4.99,
+      "pack": "32 oz; $7.29 shelf, $2.30/1 Kroger Super Saver Digital Coupon (use up to 5x per transaction), clip in Kroger app; with coupon",
+      "bulk": []
+     }
+    },
+    "best": 4.99,
+    "worst": 4.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "Kroger steamable vegetables",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 0.99,
+      "pack": "12 oz; 99c Mix & Match, buy 5+ participating items; with coupon",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 0.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "NY strip steak, 8 oz",
+    "basis": "each",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 11.99,
+      "pack": "Zabiha halal; boneless, 8 oz steak; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 11.99,
+    "worst": 11.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "assorted sweets",
     "basis": "each",
     "stores": {
@@ -1821,17 +2405,47 @@
     "n": 1
    },
    {
-    "item": "frozen vegetables, steamable 12 oz",
+    "item": "cheese, American burger slice 10 ct",
     "basis": "each",
     "stores": {
-     "Kroger": {
-      "ppu": 0.99,
-      "pack": "Kroger Steamable Vegetables, 12 oz, 99c in 99 Cent Mix & Match when you buy 5+ participating items",
+     "Papa Mart": {
+      "ppu": 4.99,
+      "pack": "New brand promo at Papa Mart. No end date printed; treat as current until replaced. 10 CT",
       "bulk": []
      }
     },
-    "best": 0.99,
-    "worst": 0.99,
+    "best": 4.99,
+    "worst": 4.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "cheese, mozzarella 200 g",
+    "basis": "each",
+    "stores": {
+     "Papa Mart": {
+      "ppu": 5.99,
+      "pack": "New brand promo at Papa Mart. No end date printed; treat as current until replaced. 200 G",
+      "bulk": []
+     }
+    },
+    "best": 5.99,
+    "worst": 5.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "cheese, shredded, 7-8 oz",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 1.99,
+      "pack": "With Kroger Card; per couponsforyourfamily.com",
+      "bulk": []
+     }
+    },
+    "best": 1.99,
+    "worst": 1.99,
     "save": 0.0,
     "n": 1
    },
@@ -1862,6 +2476,36 @@
     },
     "best": 69.99,
     "worst": 69.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "ice cream, Lemon Yogurt",
+    "basis": "each",
+    "stores": {
+     "The Meat Grinder Market": {
+      "ppu": 5.99,
+      "pack": "Shelf tag visible in reel at ~0:27",
+      "bulk": []
+     }
+    },
+    "best": 5.99,
+    "worst": 5.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "ice cream, Lemon Yogurt (box)",
+    "basis": "each",
+    "stores": {
+     "The Meat Grinder Market": {
+      "ppu": 14.99,
+      "pack": "Shelf tag visible in reel at ~0:27. Box",
+      "bulk": []
+     }
+    },
+    "best": 14.99,
+    "worst": 14.99,
     "save": 0.0,
     "n": 1
    },
@@ -1907,6 +2551,21 @@
     },
     "best": 7.99,
     "worst": 7.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "macaroni and cheese, boxed, 7.25 oz",
+    "basis": "each",
+    "stores": {
+     "Walmart": {
+      "ppu": 0.58,
+      "pack": "Per southernsavers.com Walmart ad roundup (Nov 2-8 ad)",
+      "bulk": []
+     }
+    },
+    "best": 0.58,
+    "worst": 0.58,
     "save": 0.0,
     "n": 1
    },
@@ -1986,6 +2645,21 @@
     "n": 1
    },
    {
+    "item": "ribeye steak, boneless, 16 oz",
+    "basis": "each",
+    "stores": {
+     "Prime Bazaar": {
+      "ppu": 17.99,
+      "pack": "Zabiha halal; 1 inch thick; daily counter price",
+      "bulk": []
+     }
+    },
+    "best": 17.99,
+    "worst": 17.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "samosa (frozen)",
     "basis": "each",
     "stores": {
@@ -1997,6 +2671,21 @@
     },
     "best": 9.99,
     "worst": 9.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "samosa, Panjabi Singara, Shahi King 960 g",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 2.5,
+      "pack": "Weekend Sale, Nov 6-8. Buy 2 for $4.99. 8 frozen snacks",
+      "bulk": []
+     }
+    },
+    "best": 2.5,
+    "worst": 2.5,
     "save": 0.0,
     "n": 1
    },
@@ -2076,51 +2765,6 @@
     "n": 1
    },
    {
-    "item": "tea bags, Dawn round 300 ct",
-    "basis": "each",
-    "stores": {
-     "Papa Mart": {
-      "ppu": 8.99,
-      "pack": "Weekend Mega Sale Fri-Sun; Dawn Round Tea Bags 300 ct",
-      "bulk": []
-     }
-    },
-    "best": 8.99,
-    "worst": 8.99,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "tea, Akma chamomile flower 60 g",
-    "basis": "each",
-    "stores": {
-     "Papa Mart": {
-      "ppu": 3.49,
-      "pack": "Weekend Mega Sale Fri-Sun",
-      "bulk": []
-     }
-    },
-    "best": 3.49,
-    "worst": 3.49,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "tea, Akma lemon leaves 50 g",
-    "basis": "each",
-    "stores": {
-     "Papa Mart": {
-      "ppu": 3.49,
-      "pack": "Weekend Mega Sale Fri-Sun",
-      "bulk": []
-     }
-    },
-    "best": 3.49,
-    "worst": 3.49,
-    "save": 0.0,
-    "n": 1
-   },
-   {
     "item": "yogurt bucket",
     "basis": "lb",
     "stores": {
@@ -2138,82 +2782,57 @@
   ],
   "Other groceries": [
    {
-    "item": "pears, Bartlett",
-    "basis": "lb",
-    "stores": {
-     "H-E-B": {
-      "ppu": 0.97,
-      "pack": "Green Bartlett Pears or Envy Apples 97c/lb in weekly ad price list; produce rows were missing from the morning run",
-      "bulk": []
-     },
-     "Kroger": {
-      "ppu": 1.79,
-      "pack": "Bartlett Pears or Honeycrisp Apples $1.79/lb with eCoupon, limit 5 per transaction - Weekly Digital Deal, UNVERIFIED",
-      "bulk": []
-     },
-     "Aldi": {
-      "ppu": 1.0,
-      "pack": "Washington Bartlett Pears, 3 lb bag $2.99, Aldi weekly ad; regional pricing, UNVERIFIED for Stafford",
-      "bulk": []
-     }
-    },
-    "best": 0.97,
-    "worst": 1.79,
-    "save": 0.82,
-    "n": 3
-   },
-   {
-    "item": "avocados",
+    "item": "free food distribution",
     "basis": "each",
     "stores": {
-     "Kroger": {
-      "ppu": 1.0,
-      "pack": "Avocados, 4 ct bag $3.99 (99c ea) - 3-Day Sale Thu-Sat Oct 29-31 only",
+     "East Fort Bend Human Needs Ministry": {
+      "ppu": 0.0,
+      "pack": "Interfaith Food Pantry, 435 Stafford Run, Stafford TX 77477. Tue/Thu/Fri 10:00am-12:30pm; once per week for qualified East Fort Bend County residents. Bring photo ID and proof of address; proof of income/expenses if available. No appointment.",
+      "bulk": []
+     },
+     "India House Houston": {
+      "ppu": 0.0,
+      "pack": "8888 W Bellfort Ave, Houston. Wed Nov 11, 10:30-11:30am with Houston Food Bank; first 250 families, arrive early, registration/token may close early. Open to all regardless of background. Future dates Nov 25, Dec 9 and 23.",
+      "bulk": []
+     },
+     "Mamie George Community Center": {
+      "ppu": 0.0,
+      "pack": "1111 Collins Rd, Richmond. Community Food Distribution weekly, no appointment: Mon 12:00-2:30pm, Tue and Wed 9:00am-2:30pm; fresh produce, bakery, proteins, dairy, shelf-stable. Monthly Community Food Fair date not published on the centre page \u2014 check the schedule link. Trini's Market (age 60+) by appointment.",
+      "bulk": []
+     },
+     "Second Mile Mission Center": {
+      "ppu": 0.0,
+      "pack": "1135 Highway 90A, Missouri City. Park and Pickup groceries, mobile pantry and community food fairs; Choice Pantry by appointment, about once every two weeks. No pickup schedule published on the site \u2014 call first. Serves Fort Bend County residents at or below 185% of the federal poverty level; ID required.",
+      "bulk": []
+     },
+     "ICNA Relief Halal Food Pantry": {
+      "ppu": 0.0,
+      "pack": "5645 Hillcroft Ave Ste 405, Houston. Halal food pantry, registration/by-appointment only. Hours per directory listing Tue-Fri 1:00-6:00pm and Sat 12:00-3:00pm \u2014 not confirmed on the org site this run.",
+      "bulk": []
+     },
+     "CCSC Emergency Aid Southwest": {
+      "ppu": 0.0,
+      "pack": "6856 Bellaire Blvd, Houston. Emergency Services Southwest: Mon/Tue/Thu/Fri 10:00am-2:00pm, Sat 9:00am-12:00pm. 5-day food packages, first-come first-served with a daily limit, arrive early; no appointment for food; interview to qualify; serves listed ZIP codes including 77401.",
+      "bulk": []
+     }
+    },
+    "best": 0.0,
+    "worst": 0.0,
+    "save": 0.0,
+    "n": 6
+   },
+   {
+    "item": "pomegranates, each",
+    "basis": "each",
+    "stores": {
+     "World Food Warehouse": {
+      "ppu": 1.49,
+      "pack": "Produce Special",
       "bulk": []
      },
      "Aldi": {
-      "ppu": 0.49,
-      "pack": "Fresh avocados $0.49 ea, Aldi weekly ad - corroborated by Aisle of Shame, Passionate Penny Pincher and Smart Spending Resources transcriptions; Aldi prices are regional, UNVERIFIED for Stafford",
-      "bulk": []
-     }
-    },
-    "best": 0.49,
-    "worst": 1.0,
-    "save": 0.51,
-    "n": 2
-   },
-   {
-    "item": "pomegranates",
-    "basis": "lb",
-    "stores": {
-     "The Meat Grinder Market": {
-      "ppu": 0.99,
-      "pack": "Fresh Fruit Special, Friday Saturday Sunday only, posted 15h before Oct 30 run",
-      "bulk": []
-     },
-     "Al Madina Supermarket": {
-      "ppu": 1.49,
-      "pack": "Fresh pomegranates, bin price",
-      "bulk": []
-     }
-    },
-    "best": 0.99,
-    "worst": 1.49,
-    "save": 0.5,
-    "n": 2
-   },
-   {
-    "item": "arvi",
-    "basis": "lb",
-    "stores": {
-     "Desi Brothers": {
       "ppu": 1.29,
-      "pack": "Weekend Special",
-      "bulk": []
-     },
-     "Big Basket (Stafford)": {
-      "ppu": 1.49,
-      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2 Edo (arvi)",
+      "pack": "California pomegranates; per smartspendingresources.com Aldi ad roundup",
       "bulk": []
      }
     },
@@ -2243,47 +2862,227 @@
     "n": 2
    },
    {
-    "item": "Laxmi grated coconut, 400 gm",
+    "item": "Axe body wash",
     "basis": "each",
     "stores": {
-     "Desi Brothers": {
-      "ppu": 2.49,
-      "pack": "400 gm",
+     "Walgreens": {
+      "ppu": 0.99,
+      "pack": "$5.99 each, BOGO 50% off (2 ring $8.98), clip $5/2 Walgreens digital, pay $3.98, get $2 Register Rewards; $0.99 each after coupon and rewards per Hip2Save; with coupon",
       "bulk": []
      }
     },
-    "best": 2.49,
-    "worst": 2.49,
+    "best": 0.99,
+    "worst": 0.99,
     "save": 0.0,
     "n": 1
    },
    {
-    "item": "Laxmi sesame seeds, 400 gm",
-    "basis": "each",
+    "item": "Boston butt pork roast",
+    "basis": "lb",
     "stores": {
-     "Desi Brothers": {
-      "ppu": 2.99,
-      "pack": "White/Brown 400 gm",
+     "H-E-B": {
+      "ppu": 1.49,
+      "pack": "Weekly ad price list; ad dates confirmed on heb.com but prices transcribed from roundup blog, not the H-E-B flyer itself",
       "bulk": []
      }
     },
-    "best": 2.99,
-    "worst": 2.99,
+    "best": 1.49,
+    "worst": 1.49,
     "save": 0.0,
     "n": 1
    },
    {
-    "item": "Laxmi shredded coconut, 400 gm",
+    "item": "Bounty paper towels",
     "basis": "each",
     "stores": {
-     "Desi Brothers": {
-      "ppu": 2.49,
-      "pack": "400 gm",
+     "Kroger": {
+      "ppu": 9.99,
+      "pack": "Double Rolls 6-roll or Triple Rolls 4-roll; $14.99 shelf, $5/1 Kroger Super Saver Digital Coupon (use up to 5x per transaction), clip in Kroger app; with coupon",
       "bulk": []
      }
     },
-    "best": 2.49,
-    "worst": 2.49,
+    "best": 9.99,
+    "worst": 9.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "Campbell's soup",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 0.99,
+      "pack": "Chicken Noodle or Tomato Soup 10.75 oz, or Cream of Chicken/Mushroom 10.5 oz; 99c Mix & Match, buy 5+ participating items; with coupon",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 0.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "Charmin bath tissue",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 12.99,
+      "pack": "Mega Rolls 12-roll; $16.99 shelf, $4/1 Kroger Super Saver Digital Coupon (use up to 5x per transaction), clip in Kroger app; with coupon",
+      "bulk": []
+     }
+    },
+    "best": 12.99,
+    "worst": 12.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "Coca-Cola 12-pack",
+    "basis": "each",
+    "stores": {
+     "Dollar General": {
+      "ppu": 5.0,
+      "pack": "12 oz cans; sale 3/$17, clip $2 off $10 Coca-Cola DG digital (TheFreebieGuy scenario #5); $5.00 each after Coke coupon (before the $5/$25 basket coupon); with coupon",
+      "bulk": []
+     }
+    },
+    "best": 5.0,
+    "worst": 5.0,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "Dove body wash",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 6.99,
+      "pack": "20 oz, or Bar Soap 4 ct; $8.99 shelf, $2/1 Kroger Super Saver Digital Coupon (use up to 5x per transaction), clip in Kroger app; with coupon",
+      "bulk": []
+     }
+    },
+    "best": 6.99,
+    "worst": 6.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "Gain laundry detergent",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 12.99,
+      "pack": "132 oz; $15.99 shelf, $3/1 Kroger Super Saver Digital Coupon (use up to 5x per transaction), clip in Kroger app; with coupon",
+      "bulk": []
+     }
+    },
+    "best": 12.99,
+    "worst": 12.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "General Mills cereal",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 3.99,
+      "pack": "Giant Size 20-29 oz; $6.99 shelf, $3/1 Kroger Super Saver Digital Coupon (use up to 5x per transaction), clip in Kroger app; with coupon",
+      "bulk": []
+     }
+    },
+    "best": 3.99,
+    "worst": 3.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "Glade automatic fragrance device",
+    "basis": "each",
+    "stores": {
+     "Walmart": {
+      "ppu": 1.27,
+      "pack": "Automatic Fragrance Device or Starter Kit; $6.27 shelf, $5/1 Glade Walmart Cash, clip in Walmart app; with coupon; Walmart Cash posts after purchase",
+      "bulk": []
+     }
+    },
+    "best": 1.27,
+    "worst": 1.27,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "Huggies wipes",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 4.99,
+      "pack": "192 ct; $6.99 shelf, $2/1 Kroger Super Saver Digital Coupon (use up to 5x per transaction), clip in Kroger app; with coupon",
+      "bulk": []
+     }
+    },
+    "best": 4.99,
+    "worst": 4.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "Knorr Sides",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 0.99,
+      "pack": "4-5.7 oz; 99c Mix & Match, buy 5+ participating items; with coupon",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 0.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "Lysol disinfectant wipes",
+    "basis": "each",
+    "stores": {
+     "CVS": {
+      "ppu": 0.7,
+      "pack": "75-80 ct; 2/$5.40, clip $1/1 CVS digital, pay $4.39, get $3 ExtraBucks; $0.70 each after coupon and ExtraBucks per Passionate Penny Pincher; with coupon",
+      "bulk": []
+     }
+    },
+    "best": 0.7,
+    "worst": 0.7,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "Maggi instant noodles",
+    "basis": "each",
+    "stores": {
+     "Walmart": {
+      "ppu": 2.47,
+      "pack": "12 pk; $3.97 shelf, $1.50 Walmart Cash back, clip in Walmart app; with coupon; Walmart Cash posts after purchase",
+      "bulk": []
+     }
+    },
+    "best": 2.47,
+    "worst": 2.47,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "Tide laundry detergent",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 12.99,
+      "pack": "92-105 oz; $15.99 shelf, $3/1 Kroger Super Saver Digital Coupon (use up to 5x per transaction), clip in Kroger app; with coupon",
+      "bulk": []
+     }
+    },
+    "best": 12.99,
+    "worst": 12.99,
     "save": 0.0,
     "n": 1
    },
@@ -2303,77 +3102,47 @@
     "n": 1
    },
    {
-    "item": "almonds, Aara 3 lb",
-    "basis": "lb",
+    "item": "avocados",
+    "basis": "each",
     "stores": {
-     "Papa Mart": {
-      "ppu": 5.0,
-      "pack": "Weekend Mega Sale Fri-Sun",
+     "Walmart": {
+      "ppu": 0.55,
+      "pack": "Per southernsavers.com Walmart ad roundup (Nov 2-8 ad); not seen on walmart.com this run",
       "bulk": []
      }
     },
-    "best": 5.0,
-    "worst": 5.0,
+    "best": 0.55,
+    "worst": 0.55,
     "save": 0.0,
     "n": 1
    },
    {
-    "item": "apples, Envy",
-    "basis": "lb",
-    "stores": {
-     "H-E-B": {
-      "ppu": 0.97,
-      "pack": "Envy Apples or Green Bartlett Pears 97c/lb in weekly ad price list",
-      "bulk": []
-     }
-    },
-    "best": 0.97,
-    "worst": 0.97,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "apples, Gala",
-    "basis": "lb",
-    "stores": {
-     "Aldi": {
-      "ppu": 0.66,
-      "pack": "Michigan Gala Apples, 3 lb bag $1.99, Aldi weekly ad; regional pricing, UNVERIFIED for Stafford",
-      "bulk": []
-     }
-    },
-    "best": 0.66,
-    "worst": 0.66,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "apples, Honeycrisp",
-    "basis": "lb",
+    "item": "bacon, 12-16 oz",
+    "basis": "each",
     "stores": {
      "Kroger": {
-      "ppu": 1.79,
-      "pack": "Honeycrisp Apples or Bartlett Pears $1.79/lb with eCoupon, limit 5 per transaction - Weekly Digital Deal, UNVERIFIED (login-walled gallery, aggregator transcription)",
+      "ppu": 3.99,
+      "pack": "Per aprettylicelife.com Kroger roundup; not seen on kroger.com this run",
       "bulk": []
      }
     },
-    "best": 1.79,
-    "worst": 1.79,
+    "best": 3.99,
+    "worst": 3.99,
     "save": 0.0,
     "n": 1
    },
    {
-    "item": "apples, SnapDragon",
-    "basis": "lb",
+    "item": "bacon, premium",
+    "basis": "each",
     "stores": {
-     "Aldi": {
-      "ppu": 0.99,
-      "pack": "Next ad",
+     "H-E-B": {
+      "ppu": 3.99,
+      "pack": "Weekly ad price list; ad dates confirmed on heb.com but prices transcribed from roundup blog, not the H-E-B flyer itself",
       "bulk": []
      }
     },
-    "best": 0.99,
-    "worst": 0.99,
+    "best": 3.99,
+    "worst": 3.99,
     "save": 0.0,
     "n": 1
    },
@@ -2393,17 +3162,92 @@
     "n": 1
    },
    {
-    "item": "butter, Kroger 2 x 16 oz",
+    "item": "bananas, each",
     "basis": "each",
     "stores": {
-     "Kroger": {
-      "ppu": 3.99,
-      "pack": "3-Day Sale Oct 29-31 only; via ad roundup, UNVERIFIED",
+     "Walmart": {
+      "ppu": 0.2,
+      "pack": "Listed as 20 cents each; per southernsavers.com Walmart ad roundup (Nov 2-8 ad)",
       "bulk": []
      }
     },
-    "best": 3.99,
-    "worst": 3.99,
+    "best": 0.2,
+    "worst": 0.2,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "bottom round roast",
+    "basis": "lb",
+    "stores": {
+     "Aldi": {
+      "ppu": 6.49,
+      "pack": "Per smartspendingresources.com Aldi ad roundup (Raleigh NC store, prices may vary by region)",
+      "bulk": []
+     }
+    },
+    "best": 6.49,
+    "worst": 6.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "bread, white sandwich, 20 oz",
+    "basis": "each",
+    "stores": {
+     "Walmart": {
+      "ppu": 1.52,
+      "pack": "Per southernsavers.com Walmart ad roundup (Nov 2-8 ad)",
+      "bulk": []
+     }
+    },
+    "best": 1.52,
+    "worst": 1.52,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "butter, Nurpur 100 g",
+    "basis": "each",
+    "stores": {
+     "Papa Mart": {
+      "ppu": 2.49,
+      "pack": "New brand promo at Papa Mart. No end date printed; treat as current until replaced. 100 G",
+      "bulk": []
+     }
+    },
+    "best": 2.49,
+    "worst": 2.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "butter, Nurpur 200 g",
+    "basis": "each",
+    "stores": {
+     "Papa Mart": {
+      "ppu": 4.99,
+      "pack": "New brand promo at Papa Mart. No end date printed; treat as current until replaced. 200 G",
+      "bulk": []
+     }
+    },
+    "best": 4.99,
+    "worst": 4.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "butter, Nurpur 50 g",
+    "basis": "each",
+    "stores": {
+     "Papa Mart": {
+      "ppu": 0.99,
+      "pack": "New brand promo at Papa Mart. No end date printed; treat as current until replaced. 50 G",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 0.99,
     "save": 0.0,
     "n": 1
    },
@@ -2412,13 +3256,28 @@
     "basis": "lb",
     "stores": {
      "Big Basket (Stafford)": {
-      "ppu": 0.69,
-      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "ppu": 0.79,
+      "pack": "Weekly Sale, Thu Nov 5 - Sun Nov 8, 2026. ",
       "bulk": []
      }
     },
-    "best": 0.69,
-    "worst": 0.69,
+    "best": 0.79,
+    "worst": 0.79,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "canned pumpkin, 15 oz",
+    "basis": "each",
+    "stores": {
+     "Aldi": {
+      "ppu": 1.59,
+      "pack": "Per smartspendingresources.com Aldi ad roundup",
+      "bulk": []
+     }
+    },
+    "best": 1.59,
+    "worst": 1.59,
     "save": 0.0,
     "n": 1
    },
@@ -2453,21 +3312,6 @@
     "n": 1
    },
    {
-    "item": "cashews whole, 3 lb bag",
-    "basis": "lb",
-    "stores": {
-     "Desi Brothers": {
-      "ppu": 4.66,
-      "pack": "Laxmi Cashews Whole 3 lb",
-      "bulk": []
-     }
-    },
-    "best": 4.66,
-    "worst": 4.66,
-    "save": 0.0,
-    "n": 1
-   },
-   {
     "item": "cauliflower",
     "basis": "each",
     "stores": {
@@ -2483,6 +3327,51 @@
     "n": 1
    },
    {
+    "item": "chokbazar jalapi, Meena",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 8.0,
+      "pack": "Weekend 3-Day Sale, Nov 6-8. 2 for $15.99",
+      "bulk": []
+     }
+    },
+    "best": 8.0,
+    "worst": 8.0,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chole puri combo",
+    "basis": "each",
+    "stores": {
+     "Big Basket (Stafford)": {
+      "ppu": 7.99,
+      "pack": "Delicious Desi Meal Deal: fluffy puri, chole, pulav, gulab jamun. Ready meal, in-store.",
+      "bulk": []
+     }
+    },
+    "best": 7.99,
+    "worst": 7.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chuck roast",
+    "basis": "lb",
+    "stores": {
+     "Aldi": {
+      "ppu": 6.99,
+      "pack": "Per smartspendingresources.com Aldi ad roundup (Raleigh NC store, prices may vary by region)",
+      "bulk": []
+     }
+    },
+    "best": 6.99,
+    "worst": 6.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "coconut milk",
     "basis": "each",
     "stores": {
@@ -2494,6 +3383,21 @@
     },
     "best": 1.79,
     "worst": 1.79,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "cup noodles, PRAN",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 1.33,
+      "pack": "Weekend 3-Day Sale, Nov 6-8. 3 for $3.99; Curry/Korean Super Spicy/Chicken",
+      "bulk": []
+     }
+    },
+    "best": 1.33,
+    "worst": 1.33,
     "save": 0.0,
     "n": 1
    },
@@ -2528,42 +3432,12 @@
     "n": 1
    },
    {
-    "item": "eggs, cage free, 18 ct",
+    "item": "dinner sausage, 16-18 oz",
     "basis": "each",
     "stores": {
      "Kroger": {
-      "ppu": 3.99,
-      "pack": null,
-      "bulk": []
-     }
-    },
-    "best": 3.99,
-    "worst": 3.99,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "eggs, large, 12 ct",
-    "basis": "dozen",
-    "stores": {
-     "Walmart": {
-      "ppu": 1.67,
-      "pack": "Great Value, 1 dozen; US ad Oct 26-Nov 1, NOT Sugar Land store-specific - confirm in app",
-      "bulk": []
-     }
-    },
-    "best": 1.67,
-    "worst": 1.67,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "flat valor",
-    "basis": "lb",
-    "stores": {
-     "Big Basket (Stafford)": {
       "ppu": 2.99,
-      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "pack": "$3.99 shelf, $2.99 with $1 Kroger Super Saver digital coupon (up to 5x); per iheartkroger.com",
       "bulk": []
      }
     },
@@ -2573,17 +3447,92 @@
     "n": 1
    },
    {
-    "item": "fuyu persimmons",
+    "item": "dosakai",
     "basis": "lb",
     "stores": {
-     "The Meat Grinder Market": {
+     "Big Basket (Stafford)": {
       "ppu": 0.99,
-      "pack": "Fuyu Persimmons, Fresh Fruit Special, Friday Saturday Sunday only",
+      "pack": "Weekly Sale, Thu Nov 5 - Sun Nov 8, 2026. ",
       "bulk": []
      }
     },
     "best": 0.99,
     "worst": 0.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "eggs",
+    "basis": "pack",
+    "stores": {
+     "Kroger": {
+      "ppu": 1.99,
+      "pack": "Large Grade A, 18 ct; $1.99 weekly ad price, no coupon stated",
+      "bulk": []
+     }
+    },
+    "best": 1.99,
+    "worst": 1.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "eggs, large Grade A",
+    "basis": "dozen",
+    "stores": {
+     "Aldi": {
+      "ppu": 1.85,
+      "pack": "Per wisconsinconsumer.com Aldi roundup (Green Bay WI store, prices may vary by region)",
+      "bulk": []
+     }
+    },
+    "best": 1.85,
+    "worst": 1.85,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "eggs, large, 1 dozen",
+    "basis": "dozen",
+    "stores": {
+     "Walmart": {
+      "ppu": 1.59,
+      "pack": "Per southernsavers.com Walmart ad roundup (Nov 2-8 ad)",
+      "bulk": []
+     }
+    },
+    "best": 1.59,
+    "worst": 1.59,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "eggs, large, 18 ct",
+    "basis": "pack",
+    "stores": {
+     "Kroger": {
+      "ppu": 1.99,
+      "pack": "$2.99 shelf, $1.99 with $1 Kroger weekly digital coupon; per couponsforyourfamily.com",
+      "bulk": []
+     }
+    },
+    "best": 1.99,
+    "worst": 1.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "frozen vegetable pack 300g",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 1.5,
+      "pack": "Weekend 3-Day Sale, Nov 6-8. 2 for $2.99; Lal Shak/Pat Shak/Pui Shak 300 GM",
+      "bulk": []
+     }
+    },
+    "best": 1.5,
+    "worst": 1.5,
     "save": 0.0,
     "n": 1
    },
@@ -2603,6 +3552,36 @@
     "n": 1
    },
    {
+    "item": "grapes, red",
+    "basis": "lb",
+    "stores": {
+     "Aldi": {
+      "ppu": 1.39,
+      "pack": "California red grapes; per smartspendingresources.com Aldi ad roundup",
+      "bulk": []
+     }
+    },
+    "best": 1.39,
+    "worst": 1.39,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "grapes, red or black seedless",
+    "basis": "lb",
+    "stores": {
+     "Kroger": {
+      "ppu": 1.77,
+      "pack": "$2.79/lb shelf, $1.77/lb with Kroger digital coupon; per couponsforyourfamily.com",
+      "bulk": []
+     }
+    },
+    "best": 1.77,
+    "worst": 1.77,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "grapes, red seedless",
     "basis": "lb",
     "stores": {
@@ -2614,21 +3593,6 @@
     },
     "best": 1.99,
     "worst": 1.99,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "green beans, French",
-    "basis": "lb",
-    "stores": {
-     "Aldi": {
-      "ppu": 2.89,
-      "pack": "French Green Beans, 1 lb pkg $2.89, Aldi weekly ad; regional pricing, UNVERIFIED for Stafford",
-      "bulk": []
-     }
-    },
-    "best": 2.89,
-    "worst": 2.89,
     "save": 0.0,
     "n": 1
    },
@@ -2648,32 +3612,62 @@
     "n": 1
    },
    {
-    "item": "guvar",
-    "basis": "lb",
+    "item": "honeycrisp apples, 2 lb bag",
+    "basis": "each",
     "stores": {
-     "Desi Brothers": {
-      "ppu": 2.29,
-      "pack": "Weekend Special",
+     "Aldi": {
+      "ppu": 1.99,
+      "pack": "Per smartspendingresources.com Aldi ad roundup",
       "bulk": []
      }
     },
-    "best": 2.29,
-    "worst": 2.29,
+    "best": 1.99,
+    "worst": 1.99,
     "save": 0.0,
     "n": 1
    },
    {
-    "item": "jam, Honest 1.2 kg",
+    "item": "ice cream",
     "basis": "each",
     "stores": {
-     "Papa Mart": {
-      "ppu": 7.99,
-      "pack": "Weekend Mega Sale Fri-Sun; Mix Fruit, Strawberry, Pineapple, Red Apple, Orange Marmalade",
+     "Kroger": {
+      "ppu": 2.99,
+      "pack": "Edy's or Dreyer's 48 oz; $3.99 shelf, $1/1 Kroger Super Saver Digital Coupon (use up to 5x per transaction), clip in Kroger app; with coupon",
       "bulk": []
      }
     },
-    "best": 7.99,
-    "worst": 7.99,
+    "best": 2.99,
+    "worst": 2.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "ice cream, Popi Cat Mango",
+    "basis": "each",
+    "stores": {
+     "The Meat Grinder Market": {
+      "ppu": 5.99,
+      "pack": "Shelf tag visible in reel at ~0:27. Aiko-style fruit ice cream promo reel, posted Nov 3",
+      "bulk": []
+     }
+    },
+    "best": 5.99,
+    "worst": 5.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "khaza, Meena",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 7.0,
+      "pack": "Weekend 3-Day Sale, Nov 6-8. 2 for $13.99",
+      "bulk": []
+     }
+    },
+    "best": 7.0,
+    "worst": 7.0,
     "save": 0.0,
     "n": 1
    },
@@ -2693,21 +3687,6 @@
     "n": 1
    },
    {
-    "item": "limes",
-    "basis": "lb",
-    "stores": {
-     "H-E-B": {
-      "ppu": 2.77,
-      "pack": "H-E-B Organics Limes, 1 lb bag $2.77 ea in ad (or Organics White Onions 2 lb bag at same price)",
-      "bulk": []
-     }
-    },
-    "best": 2.77,
-    "worst": 2.77,
-    "save": 0.0,
-    "n": 1
-   },
-   {
     "item": "limes, 10 for $1",
     "basis": "each",
     "stores": {
@@ -2723,17 +3702,32 @@
     "n": 1
    },
    {
-    "item": "mangoes",
+    "item": "milk, whole, gallon",
     "basis": "each",
     "stores": {
      "Aldi": {
-      "ppu": 0.99,
-      "pack": "Mangoes $0.99 ea, Aldi weekly ad; regional pricing, UNVERIFIED for Stafford",
+      "ppu": 2.53,
+      "pack": "Per wisconsinconsumer.com Aldi roundup (Green Bay WI store, prices may vary by region)",
       "bulk": []
      }
     },
-    "best": 0.99,
-    "worst": 0.99,
+    "best": 2.53,
+    "worst": 2.53,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "mini puri, coconut",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 2.5,
+      "pack": "Weekend Sale, Nov 6-8. Buy 2 for $4.99. 30 frozen snacks",
+      "bulk": []
+     }
+    },
+    "best": 2.5,
+    "worst": 2.5,
     "save": 0.0,
     "n": 1
    },
@@ -2753,17 +3747,62 @@
     "n": 1
    },
    {
-    "item": "oranges, navel",
-    "basis": "lb",
+    "item": "navel oranges, 4 lb bag",
+    "basis": "each",
     "stores": {
-     "H-E-B": {
-      "ppu": 0.74,
-      "pack": "LARGE Navel Oranges (sold by lb) or H-E-B Fresh Cranberries 12 oz (sold by ea) listed at 74c in ad price list - unit ambiguous in transcription, confirm in store",
+     "Aldi": {
+      "ppu": 2.69,
+      "pack": "Per smartspendingresources.com Aldi ad roundup",
       "bulk": []
      }
     },
-    "best": 0.74,
-    "worst": 0.74,
+    "best": 2.69,
+    "worst": 2.69,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "nimki, Meena",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 6.0,
+      "pack": "Weekend 3-Day Sale, Nov 6-8. 2 for $11.99",
+      "bulk": []
+     }
+    },
+    "best": 6.0,
+    "worst": 6.0,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "pasta",
+    "basis": "each",
+    "stores": {
+     "Kroger": {
+      "ppu": 0.99,
+      "pack": "12-16 oz; 99c Mix & Match, buy 5+ participating items; with coupon",
+      "bulk": []
+     }
+    },
+    "best": 0.99,
+    "worst": 0.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "pasta, 16 oz",
+    "basis": "each",
+    "stores": {
+     "Walmart": {
+      "ppu": 1.36,
+      "pack": "Per southernsavers.com Walmart ad roundup (Nov 2-8 ad)",
+      "bulk": []
+     }
+    },
+    "best": 1.36,
+    "worst": 1.36,
     "save": 0.0,
     "n": 1
    },
@@ -2843,12 +3882,12 @@
     "n": 1
    },
    {
-    "item": "pomegranates, each",
-    "basis": "each",
+    "item": "pomegranates",
+    "basis": "lb",
     "stores": {
-     "World Food Warehouse": {
+     "Al Madina Supermarket": {
       "ppu": 1.49,
-      "pack": "Produce Special",
+      "pack": "Fresh pomegranates, bin price",
       "bulk": []
      }
     },
@@ -2858,32 +3897,17 @@
     "n": 1
    },
    {
-    "item": "pumpkin",
-    "basis": "lb",
+    "item": "pork loin chops, boneless, 5 ct",
+    "basis": "each",
     "stores": {
-     "Desi Brothers": {
-      "ppu": 0.99,
-      "pack": "Weekend Special",
+     "Kroger": {
+      "ppu": 5.0,
+      "pack": "With Kroger Card; 1.25 lb pack; per couponsforyourfamily.com",
       "bulk": []
      }
     },
-    "best": 0.99,
-    "worst": 0.99,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "pumpkin, white",
-    "basis": "lb",
-    "stores": {
-     "Big Basket (Stafford)": {
-      "ppu": 0.79,
-      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
-      "bulk": []
-     }
-    },
-    "best": 0.79,
-    "worst": 0.79,
+    "best": 5.0,
+    "worst": 5.0,
     "save": 0.0,
     "n": 1
    },
@@ -2892,28 +3916,28 @@
     "basis": "lb",
     "stores": {
      "Big Basket (Stafford)": {
-      "ppu": 0.79,
-      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "ppu": 0.49,
+      "pack": "Weekly Sale, Thu Nov 5 - Sun Nov 8, 2026. ",
       "bulk": []
      }
     },
-    "best": 0.79,
-    "worst": 0.79,
+    "best": 0.49,
+    "worst": 0.49,
     "save": 0.0,
     "n": 1
    },
    {
-    "item": "raspberries",
+    "item": "raspberries, 6 oz",
     "basis": "each",
     "stores": {
      "Aldi": {
-      "ppu": 1.69,
-      "pack": "Raspberries, 6 oz pkg $1.69, Aldi weekly ad; regional pricing, UNVERIFIED for Stafford",
+      "ppu": 1.49,
+      "pack": "Per smartspendingresources.com Aldi ad roundup",
       "bulk": []
      }
     },
-    "best": 1.69,
-    "worst": 1.69,
+    "best": 1.49,
+    "worst": 1.49,
     "save": 0.0,
     "n": 1
    },
@@ -2933,27 +3957,57 @@
     "n": 1
    },
    {
-    "item": "roti, fresh uncooked whole wheat chapathi, 12 ct",
+    "item": "rohu, 1.5 kg",
     "basis": "each",
     "stores": {
-     "Desi Brothers": {
-      "ppu": 4.99,
-      "pack": "12 ct",
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 12.99,
+      "pack": "Weekend 3-Day Sale, Nov 6-8. 4-5 LB. Free cut & scaling. No limit",
       "bulk": []
      }
     },
-    "best": 4.99,
-    "worst": 4.99,
+    "best": 12.99,
+    "worst": 12.99,
     "save": 0.0,
     "n": 1
    },
    {
-    "item": "shrimp",
+    "item": "rohu, 3 kg",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 25.99,
+      "pack": "Weekend 3-Day Sale, Nov 6-8. 7-8 LB. Free cut & scaling. No limit",
+      "bulk": []
+     }
+    },
+    "best": 25.99,
+    "worst": 25.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "roti, Crispy Whole Wheat",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 2.5,
+      "pack": "Weekend Sale, Nov 6-8. Buy 2 for $4.99. 10 ct",
+      "bulk": []
+     }
+    },
+    "best": 2.5,
+    "worst": 2.5,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "shrimp, jumbo raw white",
     "basis": "lb",
     "stores": {
      "H-E-B": {
       "ppu": 5.97,
-      "pack": "Jumbo raw white shrimp 16-25 ct, previously frozen",
+      "pack": "Weekly ad price list; ad dates confirmed on heb.com but prices transcribed from roundup blog, not the H-E-B flyer itself",
       "bulk": []
      }
     },
@@ -2967,28 +4021,58 @@
     "basis": "lb",
     "stores": {
      "Big Basket (Stafford)": {
-      "ppu": 1.29,
-      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
+      "ppu": 0.99,
+      "pack": "Weekly Sale, Thu Nov 5 - Sun Nov 8, 2026. ",
       "bulk": []
      }
     },
-    "best": 1.29,
-    "worst": 1.29,
+    "best": 0.99,
+    "worst": 0.99,
     "save": 0.0,
     "n": 1
    },
    {
-    "item": "tilapia fillets",
+    "item": "snow crab clusters, wild caught",
     "basis": "lb",
     "stores": {
      "H-E-B": {
-      "ppu": 5.97,
-      "pack": "H-E-B Responsibly Raised",
+      "ppu": 11.97,
+      "pack": "Weekly ad price list; ad dates confirmed on heb.com but prices transcribed from roundup blog, not the H-E-B flyer itself",
       "bulk": []
      }
     },
-    "best": 5.97,
-    "worst": 5.97,
+    "best": 11.97,
+    "worst": 11.97,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "sugar, granulated, 4 lb",
+    "basis": "each",
+    "stores": {
+     "Walmart": {
+      "ppu": 2.97,
+      "pack": "Per southernsavers.com Walmart ad roundup (Nov 2-8 ad)",
+      "bulk": []
+     }
+    },
+    "best": 2.97,
+    "worst": 2.97,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "toast, Rajmahal Special",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 2.5,
+      "pack": "Weekend Sale, Nov 6-8. Buy 2 for $4.99. 14 oz",
+      "bulk": []
+     }
+    },
+    "best": 2.5,
+    "worst": 2.5,
     "save": 0.0,
     "n": 1
    },
@@ -2996,14 +4080,14 @@
     "item": "turia",
     "basis": "lb",
     "stores": {
-     "Desi Brothers": {
-      "ppu": 1.99,
-      "pack": "Weekend Special",
+     "Big Basket (Stafford)": {
+      "ppu": 1.29,
+      "pack": "Weekly Sale, Thu Nov 5 - Sun Nov 8, 2026. ",
       "bulk": []
      }
     },
-    "best": 1.99,
-    "worst": 1.99,
+    "best": 1.29,
+    "worst": 1.29,
     "save": 0.0,
     "n": 1
    },
@@ -3055,23 +4139,23 @@
   ],
   "Spices & masalas": [
    {
-    "item": "methi leaves",
+    "item": "Colgate toothpaste",
     "basis": "each",
     "stores": {
-     "Desi Brothers": {
-      "ppu": 1.29,
-      "pack": "Methi per bunch; Weekend Special",
+     "Kroger": {
+      "ppu": 2.99,
+      "pack": "3.8-6.3 oz; $3.99 shelf, $1/1 Kroger Super Saver Digital Coupon (use up to 5x per transaction), clip in Kroger app; with coupon",
       "bulk": []
      },
-     "Big Basket (Stafford)": {
-      "ppu": 1.49,
-      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2 Per bunch",
+     "Walgreens": {
+      "ppu": 0.5,
+      "pack": "Total 3.3 oz; buy 2 at $4 each, clip $3/2 Walgreens digital, pay $5, get $4 Register Rewards; $0.50 each after rewards per MoneySavingMom; with coupon",
       "bulk": []
      }
     },
-    "best": 1.29,
-    "worst": 1.49,
-    "save": 0.2,
+    "best": 0.5,
+    "worst": 2.99,
+    "save": 2.49,
     "n": 2
    },
    {
@@ -3095,47 +4179,17 @@
     "n": 2
    },
    {
-    "item": "MTR rasam powder, 200 gm",
+    "item": "butter, unsalted, Nurpur 200 g",
     "basis": "each",
     "stores": {
-     "Desi Brothers": {
-      "ppu": 2.99,
-      "pack": "MTR Masala Rasam Powder 200 gm",
+     "Papa Mart": {
+      "ppu": 4.99,
+      "pack": "New brand promo at Papa Mart. No end date printed; treat as current until replaced. 200 G unsalted",
       "bulk": []
      }
     },
-    "best": 2.99,
-    "worst": 2.99,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "MTR sambar powder, 200 gm",
-    "basis": "each",
-    "stores": {
-     "Desi Brothers": {
-      "ppu": 2.99,
-      "pack": "MTR Masala Sambar Powder 200 gm",
-      "bulk": []
-     }
-    },
-    "best": 2.99,
-    "worst": 2.99,
-    "save": 0.0,
-    "n": 1
-   },
-   {
-    "item": "MTR spiced chutney powder, 200 gm",
-    "basis": "each",
-    "stores": {
-     "Desi Brothers": {
-      "ppu": 2.99,
-      "pack": "MTR Powder Spiced Chutney 200 gm",
-      "bulk": []
-     }
-    },
-    "best": 2.99,
-    "worst": 2.99,
+    "best": 4.99,
+    "worst": 4.99,
     "save": 0.0,
     "n": 1
    },
@@ -3230,6 +4284,21 @@
     "n": 1
    },
    {
+    "item": "masala pack, Radhuni",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 2.0,
+      "pack": "Weekend 3-Day Sale, Nov 6-8. 2 for $3.99; Tehari/Roast/Biryani masala",
+      "bulk": []
+     }
+    },
+    "best": 2.0,
+    "worst": 2.0,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "masala products",
     "basis": "each",
     "stores": {
@@ -3241,6 +4310,21 @@
     },
     "best": 0.99,
     "worst": 0.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "methi leaves",
+    "basis": "each",
+    "stores": {
+     "Big Basket (Stafford)": {
+      "ppu": 1.49,
+      "pack": "Weekly Sale, Thu Nov 5 - Sun Nov 8, 2026. $1.49 per bunch",
+      "bulk": []
+     }
+    },
+    "best": 1.49,
+    "worst": 1.49,
     "save": 0.0,
     "n": 1
    },
@@ -3271,6 +4355,21 @@
     },
     "best": 2.49,
     "worst": 2.49,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "noodles, Maggi Masala",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 2.5,
+      "pack": "Weekend Sale, Nov 6-8. Buy 2 for $4.99. ",
+      "bulk": []
+     }
+    },
+    "best": 2.5,
+    "worst": 2.5,
     "save": 0.0,
     "n": 1
    },
@@ -3363,6 +4462,36 @@
     },
     "best": 1.99,
     "worst": 1.99,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chanachur, 300 gm",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 2.5,
+      "pack": "Weekend 3-Day Sale, Nov 6-8. 2 for $4.99",
+      "bulk": []
+     }
+    },
+    "best": 2.5,
+    "worst": 2.5,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "chanachur, 500 gm",
+    "basis": "each",
+    "stores": {
+     "Al Aqsa Bangla Bazaar": {
+      "ppu": 3.5,
+      "pack": "Weekend 3-Day Sale, Nov 6-8. 2 for $6.99",
+      "bulk": []
+     }
+    },
+    "best": 3.5,
+    "worst": 3.5,
     "save": 0.0,
     "n": 1
    },
@@ -3547,21 +4676,6 @@
     "n": 1
    },
    {
-    "item": "peanuts, fresh",
-    "basis": "lb",
-    "stores": {
-     "Big Basket (Stafford)": {
-      "ppu": 2.49,
-      "pack": "Weekly Sale Fri Oct 30-Mon Nov 2",
-      "bulk": []
-     }
-    },
-    "best": 2.49,
-    "worst": 2.49,
-    "save": 0.0,
-    "n": 1
-   },
-   {
     "item": "toor dal",
     "basis": "each",
     "stores": {
@@ -3639,57 +4753,37 @@
   ],
   "Grains, rice & flour": [
    {
-    "item": "basmati rice",
+    "item": "flour, all-purpose, 5 lb",
     "basis": "each",
     "stores": {
-     "Big Basket": {
-      "ppu": 8.99,
-      "pack": "Diwali Sale grid",
+     "Aldi": {
+      "ppu": 1.85,
+      "pack": "Per smartspendingresources.com Aldi ad roundup",
       "bulk": []
      },
-     "Walmart": {
-      "ppu": 9.52,
-      "pack": "Royal Authentic Basmati 5 lb; $8.52 after $1 Walmart Cash; Royal Authentic Basmati 5 lb $9.52, less $1.00 Walmart Cash = $8.52 after cash; shelf price recorded",
-      "bulk": []
-     }
-    },
-    "best": 8.99,
-    "worst": 9.52,
-    "save": 0.53,
-    "n": 2
-   },
-   {
-    "item": "idli rava",
-    "basis": "each",
-    "stores": {
-     "Big Basket": {
-      "ppu": 3.49,
-      "pack": "Diwali Sale grid",
-      "bulk": []
-     },
-     "Desi Brothers": {
-      "ppu": 3.99,
-      "pack": "Laxmi Idli Rava 4 lb bag",
-      "bulk": []
-     }
-    },
-    "best": 3.49,
-    "worst": 3.99,
-    "save": 0.5,
-    "n": 2
-   },
-   {
-    "item": "all-purpose flour",
-    "basis": "each",
-    "stores": {
      "Walmart": {
       "ppu": 1.97,
-      "pack": "Great Value 5 lb",
+      "pack": "Per southernsavers.com Walmart ad roundup (Nov 2-8 ad)",
       "bulk": []
      }
     },
-    "best": 1.97,
+    "best": 1.85,
     "worst": 1.97,
+    "save": 0.12,
+    "n": 2
+   },
+   {
+    "item": "Royal Authentic basmati rice",
+    "basis": "each",
+    "stores": {
+     "Walmart": {
+      "ppu": 8.52,
+      "pack": "5 lb; $9.52 shelf, $1.00 Walmart Cash back, clip in Walmart app; with coupon; Walmart Cash posts after purchase",
+      "bulk": []
+     }
+    },
+    "best": 8.52,
+    "worst": 8.52,
     "save": 0.0,
     "n": 1
    },
@@ -3724,12 +4818,12 @@
     "n": 1
    },
    {
-    "item": "basmati rice, Famous Sella 10 lb",
+    "item": "basmati rice",
     "basis": "each",
     "stores": {
-     "The Meat Grinder Market": {
+     "Big Basket": {
       "ppu": 8.99,
-      "pack": "Weekend reel deal 2, was $11.99 on screen ~0:12; Famous Sella 10 lb shelf tag",
+      "pack": "Diwali Sale grid",
       "bulk": []
      }
     },
@@ -3739,12 +4833,27 @@
     "n": 1
    },
    {
+    "item": "basmati rice, 5 lb",
+    "basis": "each",
+    "stores": {
+     "Walmart": {
+      "ppu": 9.52,
+      "pack": "$9.52 shelf; $8.52 with $1 Walmart Cash (clip in app, limit 5); per southernsavers.com Walmart ad roundup (Nov 2-8 ad)",
+      "bulk": []
+     }
+    },
+    "best": 9.52,
+    "worst": 9.52,
+    "save": 0.0,
+    "n": 1
+   },
+   {
     "item": "basmati rice, Jazaa Elite",
     "basis": "lb",
     "stores": {
      "Al Aqsa Bangla Bazaar": {
       "ppu": 1.2,
-      "pack": "Jazaa Elite Basmati Rice Extra Long Grain 10 LB, regular $14.99, no limit, Everyday Sale",
+      "pack": "Everyday Sale. Reg $14.99. No limit",
       "bulk": []
      }
     },
@@ -3789,12 +4898,27 @@
     "stores": {
      "Al Aqsa Bangla Bazaar": {
       "ppu": 2.1,
-      "pack": "10 LB bag, regular $27.99, limit 2 per customer, Everyday Sale 7 days a week",
+      "pack": "Everyday Sale. Reg $27.99. Limit 2 per customer",
       "bulk": []
      }
     },
     "best": 2.1,
     "worst": 2.1,
+    "save": 0.0,
+    "n": 1
+   },
+   {
+    "item": "idli rava",
+    "basis": "each",
+    "stores": {
+     "Big Basket": {
+      "ppu": 3.49,
+      "pack": "Diwali Sale grid",
+      "bulk": []
+     }
+    },
+    "best": 3.49,
+    "worst": 3.49,
     "save": 0.0,
     "n": 1
    },
@@ -3849,7 +4973,7 @@
     "stores": {
      "Al Aqsa Bangla Bazaar": {
       "ppu": 1.6,
-      "pack": "Palli Aromatic Kalijeera Rice 10 LB, regular $22.99, no limit, Everyday Sale",
+      "pack": "Everyday Sale. Reg $22.99. No limit",
       "bulk": []
      }
     },
@@ -4009,11 +5133,7 @@
    "basis": "lb",
    "qty": 2,
    "stores": {
-    "Papa Mart": 3.8,
-    "Aldi": 3.98,
-    "H-E-B": 4.98,
-    "Kroger": 3.98,
-    "Prime Bazaar": 6.0
+    "Prime Bazaar": 11.98
    }
   },
   {
@@ -4022,26 +5142,31 @@
    "qty": 3,
    "stores": {
     "World Food Warehouse": 2.37,
-    "Papa Mart": 5.37,
-    "Aldi": 3.27,
-    "Prime Bazaar": 10.47,
-    "H-E-B": 2.97
+    "Prime Bazaar": 10.47
    }
   },
   {
-   "item": "eggs, cage free, 18 ct",
-   "basis": "each",
+   "item": "chicken leg quarters, cut up",
+   "basis": "lb",
+   "qty": 3,
+   "stores": {
+    "Prime Bazaar": 10.47
+   }
+  },
+  {
+   "item": "eggs, large, 18 ct",
+   "basis": "pack",
    "qty": 1,
    "stores": {
-    "Kroger": 3.99
+    "Kroger": 1.99
    }
   },
   {
-   "item": "ground beef, 80% lean",
+   "item": "ground beef",
    "basis": "lb",
    "qty": 2,
    "stores": {
-    "Kroger": 9.54
+    "Prime Bazaar": 11.98
    }
   },
   {
@@ -4074,7 +5199,15 @@
    "basis": "lb",
    "qty": 5,
    "stores": {
-    "Desi Brothers": 2.45
+    "Big Basket (Stafford)": 2.45
+   }
+  },
+  {
+   "item": "white potato",
+   "basis": "lb",
+   "qty": 5,
+   "stores": {
+    "Big Basket (Stafford)": 4.95
    }
   },
   {
@@ -4091,40 +5224,28 @@
    "total": 11.98,
    "n": 1
   },
-  "Papa Mart": {
-   "total": 9.17,
-   "n": 2
-  },
-  "Aldi": {
-   "total": 7.25,
-   "n": 2
-  },
-  "H-E-B": {
-   "total": 7.95,
-   "n": 2
-  },
-  "Kroger": {
-   "total": 17.51,
-   "n": 3
-  },
   "Prime Bazaar": {
-   "total": 16.47,
-   "n": 2
+   "total": 44.9,
+   "n": 4
   },
   "World Food Warehouse": {
    "total": 35.01,
    "n": 2
   },
+  "Kroger": {
+   "total": 1.99,
+   "n": 1
+  },
   "Big Basket": {
    "total": 61.35,
    "n": 4
   },
-  "Desi Brothers": {
-   "total": 2.45,
-   "n": 1
+  "Big Basket (Stafford)": {
+   "total": 7.4,
+   "n": 2
   }
  },
- "basket_split_total": 93.24,
- "basket_items_found": 10,
+ "basket_split_total": 117.28,
+ "basket_items_found": 12,
  "basket_items": 12
 }
