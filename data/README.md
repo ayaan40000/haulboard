@@ -10,10 +10,12 @@ The data behind the board, published with it every week. All files are plain tex
 | `tables.json` | Full cross-store price tables generated from the database |
 | `tables_page.json` | The trimmed tables actually rendered in the board's Price tables section |
 | `coupons-YYYY-MM-DD.json` | Dated coupon shortlists (added per research round) — couponer-identified deals with the posters' math preserved, tagged VERIFIED / UNVERIFIED |
+| `coupon-outcomes.json` | Register-check log for shortlist deals (expected final price vs register total) + per-source reliability scores (Phase B2) |
+| `essentials.json` | Track C taxonomy v2: essentials category tree (Paper goods / Laundry / Cleaning / Health & beauty), stock-up prices with the deal that set them, best tracked prices, and per-store clearance notes |
 
 ## Why there is no `prices.db` file here
 
-The live database is SQLite (binary). The publishing flow for this repo accepts validated text snapshots only, so the database is published as a SQL dump plus a JSON export instead — both rebuild the exact same database (664 prices, 435 canonical items, 24 stores as of 2026-11-06), and text diffs make weekly changes reviewable in git history.
+The live database is SQLite (binary). The publishing flow for this repo accepts validated text snapshots only, so the database is published as a SQL dump plus a JSON export instead — both rebuild the exact same database (894 prices, 551 canonical items, 26 stores as of 2026-11-13), and text diffs make weekly changes reviewable in git history.
 
 ## Schema (summary)
 
