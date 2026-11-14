@@ -6,7 +6,7 @@ household essentials, clothing, furniture, and clearance finds — with prices t
 time, deals verified from source images and videos, and a single place to decide
 *what to buy, where, and whether this week is even the right week to buy it.*
 
-Last updated: 2026-10-25
+Last updated: 2026-11-07
 
 ## How this roadmap works
 
@@ -54,22 +54,22 @@ the ones couponers have already identified and priced out.*
 
 ### Phase B1 — Image-first coupon research (in progress, Oct 2026)
 - [x] Source map: H-E-B coupon gallery (public), Kroger digitals via aggregators (UNVERIFIED until in-app), Walmart Cash, Aldi = no program
-- [ ] Weekly couponer sweep, **images parsed**: Dollar General coupon-community posts (that day's posts; deal math read from the images, posters' math preserved verbatim), Kroger Krazy / iHeartKroger, CVS and Walgreens deal communities/blogs, Target Circle roundups
-- [ ] Coverage: **Dollar General, H-E-B, Kroger, Walgreens, CVS, Target** every week; Walmart, Dollar Tree, and warehouse clubs when something is genuinely notable
-- [ ] Output format per deal: item + size, shelf price, exact coupons/offers to clip and where, rewards involved, final price (poster's math where community-sourced), validity dates, conditions, VERIFIED/UNVERIFIED
-- [ ] Published deliverables per round: a **Top 5 overall** + per-store shortlist on the board's Coupons section, and a dated `data/coupons-YYYY-MM-DD.json` in this repo
-- [ ] Standing highlight: Dollar General Saturday $5-off-$25 scenarios, worked out from community posts each week
+- [x] Weekly couponer sweep, **images parsed** (live — rounds 2026-10-30, 2026-10-31, 2026-11-03, 2026-11-06): Dollar General coupon-community posts (that day's posts; deal math read from the images, posters' math preserved verbatim), Kroger Krazy / iHeartKroger, CVS and Walgreens deal communities/blogs, Target Circle roundups
+- [x] Coverage: **Dollar General, H-E-B, Kroger, Walgreens, CVS, Target** every week; Walmart, Dollar Tree, and warehouse clubs when something is genuinely notable (all six core stores plus Walmart in the 2026-11-06 shortlist; Dollar Tree / clubs: nothing genuinely notable that week, stated in the round notes)
+- [x] Output format per deal (locked 2026-11-07 — every deal in `data/coupons-2026-11-06.json` carries all 14 fields; the Friday runbook rejects a shortlist deal missing one): item + size, shelf price, exact coupons/offers to clip and where, rewards involved, final price (poster's math where community-sourced), validity dates, conditions, VERIFIED/UNVERIFIED
+- [x] Published deliverables per round (Top 5 + per-store shortlist on the Coupons view and the dated JSON, every round since 2026-10-25): a **Top 5 overall** + per-store shortlist on the board's Coupons section, and a dated `data/coupons-YYYY-MM-DD.json` in this repo
+- [x] Standing highlight: Dollar General Saturday $5-off-$25 scenarios, worked out from community posts each week (2026-11-06 round: TheFreebieGuy scenarios #1 and #7, plus the weekday-coupon variant caught the same week)
 
 ### Phase B2 — Coupon tracking
 - [x] Clip-by dates surfaced as a "clip before Saturday" checklist (2026-10-30, shell v4 — `SECTION: clip-checklist` on the Coupons view, on-device persistence)
-- [ ] Deal outcomes logged: did the shortlist price match at the register? (feeds source reliability scores)
-- [ ] Expiring-digital alerts folded into the Friday summary (48-hour window)
+- [x] Deal outcomes logged: did the shortlist price match at the register? (feeds source reliability scores) (system live 2026-11-07: `data/coupon-outcomes.json` + the Source reliability card on the Coupons view; scores start with the first register check the owner reports)
+- [x] Expiring-digital alerts folded into the Friday summary (48-hour window) (live 2026-11-07: 'Expiring within 48 hours' card on the Coupons view, generated from the shortlist's validity dates, plus a standing expiring line in the Friday summary)
 
 ## Track C — Household essentials & drugstores
 
-- [ ] Walgreens/CVS/Walmart/Target household categories as first-class price-tracked items: paper goods, laundry, cleaning, health & beauty — same canonical-item database, new category trees
-- [ ] Stock-up thresholds per essential (e.g. paper towel per-sheet, detergent per-load) so "cheap" is computed, not vibes
-- [ ] Clearance endcaps and seasonal resets tracked per store
+- [x] Walgreens/CVS/Walmart/Target household categories as first-class price-tracked items: paper goods, laundry, cleaning, health & beauty — same canonical-item database, new category trees (pilot live 2026-11-07: Essentials view + `data/essentials.json` taxonomy v2, 10 canonical essentials mapped; Friday runs file household prices with sizes under the tree)
+- [x] Stock-up thresholds per essential (e.g. paper towel per-sheet, detergent per-load) so "cheap" is computed, not vibes (live 2026-11-07: a threshold is set only from a real sourced deal price — Colgate $0.50, Lysol wipes $0.70, Axe $0.99, Glade $1.27 at launch; the rest show 'baseline building' until a deal proves a price; per-unit bases are declared per category and start with the first sized capture)
+- [x] Clearance endcaps and seasonal resets tracked per store (live 2026-11-07: Clearance & seasonal resets card on the Essentials view — Dollar General penny list + seasonal markdowns refreshed weekly; other stores carry a sourced note or an explicit 'not checked', never a silent blank)
 
 ## Track D — Clothing & apparel clearance (future)
 
@@ -118,4 +118,4 @@ walkthroughs/reels instead of flyers). The suite needs ears and eyes, not just O
 ## Data foundation (done, maintained weekly)
 
 - [x] Database + JSONs published with the board in `data/` (SQL dump, JSON export, raw captures, tables) — text formats, diffable in git; see `data/README.md`
-- [ ] Category taxonomy v2 when Track C starts (home essentials tree) — canonical-item rules unchanged
+- [x] Category taxonomy v2 when Track C starts (home essentials tree) — canonical-item rules unchanged (2026-11-07: `data/essentials.json` — Paper goods / Laundry / Cleaning / Health & beauty)

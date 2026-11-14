@@ -1,0 +1,131 @@
+{
+ "version": 1,
+ "updated": "2026-11-07",
+ "purpose": "Register-check log for coupon shortlist deals (Roadmap Phase B2). Each outcome compares a shortlist deal's expected final price with the register total the owner reports after a trip.",
+ "scoring": "Per source: score = matched / checks, shown on the board's Source reliability card once checks >= 1. A source with no checks shows no score. Deals published counts the current round's shortlist (data/coupons-2026-11-06.json).",
+ "outcome_schema": {
+  "deal": "shortlist item text",
+  "store": "store name",
+  "source": "credit as in the shortlist",
+  "expected_final": "final_price from the shortlist",
+  "register_total": "what the register actually charged",
+  "matched": true,
+  "date": "YYYY-MM-DD",
+  "note": "free text"
+ },
+ "sources": [
+  {
+   "source": "TheFreebieGuy",
+   "deals_published": 2,
+   "checks": 0,
+   "matched": 0,
+   "mismatched": 0,
+   "score": null
+  },
+  {
+   "source": "DG Diva",
+   "deals_published": 2,
+   "checks": 0,
+   "matched": 0,
+   "mismatched": 0,
+   "score": null
+  },
+  {
+   "source": "Sarah CK Jones",
+   "deals_published": 2,
+   "checks": 0,
+   "matched": 0,
+   "mismatched": 0,
+   "score": null
+  },
+  {
+   "source": "heb.com digital coupon gallery",
+   "deals_published": 2,
+   "checks": 0,
+   "matched": 0,
+   "mismatched": 0,
+   "score": null
+  },
+  {
+   "source": "Kisha Twins Journey",
+   "deals_published": 1,
+   "checks": 0,
+   "matched": 0,
+   "mismatched": 0,
+   "score": null
+  },
+  {
+   "source": "Living Rich With Coupons",
+   "deals_published": 1,
+   "checks": 0,
+   "matched": 0,
+   "mismatched": 0,
+   "score": null
+  },
+  {
+   "source": "Passionate Penny Pincher",
+   "deals_published": 1,
+   "checks": 0,
+   "matched": 0,
+   "mismatched": 0,
+   "score": null
+  },
+  {
+   "source": "MoneySavingMom / Hip2Save",
+   "deals_published": 1,
+   "checks": 0,
+   "matched": 0,
+   "mismatched": 0,
+   "score": null
+  },
+  {
+   "source": "Hip2Save weekly ad deals",
+   "deals_published": 1,
+   "checks": 0,
+   "matched": 0,
+   "mismatched": 0,
+   "score": null
+  },
+  {
+   "source": "Kroger Krazy",
+   "deals_published": 1,
+   "checks": 0,
+   "matched": 0,
+   "mismatched": 0,
+   "score": null
+  },
+  {
+   "source": "iHeartKroger / Southern Savers",
+   "deals_published": 1,
+   "checks": 0,
+   "matched": 0,
+   "mismatched": 0,
+   "score": null
+  },
+  {
+   "source": "iHeartKroger / ForTheMommas",
+   "deals_published": 1,
+   "checks": 0,
+   "matched": 0,
+   "mismatched": 0,
+   "score": null
+  },
+  {
+   "source": "FreeStuffFinder",
+   "deals_published": 1,
+   "checks": 0,
+   "matched": 0,
+   "mismatched": 0,
+   "score": null
+  },
+  {
+   "source": "MoneySavingMom",
+   "deals_published": 1,
+   "checks": 0,
+   "matched": 0,
+   "mismatched": 0,
+   "score": null
+  }
+ ],
+ "outcomes": []
+}

@@ -1,0 +1,195 @@
+{
+ "version": 1,
+ "updated": "2026-11-07",
+ "purpose": "Track C taxonomy v2 (home essentials tree) mapped to canonical items in the price database. A stock-up price is set only from a real, sourced deal price; where no deal price exists yet it stays null and the board shows 'baseline building' instead of a made-up number.",
+ "categories": [
+  {
+   "name": "Paper goods",
+   "unit_basis": "per 100 sheets (unit pricing starts with the first sized capture)",
+   "items": [
+    {
+     "item": "Bounty paper towels",
+     "stock_up_price": null,
+     "threshold_basis": "Tracked Kroger price has no pack size yet - threshold waits for a sized capture.",
+     "best_tracked": {
+      "price": 9.99,
+      "store": "Kroger",
+      "captured_on": "2026-11-06",
+      "verified": false
+     }
+    },
+    {
+     "item": "Charmin bath tissue",
+     "stock_up_price": null,
+     "threshold_basis": "Tracked Kroger price has no pack size yet - threshold waits for a sized capture.",
+     "best_tracked": {
+      "price": 12.99,
+      "store": "Kroger",
+      "captured_on": "2026-11-06",
+      "verified": false
+     }
+    }
+   ]
+  },
+  {
+   "name": "Laundry",
+   "unit_basis": "per load (from pack load counts when captured)",
+   "items": [
+    {
+     "item": "Tide laundry detergent",
+     "stock_up_price": null,
+     "threshold_basis": "Best route is a bundle (CVS Tide 73 oz + PODS, $11.96 net, Nov 6 shortlist) - a bundle price cannot split into a per-item threshold.",
+     "best_tracked": {
+      "price": 12.99,
+      "store": "Kroger",
+      "captured_on": "2026-11-06",
+      "verified": false
+     }
+    },
+    {
+     "item": "Gain laundry detergent",
+     "stock_up_price": null,
+     "threshold_basis": "Best route is the DG Saturday basket (Gain Plus 75 loads inside the $14.00 basket, Nov 6 shortlist) - a basket price cannot split into a per-item threshold.",
+     "best_tracked": {
+      "price": 12.99,
+      "store": "Kroger",
+      "captured_on": "2026-11-06",
+      "verified": false
+     }
+    }
+   ]
+  },
+  {
+   "name": "Cleaning",
+   "unit_basis": "per item as tracked",
+   "items": [
+    {
+     "item": "Lysol disinfectant wipes",
+     "stock_up_price": 0.7,
+     "threshold_basis": "CVS deal, 2026-11-06 shortlist: $0.70 each after $1/1 digital + $3 ExtraBucks on 2 (75-80 ct).",
+     "best_tracked": {
+      "price": 0.7,
+      "store": "CVS",
+      "captured_on": "2026-11-06",
+      "verified": false
+     },
+     "deal_ends": "2026-11-07"
+    },
+    {
+     "item": "Glade automatic fragrance device",
+     "stock_up_price": 1.27,
+     "threshold_basis": "Walmart deal, 2026-11-06 shortlist: $1.27 after $5 Walmart Cash.",
+     "best_tracked": {
+      "price": 1.27,
+      "store": "Walmart",
+      "captured_on": "2026-11-06",
+      "verified": false
+     },
+     "deal_ends": "2026-11-08"
+    }
+   ]
+  },
+  {
+   "name": "Health & beauty",
+   "unit_basis": "per item as tracked",
+   "items": [
+    {
+     "item": "Colgate toothpaste",
+     "stock_up_price": 0.5,
+     "threshold_basis": "Walgreens deal, 2026-11-06 shortlist: $0.50 each after rewards (Colgate Total 3.3 oz).",
+     "best_tracked": {
+      "price": 0.5,
+      "store": "Walgreens",
+      "captured_on": "2026-11-06",
+      "verified": false
+     },
+     "deal_ends": "2026-11-07"
+    },
+    {
+     "item": "Axe body wash",
+     "stock_up_price": 0.99,
+     "threshold_basis": "Walgreens + Kroger deals, 2026-11-06 shortlist: $0.99 each after coupons.",
+     "best_tracked": {
+      "price": 0.99,
+      "store": "Walgreens",
+      "captured_on": "2026-11-06",
+      "verified": false
+     },
+     "deal_ends": "2026-11-07"
+    },
+    {
+     "item": "Dove body wash",
+     "stock_up_price": null,
+     "threshold_basis": "Only a Kroger shelf price tracked so far - threshold waits for a deal price.",
+     "best_tracked": {
+      "price": 6.99,
+      "store": "Kroger",
+      "captured_on": "2026-11-06",
+      "verified": false
+     }
+    },
+    {
+     "item": "Huggies wipes",
+     "stock_up_price": null,
+     "threshold_basis": "Only a Kroger shelf price tracked so far - threshold waits for a deal price.",
+     "best_tracked": {
+      "price": 4.99,
+      "store": "Kroger",
+      "captured_on": "2026-11-06",
+      "verified": false
+     }
+    }
+   ]
+  }
+ ],
+ "clearance": [
+  {
+   "store": "Dollar General",
+   "cadence": "Penny list every Tuesday; seasonal resets after each holiday",
+   "current_note": "Tue Nov 3 penny list: July Non-Core MAG items, Studio Selection suncare, summer insect control at $0.01 - scan in the DG app first, not guaranteed at every store. Seasonal: Halloween 50% off, candy 25% off.",
+   "verified": "VERIFIED",
+   "source": "Krazy Coupon Lady penny list + Bargain Hunters DG Penny List & Clearance Deals (FB), read Nov 3-6, 2026",
+   "updated": "2026-11-07"
+  },
+  {
+   "store": "Kroger",
+   "cadence": "Clearance endcaps, tracked via Kroger Krazy / iHeartKroger roundups",
+   "current_note": "No specific clearance note captured this week. Aggregator-sourced clearance stays UNVERIFIED until checked in the app.",
+   "verified": "UNVERIFIED",
+   "source": "Standing rule, coupons research Oct 24, 2026",
+   "updated": "2026-11-07"
+  },
+  {
+   "store": "CVS",
+   "cadence": "Seasonal clearance after holidays",
+   "current_note": "No clearance note captured this week - not checked means not checked, never 'no clearance'.",
+   "verified": "UNVERIFIED",
+   "source": "Friday sweep, Nov 6, 2026",
+   "updated": "2026-11-07"
+  },
+  {
+   "store": "Walgreens",
+   "cadence": "Seasonal clearance after holidays",
+   "current_note": "No clearance note captured this week - not checked means not checked, never 'no clearance'.",
+   "verified": "UNVERIFIED",
+   "source": "Friday sweep, Nov 6, 2026",
+   "updated": "2026-11-07"
+  },
+  {
+   "store": "Target",
+   "cadence": "Endcap clearance, markdown cadence varies by department",
+   "current_note": "No clearance note captured this week - not checked means not checked, never 'no clearance'.",
+   "verified": "UNVERIFIED",
+   "source": "Friday sweep, Nov 6, 2026",
+   "updated": "2026-11-07"
+  },
+  {
+   "store": "Walmart",
+   "cadence": "Clearance aisles + seasonal resets",
+   "current_note": "No clearance note captured this week - not checked means not checked, never 'no clearance'.",
+   "verified": "UNVERIFIED",
+   "source": "Friday sweep, Nov 6, 2026",
+   "updated": "2026-11-07"
+  }
+ ]
+}
