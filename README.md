@@ -31,7 +31,7 @@ Every Friday (~9:37 AM CT) an automated run:
 2. Pulls the big retailers' weekly ads and coupon sources
 3. Re-verifies free-food distributions and refreshes the Events tab (rolling 21-day lookahead)
 4. Files **every** captured price into the price database (deals, coupon prices, and regular flyer prices; expired prices stay as history). Undated flyer prices are closed when a later flyer supersedes them, so a stale price never shows as current
-5. Rebuilds the price-compare and category tables, refreshes this page, privacy-scans it, and pushes it to this repo — GitHub Pages then redeploys automatically
+5. Rebuilds the price-compare and category tables, refreshes this page, sets both header dates from one value, greys out shortlist rows whose deals have ended, and runs the pre-push validator (`validate.py` — marker integrity, header dates, privacy scan, Add-button formats, page size; a failure blocks the push) before pushing to this repo — GitHub Pages then redeploys automatically
 6. Posts a short Friday summary (best deals, coupon finds, free distributions) in the owner's chat
 
 Every item is tagged **VERIFIED** (seen on the store/org's own post, flyer, or page that run) or **UNVERIFIED**. Prices are never invented.
@@ -44,7 +44,7 @@ The site is a progressive web app: open the live link in your phone browser and 
 
 | Path | Purpose |
 | --- | --- |
-| `index.html` | The board itself — one self-contained file (inline CSS/JS, no external fonts, scripts, or images) |
+| `index.html` | The board itself — one self-contained file (inline CSS/JS, no external fonts or scripts; the only external images are product photos from the saved, preflighted library — policy in `docs/DEVELOPMENT.md`) |
 | `manifest.webmanifest` | Web app manifest (name, colors, icons) for Add to Home Screen |
 | `icon.svg` | App icon |
 | `sw.js` | Service worker — offline copy of the current board, network-first refresh |

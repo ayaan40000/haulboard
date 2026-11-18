@@ -119,3 +119,4 @@ walkthroughs/reels instead of flyers). The suite needs ears and eyes, not just O
 
 - [x] Database + JSONs published with the board in `data/` (SQL dump, JSON export, raw captures, tables) — text formats, diffable in git; see `data/README.md`
 - [x] Category taxonomy v2 when Track C starts (home essentials tree) — canonical-item rules unchanged (2026-11-07: `data/essentials.json` — Paper goods / Laundry / Cleaning / Health & beauty)
+- [x] Trust & freshness fixes (development plan Phase 1, 2026-11-17): store names canonicalised in the database (23 stores, location in the `city` field; canonical list in the workspace runbook), single-source header dates, expired coupon rows greyed with "Ended" tags, and a `validate.py` pre-push gate the Friday run must pass

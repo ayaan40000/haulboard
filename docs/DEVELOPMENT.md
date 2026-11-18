@@ -9,23 +9,35 @@ House style ("Market Ledger"):
 - Colors: deep green `#14532d` / green `#166534`, warm cream `#f6f3ec`, marigold `#d97706`
 - Headings in Georgia serif; body in the system sans stack
 - Mobile-first, single column under 760px, app-style views with a tab bar (fixed bottom bar on mobile, top pill bar at 761px+), 44px+ tap targets
-- No external fonts, scripts, images, or trackers — ever. New assets must live in this repo and be referenced relatively
+- No external fonts, scripts, or trackers — ever. New assets must live in this repo and be referenced relatively. The single exception is product photos, under the policy below
 
 The PWA files are deliberately tiny and boring:
 
 - `manifest.webmanifest` — name, short name, colors, `display: standalone`, icon entries
 - `icon.svg` — the app icon (also used as the Apple touch icon)
-- `sw.js` — network-first for navigations (fresh board wins), cache-first for the icon/manifest, cache name versioned (`haulboard-v<major>`); bump the version when the shell changes so phones drop the old cache
+- `sw.js` — network-first for navigations (fresh board wins), cache-first for the icon/manifest, cache name versioned (`haulboard-v<major>`); bump the version when the shell **or the page structure** changes so phones drop the old cache. **This sentence is the single home of the cache-bump rule** — the runbook and the checklist below point here instead of restating it
 - `.nojekyll` — empty file; without it GitHub Pages runs Jekyll over the repo for no benefit
 
+## Product photos (policy as practised since 2026-11-03)
+
+The board hotlinks product photos on coupon deal rows. The rules, exactly as practised:
+
+- **Library first.** A photo may be used only if it is in the saved library — `product-images.json` + the `product-images/` folder in the workspace (`~/workspace/grocery-deals/`). Check the library before any search; never hotlink a URL that is not in it.
+- **Preflighted.** Every URL used in a run is verified in that run before publishing: HTTP 200 and an image content-type, fetched with a cross-origin referer.
+- **Self-removing.** Photo `<img>` tags carry an `onerror` handler that removes the image, so a link that dies later takes itself off the board instead of showing a broken-image box.
+- **Saved when new.** A newly verified image is saved into the library (file + JSON entry) in the same run, so it is reusable forever.
+- Nothing else external: no other hotlinked images, and no external fonts, scripts, or trackers, ever.
+
 ## Validation checklist (before every push)
+
+Most of this checklist is enforced mechanically by `validate.py` in the workspace root (`~/workspace/grocery-deals/validate.py` — marker-pair integrity, tag balance, header dates vs push date, privacy scan, Add-button/`data-item` format, `HB_PLAN` parses, coupon-expiry treatment applied, page < 1 MB). **Run it before every push; a failure blocks the push.** The list below remains the human-readable contract it implements:
 
 1. HTML parses with no unclosed tags; doctype first, `</html>` last
 2. Hash-router compatibility (replaces the old section-id rule): every legacy hash (`#top-picks`, `#al-aqsa`, `#wfw`, `#more-stores`, `#big-retailers`, `#watchlist`, `#price-compare`, `#coupons`, `#free-food`, `#my-list`), the `#compare` and `#stores` aliases, and all 15 store slugs route to the right view or store detail per `docs/UX-REDESIGN.md` §3.3; an unknown hash opens This Week. The Events view (added 2026-11-04) routes at `#events` to element id `view-events`. The Essentials view (added 2026-11-07) routes at `#essentials` to element id `view-essentials`. The retained DOM ids — `top-picks`, `more-stores`, `big-retailers`, `watchlist`, `price-compare`, `coupons`, `free-food`, `view-events`, `view-essentials`, `my-list`, plus the functional ids `themeToggle`, `list`, `clear` — each appear exactly once. The legacy store section ids `al-aqsa` and `wfw` are hash routes only, not element ids
 3. No external URLs in the page except intentional links: repo/docs links, product photos (see the Nov 3 changelog entry), and the Coupons view's store-app search and coupon-gallery links (registered below)
 4. **Privacy scan (blocking):** search the full publish set for the owner's personal name, home street patterns, and phone-number patterns. A hit stops the push — no exceptions. Only "Stafford, TX 77477" and public store addresses may appear
 5. File sizes sane: `index.html` should stay well under 1 MB
-6. Service worker cache version bumped if `sw.js` or the shell changed
+6. Service worker cache version bumped if the shell or the page structure changed (rule stated once, under "Working on the page" above)
 
 ## Coupons view format (standing, owner order 2026-11-05)
 
@@ -36,6 +48,7 @@ Every "Best per store" row in the Coupons view is built the same way:
 - Under the table, the deal's coupons as chips (`<a class="chip">`) in a `.clip-line` labelled "Clip in the <store> app:", each chip linking to the store's coupon gallery below.
 - Each `SECTION: clip-checklist` row is wrapped in `.clip-item` and followed by an "Open in <store> app ↗" link to the same gallery (the combined CVS/Walgreens row carries both links).
 - Photo strips, prices, poster math, and the Add button's `data-item` string are unchanged by this layout.
+- Expiry treatment (2026-11-17): after the shortlist is built, the run applies `coupon_expiry.py` — any row (Top 5 or Best per store) whose structured `valid_to` in the week's `data/coupons-<date>.json` is before the board date gets the `ended` class (greyed) and an "Ended <date>" tag. Rows still swap out fully on the next Friday run; `validate.py` fails the push if an expired row lacks the treatment.
 
 Store link templates (`{q}` = URL-encoded query):
 
@@ -66,9 +79,9 @@ Note: each connector push may surface an approval card to the owner. If a Friday
 
 ## Weekly content generation
 
-Friday content is generated by the automated run (see OPERATIONS.md) from that week's captured data and the regenerated category tables — the page is rebuilt, not hand-edited, so structural changes (new views, features) are made here in the source template first and then flow into the weekly rebuilds.
+Friday content is generated by the automated run (see OPERATIONS.md) from that week's captured data and the regenerated category tables. The run swaps content **only between the paired markers** — it does not rebuild the page from a template — so structural changes (new views, features) are made in `index.html` and the docs first (in a development change, never mid-run) and then simply persist through the weekly swaps. Before the push, the run sets both header dates from one value (`set_board_date.py`), applies the coupon-expiry treatment (`coupon_expiry.py`), and gates the push on `validate.py`.
 
-Page structure (app-style since 2026-10-26, spec: `docs/UX-REDESIGN.md`): eight views — This Week, Stores (with per-store detail sub-views and the watchlist group), Compare, Coupons, Free Food, Events (added 2026-11-04: family events within ~30 min of Stafford, rolling 21-day lookahead, rows between `SECTION: events-list` markers, structured data in `data/events-<date>.json`; rules in the workspace RUNBOOK's standing push rules), Essentials (added 2026-11-07: Track C — stock-up table between `SECTION: essentials-stockup` markers and the clearance tracker between `SECTION: clearance-tracker` markers, data in `data/essentials.json`; the Coupons view also carries two generated blocks, `SECTION: expiring-alerts` from the current `data/coupons-<date>.json` validity dates and `SECTION: source-reliability` from `data/coupon-outcomes.json`, both rebuilt on the Friday push), My List — one visible at a time via the hash router and tab bar. Weekly data is swapped only between the paired HTML comment markers (`VIEW` / `SECTION` / `STORE` / `DATA`, alone on their own line; full registry in the spec §8.2); the shell inside `SHELL` markers (header, tab bar, core scripts, styles) is frozen for weekly runs. Deal rows carry one priced item each with an Add button (`data-item` = `"<Item> — <Store> — <Price>"`); the My List storage contract (`haulboard-list-v1`) and theme contract (`hb-theme`, `#themeToggle`) must not change, so saved lists and theme choices survive every rebuild. Bump the `sw.js` cache version whenever the shell changes.
+Page structure (app-style since 2026-10-26, spec: `docs/UX-REDESIGN.md`): eight views — This Week, Stores (with per-store detail sub-views and the watchlist group), Compare, Coupons, Free Food, Events (added 2026-11-04: family events within ~30 min of Stafford, rolling 21-day lookahead, rows between `SECTION: events-list` markers, structured data in `data/events-<date>.json`; rules in the workspace RUNBOOK's standing push rules), Essentials (added 2026-11-07: Track C — stock-up table between `SECTION: essentials-stockup` markers and the clearance tracker between `SECTION: clearance-tracker` markers, data in `data/essentials.json`; the Coupons view also carries two generated blocks, `SECTION: expiring-alerts` from the current `data/coupons-<date>.json` validity dates and `SECTION: source-reliability` from `data/coupon-outcomes.json`, both rebuilt on the Friday push), My List — one visible at a time via the hash router and tab bar. Weekly data is swapped only between the paired HTML comment markers (`VIEW` / `SECTION` / `STORE` / `DATA`, alone on their own line; full registry in the spec §8.2); the shell inside `SHELL` markers (header, tab bar, core scripts, styles) is frozen for weekly runs. Deal rows carry one priced item each with an Add button (`data-item` = `"<Item> — <Store> — <Price>"`); the My List storage contract (`haulboard-list-v1`) and theme contract (`hb-theme`, `#themeToggle`) must not change, so saved lists and theme choices survive every rebuild. Bump the `sw.js` cache version whenever the shell or the page structure changes (the rule's single home is under "Working on the page" above).
 
 ## Coupon tracking + Essentials sections (2026-11-07)
 

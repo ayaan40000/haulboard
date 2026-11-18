@@ -1,7 +1,8 @@
-// HaulBoard service worker — shell v7
+// HaulBoard service worker — shell v8
 // Network-first for the page (a fresh board always wins when online),
-// cache-first for the icon and manifest. Bump CACHE when the shell changes.
-const CACHE = 'haulboard-v7';
+// cache-first for the icon and manifest. Bump CACHE when the shell or the
+// page structure changes (rule stated once in docs/DEVELOPMENT.md).
+const CACHE = 'haulboard-v8';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icon.svg'];
 
 self.addEventListener('install', (event) => {
