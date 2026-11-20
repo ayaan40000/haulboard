@@ -1,8 +1,8 @@
 {
  "version": 1,
- "updated": "2026-11-07",
+ "updated": "2026-11-20",
  "purpose": "Register-check log for coupon shortlist deals (Roadmap Phase B2). Each outcome compares a shortlist deal's expected final price with the register total the owner reports after a trip.",
- "scoring": "Per source: score = matched / checks, shown on the board's Source reliability card once checks >= 1. A source with no checks shows no score. Deals published counts the current round's shortlist (data/coupons-2026-11-06.json).",
+ "scoring": "Per source: score = matched / checks, shown on the board's Source reliability card once checks >= 1. A source with no checks shows no score. Deals published counts the current round's shortlist (data/coupons-2026-11-20.json).",
  "outcome_schema": {
   "deal": "shortlist item text",
   "store": "store name",
@@ -16,22 +16,22 @@
  "sources": [
   {
    "source": "TheFreebieGuy",
-   "deals_published": 2,
+   "deals_published": 4,
    "checks": 0,
    "matched": 0,
    "mismatched": 0,
    "score": null
   },
   {
-   "source": "DG Diva",
-   "deals_published": 2,
+   "source": "Southern Savers",
+   "deals_published": 3,
    "checks": 0,
    "matched": 0,
    "mismatched": 0,
    "score": null
   },
   {
-   "source": "Sarah CK Jones",
+   "source": "MoneySavingMom / The Krazy Coupon Lady",
    "deals_published": 2,
    "checks": 0,
    "matched": 0,
@@ -47,7 +47,7 @@
    "score": null
   },
   {
-   "source": "Kisha Twins Journey",
+   "source": "The Krazy Coupon Lady",
    "deals_published": 1,
    "checks": 0,
    "matched": 0,
@@ -55,7 +55,7 @@
    "score": null
   },
   {
-   "source": "Living Rich With Coupons",
+   "source": "Kroger Krazy / Southern Savers",
    "deals_published": 1,
    "checks": 0,
    "matched": 0,
@@ -63,7 +63,7 @@
    "score": null
   },
   {
-   "source": "Passionate Penny Pincher",
+   "source": "Southern Savers / A Pretty Nice Life",
    "deals_published": 1,
    "checks": 0,
    "matched": 0,
@@ -71,39 +71,7 @@
    "score": null
   },
   {
-   "source": "MoneySavingMom / Hip2Save",
-   "deals_published": 1,
-   "checks": 0,
-   "matched": 0,
-   "mismatched": 0,
-   "score": null
-  },
-  {
-   "source": "Hip2Save weekly ad deals",
-   "deals_published": 1,
-   "checks": 0,
-   "matched": 0,
-   "mismatched": 0,
-   "score": null
-  },
-  {
-   "source": "Kroger Krazy",
-   "deals_published": 1,
-   "checks": 0,
-   "matched": 0,
-   "mismatched": 0,
-   "score": null
-  },
-  {
-   "source": "iHeartKroger / Southern Savers",
-   "deals_published": 1,
-   "checks": 0,
-   "matched": 0,
-   "mismatched": 0,
-   "score": null
-  },
-  {
-   "source": "iHeartKroger / ForTheMommas",
+   "source": "DealSelected",
    "deals_published": 1,
    "checks": 0,
    "matched": 0,
@@ -119,7 +87,15 @@
    "score": null
   },
   {
-   "source": "MoneySavingMom",
+   "source": "Hip2Save / MoneySavingMom",
+   "deals_published": 1,
+   "checks": 0,
+   "matched": 0,
+   "mismatched": 0,
+   "score": null
+  },
+  {
+   "source": "Hip2Save / FreeStuffFinder",
    "deals_published": 1,
    "checks": 0,
    "matched": 0,

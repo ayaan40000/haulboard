@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-07",
+ "updated": "2026-11-20",
  "purpose": "Track C taxonomy v2 (home essentials tree) mapped to canonical items in the price database. A stock-up price is set only from a real, sourced deal price; where no deal price exists yet it stays null and the board shows 'baseline building' instead of a made-up number.",
  "categories": [
   {
@@ -66,26 +66,24 @@
     {
      "item": "Lysol disinfectant wipes",
      "stock_up_price": 0.7,
-     "threshold_basis": "CVS deal, 2026-11-06 shortlist: $0.70 each after $1/1 digital + $3 ExtraBucks on 2 (75-80 ct).",
+     "threshold_basis": "CVS deal, 2026-11-06 shortlist: $0.70 each after $1/1 digital + $3 ExtraBucks on 2 (75-80 ct). No Lysol deal this week - threshold stands, no live deal.",
      "best_tracked": {
       "price": 0.7,
       "store": "CVS",
       "captured_on": "2026-11-06",
       "verified": false
-     },
-     "deal_ends": "2026-11-07"
+     }
     },
     {
      "item": "Glade automatic fragrance device",
      "stock_up_price": 1.27,
-     "threshold_basis": "Walmart deal, 2026-11-06 shortlist: $1.27 after $5 Walmart Cash.",
+     "threshold_basis": "Walmart deal, 2026-11-06 shortlist: $1.27 after $5 Walmart Cash. No Glade deal this week - threshold stands, no live deal.",
      "best_tracked": {
       "price": 1.27,
       "store": "Walmart",
       "captured_on": "2026-11-06",
       "verified": false
-     },
-     "deal_ends": "2026-11-08"
+     }
     }
    ]
   },
@@ -96,26 +94,26 @@
     {
      "item": "Colgate toothpaste",
      "stock_up_price": 0.5,
-     "threshold_basis": "Walgreens deal, 2026-11-06 shortlist: $0.50 each after rewards (Colgate Total 3.3 oz).",
+     "threshold_basis": "Walgreens deal, 2026-11-20 shortlist: $0.50 each after coupon and rewards (Colgate Total 3.3 oz); CVS Colgate Optic White also $0.50 each this week.",
      "best_tracked": {
       "price": 0.5,
       "store": "Walgreens",
       "captured_on": "2026-11-06",
       "verified": false
      },
-     "deal_ends": "2026-11-07"
+     "deal_ends": "2026-11-21"
     },
     {
      "item": "Axe body wash",
      "stock_up_price": 0.99,
-     "threshold_basis": "Walgreens + Kroger deals, 2026-11-06 shortlist: $0.99 each after coupons.",
+     "threshold_basis": "Walgreens deal, 2026-11-20 shortlist: $0.99 each after coupon and rewards.",
      "best_tracked": {
       "price": 0.99,
       "store": "Walgreens",
       "captured_on": "2026-11-06",
       "verified": false
      },
-     "deal_ends": "2026-11-07"
+     "deal_ends": "2026-11-21"
     },
     {
      "item": "Dove body wash",
@@ -146,10 +144,10 @@
   {
    "store": "Dollar General",
    "cadence": "Penny list every Tuesday; seasonal resets after each holiday",
-   "current_note": "Tue Nov 3 penny list: July Non-Core MAG items, Studio Selection suncare, summer insect control at $0.01 - scan in the DG app first, not guaranteed at every store. Seasonal: Halloween 50% off, candy 25% off.",
+   "current_note": "New penny list effective Fri Nov 20: Lawn & Garden, select Camping, Swim/Summer Toys (Pink Square), Yellow Dot Accessories & Shoes, Green Dot Beach Towels, Green Dot Home, Spring Stationery & Party, Summer Party, Swim Diapers, Beautiful Blooms, Dolly Parton Spring Floral/Summer, Strawberry Fields; Club 92 candles reported pennied today. Scan in the DG app first, not guaranteed at every store. Seasonal Clearance Event ended Thu Nov 19 - last week's clearance prices are NOT carried forward.",
    "verified": "VERIFIED",
-   "source": "Krazy Coupon Lady penny list + Bargain Hunters DG Penny List & Clearance Deals (FB), read Nov 3-6, 2026",
-   "updated": "2026-11-07"
+   "source": "TheFreebieGuy penny page + Bargain Hunters DG Penny List & Clearance Deals (FB), read Nov 20, 2026",
+   "updated": "2026-11-20"
   },
   {
    "store": "Kroger",
@@ -157,39 +155,39 @@
    "current_note": "No specific clearance note captured this week. Aggregator-sourced clearance stays UNVERIFIED until checked in the app.",
    "verified": "UNVERIFIED",
    "source": "Standing rule, coupons research Oct 24, 2026",
-   "updated": "2026-11-07"
+   "updated": "2026-11-20"
   },
   {
    "store": "CVS",
    "cadence": "Seasonal clearance after holidays",
    "current_note": "No clearance note captured this week - not checked means not checked, never 'no clearance'.",
    "verified": "UNVERIFIED",
-   "source": "Friday sweep, Nov 6, 2026",
-   "updated": "2026-11-07"
+   "source": "Friday sweep, Nov 20, 2026",
+   "updated": "2026-11-20"
   },
   {
    "store": "Walgreens",
    "cadence": "Seasonal clearance after holidays",
    "current_note": "No clearance note captured this week - not checked means not checked, never 'no clearance'.",
    "verified": "UNVERIFIED",
-   "source": "Friday sweep, Nov 6, 2026",
-   "updated": "2026-11-07"
+   "source": "Friday sweep, Nov 20, 2026",
+   "updated": "2026-11-20"
   },
   {
    "store": "Target",
    "cadence": "Endcap clearance, markdown cadence varies by department",
    "current_note": "No clearance note captured this week - not checked means not checked, never 'no clearance'.",
    "verified": "UNVERIFIED",
-   "source": "Friday sweep, Nov 6, 2026",
-   "updated": "2026-11-07"
+   "source": "Friday sweep, Nov 20, 2026",
+   "updated": "2026-11-20"
   },
   {
    "store": "Walmart",
    "cadence": "Clearance aisles + seasonal resets",
    "current_note": "No clearance note captured this week - not checked means not checked, never 'no clearance'.",
    "verified": "UNVERIFIED",
-   "source": "Friday sweep, Nov 6, 2026",
-   "updated": "2026-11-07"
+   "source": "Friday sweep, Nov 20, 2026",
+   "updated": "2026-11-20"
   }
  ]
 }

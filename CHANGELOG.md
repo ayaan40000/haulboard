@@ -2,6 +2,12 @@
 
 All notable deployments of the public HaulBoard page. Weekly content refreshes (new prices and deals) happen every Friday and are summarised in the commit message; this log tracks structural and feature changes.
 
+## 2026-11-20 — Friday refresh: Meat Grinder chicken $0.99/lb, Prime box back to $29.99, 1210 prices filed
+- Content: Al Aqsa Weekend 3-Day Sale Nov 20–22 (parathas 2 for $13.99/$14.99, young hen $14.99, was $19.99); Papa Mart Weekend Deal Fri–Sun (atta $10.99, basmati $8.99–$10.99) + Premium Offers + Diwali deals still running + Valley Farms halal turkey $1.99/lb; Big Basket Weekly Sale Fri–Mon Nov 20–23 (beet/cabbage $0.49/lb); Prime Bazaar counter re-verified (leg-quarters 40 lb box back to $29.99 as-is; goat/lamb cuts hold $10.99/lb); Al Madina Medjool dates 4 lb $11.99, persimmons $1.49/lb; no new weekend flyer from WFW or Desi Brothers; Hala Market no new posts since Nov 8
+- Meat Grinder video pricing: five reels transcribed and frame-checked — 12 verified prices, incl. chicken thighs and ground chicken $0.99/lb, Malka cake rusk $1.59, Al-Basha molokhia $2.59; the Thanksgiving turkey promo and grinder-machine reels had no prices. New structured file `data/coupons-dg-2026-11-20.json` (4 DG deals); 18-coupon shortlist (DG Saturday $5/$25 only, Sat Nov 21; Kroger turkey $0.48/lb with digital), 38 post-trip events Dec 1–11, sample basket $77.95 over 8/12 items; 1210 prices, 697 canonical items, 23 stores
+- Fixes: the Expiring-within-48-hours card and Source reliability card are now rebuilt from the current shortlist every Friday (they were still showing the Nov 6 round); price-compare tables now skip bulk-only stores with no per-unit price (the WFW wholesale leg-quarters box had crashed the build); the Nov 13 Everyday Sale rows at Al Aqsa were not re-posted and are not carried forward
+- Both header dates updated to Nov 20 per the standing rule
+
 ## 2026-11-17 — Phase 1: trust & freshness fixes (development plan)
 - **Single-source header dates:** both board dates (lede eyebrow + top-right week-stamp) are now written from one value by `set_board_date.py`; a mismatch with the push date fails validation instead of reaching the page (the Nov 3 lesson, mechanised)
 - **Coupon expiry treatment:** shortlist rows whose structured `valid_to` has passed are greyed with an "Ended <date>" tag (`coupon_expiry.py`, driven by the week's shortlist JSON) instead of looking identical to live deals — 14 rows on today's board (the Nov 14 Dollar General / CVS / Walgreens baskets). Rows still swap out fully on Friday
